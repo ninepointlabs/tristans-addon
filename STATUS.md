@@ -3,7 +3,7 @@
 **What it is:** the WoW Forever-only, do-everything Paladin companion for Tristan Ludlowe (Human Paladin, Alliance, PvP-ruleset realm), with a Battle (PvP) section. It follows the structure, window design and website style of Andric's Addon and Parzelle's Addon (Parzelle's where they differ).
 
 **Repo:** local `/home/tim/Projects/tristans-addon`, branch `main`. Commits use `Nine Point Labs <179739321+ninepointlabs@users.noreply.github.com>`.
-- **Not on GitHub yet.** `gh repo create ninepointlabs/tristans-addon --public --source . --remote origin --push` was blocked by Claude Code's permission check (creating a public repo). Run it (or approve it) to create the repo, set `origin` and push `main`. CI (`.github/workflows/test.yml`) runs on every push to `main` once it's there.
+- **On GitHub:** https://github.com/ninepointlabs/tristans-addon (public), created 2026-11-10 at Tim's go-ahead; `origin` set, `main` pushed. First CI run (Test, run 42887561649) passed: data up to date, Lua syntax, headless tests, poller tests.
 - **No tag, no GitHub release, no release post, no topics, no Pages setting, no DNS.** Admin handles releases with Tim's explicit OK. `docs/CNAME` = `tristans-addon.myazerothlife.com` (file only).
 - Target: loadable **v0.1.0** on `main` (the TOC says `@project-version@`; the packager fills it in on a tag).
 
