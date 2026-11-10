@@ -1,0 +1,10 @@
+package-as: TristansAddon
+
+ignore:
+  - README.md
+  - STATUS.md
+  - research
+  - docs
+  - content
+  - tools
+  - tests

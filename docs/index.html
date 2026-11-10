@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en" data-faction="neutral">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tristan's Addon</title>
+<meta name="description" content="Tristan's Addon: the Paladin companion for World of Warcraft: Forever, with a PvP focus. A Blessing button, Seal and Aura hints, a Battle module with Honor &amp; Rank, battlegrounds, a PvP bar, your cooldowns and Forbearance, plus rotation, gear, leveling, talents and Learn the Paladin.">
+<meta name="theme-color" content="#0b0806">
+<link rel="icon" href="https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IM+Fell+English:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="extra.css">
+<script>
+  document.documentElement.classList.add("js");
+  try { var f = localStorage.getItem("tristans-faction"); if (f) document.documentElement.dataset.faction = f; } catch (e) {}
+</script>
+</head>
+<body>
+
+<!-- Screenshots: none yet. They come once Tim provides them, with other
+     players' names pixelated. Until then every screenshot slot is a
+     "Screenshot coming soon" card with a Blizzard spell icon. -->
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Tristan's Addon, back to top">
+    <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg" alt="" width="26" height="26" style="border-radius: 4px; border: 1px solid #8a6526">
+    <span>Tristan's Addon</span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#bless">Blessings</a>
+    <a href="#battle">Battle</a>
+    <a href="#quests">Quests</a>
+    <a href="#loot">Loot</a>
+    <a href="#tristan">Tristan</a>
+    <a href="#tavern">Tavern</a>
+    <a href="https://github.com/ninepointlabs/tristans-addon">GitHub</a>
+  </nav>
+  <div class="faction" role="group" aria-label="Choose your faction">
+    <button type="button" data-pick="alliance" aria-pressed="false" title="For the Alliance!">
+      <img src="https://omaforge.ninepointlabs.com/assets/art/alliance-crest-sm.webp" alt="Alliance" width="28" height="35">
+    </button>
+    <button type="button" data-pick="horde" aria-pressed="false" title="For the Horde!">
+      <img src="https://omaforge.ninepointlabs.com/assets/art/horde-sigil-sm.webp" alt="Horde" width="28" height="35">
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="top">
+  <div class="hero-art" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <!-- Portrait slot: add Tristan's portrait here once Tim provides it. -->
+    <p class="kicker">The Paladin companion for World of Warcraft: Forever</p>
+    <h1 class="title">Tristan's Addon</h1>
+    <p class="named-for">Named for <a href="#tristan">Tristan Ludlowe</a>, Human Paladin of the Alliance</p>
+    <p class="lede">
+      Holy, Protection or Retribution, with a soft spot for the battleground. Bless your
+      group with one button, keep the right Seal and Aura up, and walk into Warsong Gulch
+      knowing your Honor, your cooldowns and exactly where your Forbearance stands.
+    </p>
+    <ul class="specs" aria-label="Specs">
+      <li class="spec holy"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_holybolt.jpg" alt="" width="30" height="30">Holy</li>
+      <li class="spec prot"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_devotionaura.jpg" alt="" width="30" height="30">Protection</li>
+      <li class="spec ret"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_auraoflight.jpg" alt="" width="30" height="30">Retribution</li>
+    </ul>
+    <div class="cta">
+      <a class="wow-btn" href="#loot">Claim your loot</a>
+      <a class="wow-btn ghost" href="#bless">Try the Blessing button</a>
+    </div>
+    <p class="meta">Free and open source · MIT · WoW Forever only · <span data-version>first release coming soon</span> · <a href="https://github.com/ninepointlabs/tristans-addon">GitHub</a></p>
+  </div>
+  <div class="loading" aria-hidden="true">
+    <p class="loading-tip"><b>Tip:</b> <span id="tip">Each press of the Bless next button blesses the next player missing your Blessing, nearest first.</span></p>
+    <div class="loading-bar"><div class="loading-fill"></div></div>
+  </div>
+</section>
+
+<div class="facts-band">
+  <div class="facts" aria-label="At a glance">
+    <div class="fact"><b>3</b><span>specs, one click apart</span></div>
+    <div class="fact"><b>4</b><span>battlegrounds tracked</span></div>
+    <div class="fact"><b>5</b><span>PvP bar buttons</span></div>
+    <div class="fact"><b>6</b><span>Battle tabs</span></div>
+    <div class="fact"><b>1</b><span>press = 1 cast, always</span></div>
+  </div>
+</div>
+
+<section class="section buff" id="bless">
+  <div class="section-head">
+    <h2 class="heading">The Blessing Button</h2>
+    <p class="sub">Might, Wisdom or Kings, for whoever's next. One press at a time.</p>
+  </div>
+
+  <div class="spotlight">
+    <div>
+      <h3>One button. Everybody blessed.</h3>
+      <p>A small button sits on your Paladin bar. Each press casts your Blessing on the
+        next friendly player who's missing one from you, nearest first, and moves straight
+        on to the next. Keep pressing until the whole group is glowing.</p>
+      <p class="steps-title">Who's next, in order</p>
+      <ol class="picks">
+        <li><b>You</b>, with the Blessing that fits your spec: Might for Retribution and Protection, Wisdom for Holy.</li>
+        <li><b>Your group</b>, nearest first when the game reports distance.</li>
+        <li><b>Your target</b>, then friendly players with a visible nameplate.</li>
+      </ol>
+      <p class="steps-title">Class-smart</p>
+      <ul class="rules">
+        <li><b>Blessing of Might</b> for Warriors, Rogues and Hunters.</li>
+        <li><b>Blessing of Wisdom</b> for casters and healers.</li>
+        <li><b>Kings for everyone</b>, if you switch it on (once you know Blessing of Kings). Every class can be overridden under <em>Settings › Paladin bar</em>.</li>
+        <li>Greater Blessings only when you know them, in a raid, when three or more of a class need one.</li>
+      </ul>
+      <p class="steps-title">It skips</p>
+      <ul class="rules">
+        <li>anyone who already has your Blessing</li>
+        <li>anyone out of range (the tooltip tells you how many)</li>
+        <li>anyone wearing your Blessing of Freedom or Protection, until it ends: one Blessing from you per target, and Might would replace it. Then they're offered again.</li>
+      </ul>
+      <p class="steps-title">Blizzard's rules, kept</p>
+      <ul class="rules">
+        <li>One press, one cast. The addon never casts on its own, and it adds no macros to your macro list.</li>
+        <li>Who the button targets only changes out of combat. In combat it keeps its last target and says so.</li>
+        <li>No key is bound by default. Pick one under <em>Settings › Paladin bar › Set key</em> or type <code>/tristan bless key</code>. Super combos are never used.</li>
+      </ul>
+    </div>
+
+    <div class="demo" id="bless-demo" tabindex="0" aria-label="Blessing button demo: press the button or B">
+      <div class="demo-bar"><span>Try it</span><small>pretend party · same rules as the addon</small></div>
+      <ul class="party" aria-live="polite"></ul>
+      <div class="demo-toggles"><label><input type="checkbox" class="kings-toggle"> Kings for everyone</label></div>
+      <div class="demo-combat"><span>Out of combat.</span><button type="button" class="wow-btn small ghost combat-toggle">Pull a mob</button></div>
+      <div class="demo-foot">
+        <button type="button" class="bless-btn" aria-label="Bless the next player"><span class="key">B</span></button>
+        <div class="demo-status"></div>
+      </div>
+      <p class="demo-note">Not shown, but true in game: someone wearing your Blessing of Freedom is skipped until it ends. A web demo of the addon's logic, not a screenshot. The B key is just for the demo: in game you choose your own key.</p>
+    </div>
+  </div>
+  <div class="in-game">
+    <figure><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>The Paladin bar in game: Blessing button, Aura hint and Seal hint</span></div></figure>
+    <figure><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofmight.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>The Blessing button's tooltip: who's next, or that everyone nearby is blessed</span></div></figure>
+  </div>
+</section>
+
+<section class="section battle" id="battle">
+  <div class="section-head">
+    <h2 class="heading">The Battle Module</h2>
+    <p class="sub">PvP for a Paladin, in the same window. Your side of the fight, honestly told.</p>
+  </div>
+
+  <div class="battle-grid">
+    <div class="battle-card">
+      <h3><img src="https://render.worldofwarcraft.com/us/icons/56/inv_bannerpvp_01.jpg" alt="" width="32" height="32" loading="lazy" decoding="async">Honor &amp; Rank</h3>
+      <p>Your Honor, Rank and the next rank reward. Anything the game won't tell addons shows as <em>hidden</em>, with a pointer to <em>Character › Player vs. Player</em>. Nothing is guessed.</p>
+    </div>
+    <div class="battle-card">
+      <h3><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofvalor.jpg" alt="" width="32" height="32" loading="lazy" decoding="async">Battlegrounds</h3>
+      <p>Which ones your level can queue for:</p>
+      <table class="bg-table">
+        <tr><td>Warsong Gulch · 10v10</td><td>10–60</td></tr>
+        <tr><td>Arathi Basin · 15v15</td><td>20–60</td></tr>
+        <tr><td>Darkspear Islands · 15v15</td><td>30–60</td></tr>
+        <tr><td>Alterac Valley · 40v40</td><td>51–60</td></tr>
+      </table>
+    </div>
+    <div class="battle-card">
+      <h3><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_removecurse.jpg" alt="" width="32" height="32" loading="lazy" decoding="async">PvP bar</h3>
+      <p>Five secure buttons, one press one cast:</p>
+      <ul>
+        <li><b>Freedom</b> on your mouseover, focus, picked ally, else you</li>
+        <li><b>Cleanse</b> (Purify until you have Cleanse)</li>
+        <li><b>Protection</b> on mouseover, picked ally or focus</li>
+        <li><b>Stun</b>: Hammer of Justice on your target, Shift for focus</li>
+        <li><b>Repentance</b>, same as Stun (talent)</li>
+      </ul>
+    </div>
+    <div class="battle-card">
+      <h3><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_divineintervention.jpg" alt="" width="32" height="32" loading="lazy" decoding="async">My cooldowns &amp; Forbearance</h3>
+      <p>Your own cooldowns (Hammer of Justice, Divine Shield, Blessing of Protection, Lay on Hands and friends) and your Forbearance, so you know which "get out of jail" card is still in your hand.</p>
+    </div>
+    <div class="battle-card">
+      <h3><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_auraoflight.jpg" alt="" width="32" height="32" loading="lazy" decoding="async">Burst coach</h3>
+      <p>Walks you through a burst window step by step, following only your own casts. Advice only: it never presses anything, and it never reads your enemy.</p>
+    </div>
+    <div class="battle-card">
+      <h3><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_devotionaura.jpg" alt="" width="32" height="32" loading="lazy" decoding="async">World PvP</h3>
+      <p>Is this zone contested or hostile, are you flagged, what's ready if you get jumped. Set for a PvP realm by default, with tips for leveling on one. A <em>Buff before the gates open</em> reminder waits in battlegrounds.</p>
+    </div>
+  </div>
+
+  <div class="cant">
+    <h3>What it can't do (and won't pretend to)</h3>
+    <ul class="rules">
+      <li>No enemy trinket or cooldown tracking</li>
+      <li>No diminishing-returns tracker</li>
+      <li>No kill announcer and no battleground callouts</li>
+      <li>No Spy-style enemy detection</li>
+      <li>No auto-targeting enemy healers</li>
+    </ul>
+    <p>Why: Forever gives addons no combat log, hides other units' values as secrets, and
+      locks chat in instances. For nameplates, try <b>BetterBlizzPlates</b> or <b>Plater</b>;
+      for battleground timers, <b>Capping</b>.</p>
+  </div>
+</section>
+
+<section class="section quests" id="quests">
+  <div class="section-head">
+    <h2 class="heading">Quest Log</h2>
+    <p class="sub">Everything Tristan's Addon does for your Paladin, one quest at a time.</p>
+  </div>
+
+  <div class="questlog">
+    <div class="ql-bar">
+      <span class="ql-name">Quest Log</span>
+      <span class="ql-count"><span id="ql-done">0</span>/10 accepted</span>
+    </div>
+    <div class="ql-body">
+      <ol class="ql-list" id="ql-list" aria-label="Quests"></ol>
+
+      <div class="ql-pages">
+
+        <div class="quest" id="q-home" data-zone="Northshire Abbey" data-level="10">
+          <h3>Know What to Do Next</h3>
+          <p>Every time you open the window, Home tells you what matters now: spells waiting at your trainer, how close you are to your riding gold, your next class quest, your Honor and Rank, and anything that needs attention.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>See what to train now and at your next trainer visit</li>
+            <li>Track your savings for riding</li>
+            <li>Never miss your next Paladin class quest</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>Cards across the top cover the trainer, riding gold, your next class quest and Honor &amp; Rank. Below them, <em>Needs attention</em> lists what's missing, each with a button that takes you there.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="rare">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/inv_misc_book_09.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Codex of Next Steps</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-rare">Codex of Next Steps</b>
+                <span>Binds when installed</span>
+                <span class="use">Use: Shows what to do next, sorted by what matters.</span>
+                <i>"Type /tristan. Start on Home."</i>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/inv_misc_book_09.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Home: Needs attention, your trainer, riding gold and next class quest</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-rotation" data-zone="Northshire Abbey" data-level="12">
+          <h3>Seal, Judge, Strike</h3>
+          <p>Priority lists for Holy, Protection and Retribution, filtered to the spells you can cast at your level, plus a <em>Seals &amp; auras</em> tab that says which Seal and Aura fit what you're doing. It only ever advises: nothing casts by itself.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Follow the priority for your spec and level</li>
+            <li>Pick the right Seal and Aura with the hints on your Paladin bar</li>
+            <li>Learn Forever's seal twist with the Unsealed Wrath helper</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>The Aura hint glows when you have no Aura or a different one; Blizzard's Aura flyout on your action bar stays the way to switch. The Seal hint glows when you're in melee range with no Seal.</p><p>With Unsealed Wrath talented, the Seal hint counts your echoes (0 to 3) from your own aura and says <em>swap</em> at 3. If the game hides the value, it says <em>hidden</em> instead of guessing.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="epic">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofmight.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Whisper of the Next Seal</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-epic">Whisper of the Next Seal</b>
+                <span>Unique</span>
+                <span class="use">Use: Suggests your Seal and Aura. You still press the button.</span>
+                <i>"Judgement no longer eats your Seal. Party on."</i>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofmight.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Rotation with the Seals &amp; auras tab and the Unsealed Wrath echo count</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-bless" data-zone="Northshire Abbey" data-level="14">
+          <h3>Blessings for Everyone</h3>
+          <p>One small button blesses the next player missing your Blessing, nearest first: Might for melee, Wisdom for casters, or Kings for everyone. Bind it to any key you like.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Bless your whole group with a few presses</li>
+            <li>Pick class defaults or Kings for everyone in Settings</li>
+            <li>Never forget the Hunter again (once he's in range)</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>See <a href="#bless">the Blessing button</a> above for the full rules and a demo you can press.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="rare">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Gauntlet of Many Blessings</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-rare">Gauntlet of Many Blessings</b>
+                <span>Binds to a key</span>
+                <span class="use">Use: Blesses whoever is next.</span>
+                <i>"One press per cast, as the Light intended."</i>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>The Paladin bar: Blessing button, Aura hint and Seal hint</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-battle" data-zone="Alterac Mountains" data-level="16">
+          <h3>Answer the Call to Battle</h3>
+          <p>A whole Battle group in the same window: Honor &amp; Rank, the battlegrounds open to your level, a PvP bar, your own cooldowns and Forbearance, a Burst coach and World PvP status.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Check your Honor and Rank</li>
+            <li>Set up your PvP bar</li>
+            <li>Know which defensive is still on the table</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>See <a href="#battle">the Battle module</a> below for everything it does, and the honest list of what it can't.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="epic">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/inv_bannerpvp_01.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Banner of Honest Battle</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-epic">Banner of Honest Battle</b>
+                <span>Unique · PvP</span>
+                <span class="use">Use: Shows your Honor, Rank and cooldowns. Never your enemy's.</span>
+                <i>"For the Alliance. Politely."</i>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/inv_bannerpvp_01.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Battle: Honor &amp; Rank, Battlegrounds and the PvP bar</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-gear" data-zone="Stormwind Armory" data-level="20">
+          <h3>Upgrade or Vendor?</h3>
+          <p>Hover any item and the tooltip says whether it beats what you're wearing for your spec, and what you'd gain or lose. Turn on PvP weights and Stamina moves to the front.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Compare every item with your equipped one, for your spec</li>
+            <li>Switch on PvP weights for battleground gear</li>
+            <li>Spot upgrades in your bags at a glance</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>Gear has <em>For my level</em>, <em>Best overall</em>, <em>By bracket</em>, <em>Consumables</em> and <em>Weights</em>. The <em>PvP weights: Stamina first</em> switch lives on the Weights tab, and the tooltip says when PvP weights are in use.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="epic">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_devotionaura.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Appraiser's Breastplate</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-epic">Appraiser's Breastplate</b>
+                <span>Chest · Plate</span>
+                <span class="use">Equip: Tells you which breastplate is better, and why.</span>
+                <i>"More Stamina. Always more Stamina."</i>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_devotionaura.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Gear with PvP weights</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-leveling" data-zone="Westfall" data-level="22">
+          <h3>The Road to Sixty</h3>
+          <p>Your path laid out by level: upcoming trainer visits and milestones, zones and dungeons for your level, every spell rank, your Paladin class quests, and riding.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Plan your next trainer visits</li>
+            <li>Find zones and dungeons for your level</li>
+            <li>Complete your class quests</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>The tabs are <em>Path</em>, <em>Zones &amp; dungeons</em>, <em>Trainer</em>, <em>Class quests</em> and <em>Riding &amp; gold</em>.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="uncommon">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/ability_mount_charger.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Reins of the Long Road</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-uncommon">Reins of the Long Road</b>
+                <span>Requires patience</span>
+                <span class="use">Use: Reminds you how much gold you still need.</span>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/ability_mount_charger.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Leveling: Path, trainer visits and class quests</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-talents" data-zone="Westfall" data-level="30">
+          <h3>A Build You Can See</h3>
+          <p>Recommended builds for Holy, Protection and Retribution, drawn on Forever's own trees and validated against them, including PvP builds: a battleground healer, a mobile healer for flag carrying and a Retribution burst build.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>See every recommended build on the real talent trees</li>
+            <li>Pick a PvP build for battlegrounds</li>
+            <li>Switch specs and let the addon follow</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>A build that no longer fits the current trees shows its link instead of a wrong picture.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="epic">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_holybolt.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Twin Tomes of Talent</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-epic">Twin Tomes of Talent</b>
+                <span>Unique · Dual spec</span>
+                <span class="use">Use: Shows a build point by point on Forever's trees.</span>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_holybolt.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Talents: a PvP build on Forever's three trees</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-learn" data-zone="The Library" data-level="10">
+          <h3>Learn the Paladin</h3>
+          <p>Every spell and talent explained, how the class works, playing in a group, leveling, common mistakes, and a <em>PvP basics</em> track for your first battleground. New lessons unlock as you level.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Read about every spell and talent</li>
+            <li>Work through PvP basics before the gates open</li>
+            <li>Learn your role in a group</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>The sections are <em>Lessons</em>, <em>Spells</em>, <em>Talents</em>, <em>How the class works</em>, <em>In a group</em>, <em>PvP basics</em>, <em>Leveling</em> and <em>Common mistakes</em>. Anything the sources couldn't confirm is marked.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="legendary">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_auraoflight.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Tome of the Whole Paladin</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-legendary">Tome of the Whole Paladin</b>
+                <span>Soulbound</span>
+                <span class="use">Use: Teaches you everything there is about the class.</span>
+                <i>"Unconfirmed facts are marked. The Light rewards honesty."</i>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_auraoflight.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Learn the Paladin: PvP basics</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-reminders" data-zone="The Library" data-level="18">
+          <h3>Nothing Forgotten</h3>
+          <p>Reminders for your Blessing, Aura, Seal and more, plus a <em>Buff before the gates open</em> nudge in battlegrounds. What's new collects Forever and Paladin changes, each with its source.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Keep your buffs in order</li>
+            <li>Catch every Paladin change in What's new</li>
+            <li>Check the source behind any fact</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>Reminders appear on Home and as a small pop-up out of combat; choose which ones under <em>Settings › Reminders</em>.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="uncommon">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/inv_scroll_05.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Scroll of Honest Notes</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-uncommon">Scroll of Honest Notes</b>
+                <span>Binds when installed</span>
+                <span class="use">Use: Shows where every fact came from.</span>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/inv_scroll_05.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Settings › Reminders and What's new</span></div></figure>
+        </div>
+
+        <div class="quest" id="q-settings" data-zone="The Library" data-level="20">
+          <h3>Make It Yours</h3>
+          <p>Settings has <em>General</em>, <em>Paladin bar</em>, <em>Tooltips &amp; bags</em>, <em>Reminders</em>, <em>About the data</em> and <em>About</em>. Set your Blessing per class, your keys and your hints.</p>
+          <h4>Objectives</h4>
+          <ul class="objectives">
+            <li>Choose a Blessing per class, or Kings for everyone</li>
+            <li>Pick your own keys (none by default)</li>
+            <li>Show or hide the Aura and Seal hints</li>
+          </ul>
+          <h4>How it works</h4>
+          <div class="how"><p>Keys never use Super combos: on Omarchy and many Linux desktops they belong to the desktop. What the secure buttons cast and their keys only change out of combat.</p></div>
+          <h4>Rewards</h4>
+          <div class="rewards">
+            <div class="item" tabindex="0" data-quality="rare">
+              <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofvalor.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
+              <span class="item-name">Signet of Preferences</span>
+              <div class="tooltip" role="tooltip">
+                <b class="q-rare">Signet of Preferences</b>
+                <span>Binds when installed</span>
+                <span class="use">Use: Makes the addon work your way.</span>
+              </div>
+            </div>
+          </div>
+          <figure class="shot"><div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofvalor.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Screenshot coming soon</b><span>Settings › Paladin bar</span></div></figure>
+        </div>
+
+      </div>
+    </div>
+    <div class="ql-foot">
+      <button type="button" class="wow-btn small" id="accept">Accept</button>
+      <button type="button" class="wow-btn small ghost" id="next">Next quest ›</button>
+    </div>
+  </div>
+</section>
+
+<section class="section origin-section" id="tristan">
+  <div class="section-head">
+    <h2 class="heading">The Paladin Who Started It All</h2>
+    <p class="sub">Every addon has a first player. This one wears plate.</p>
+  </div>
+  <div class="origin">
+    <figure class="portrait">
+      <!-- Portrait comes once Tim provides it. -->
+      <div class="soon"><img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_sealofvalor.jpg" alt="" width="40" height="40" loading="lazy" decoding="async"><b>Portrait coming soon</b><span>He's still polishing his armor.</span></div>
+      <figcaption>Tristan Ludlowe<span>Human Paladin of the Alliance</span></figcaption>
+    </figure>
+    <div class="origin-text">
+      <h3>Meet Tristan Ludlowe</h3>
+      <p>Tristan Ludlowe is the Paladin this addon is named for: a Human of the Alliance,
+        living on a PvP realm, where every road is a little more exciting than it needs to be.</p>
+      <p>He's Tim's final WoW Forever character, and the PvP one. The others got the quiet
+        life; Tristan got the plate armor and the battleground queue. Tristan's Addon is built
+        for him and tested on him.</p>
+      <p>If you see a Human Paladin bubble at exactly the wrong moment, be kind. He's still
+        learning. Like Daniel-san, he'll get there: bless on, bless off.</p>
+      <p class="signoff">May the Light keep you, and your Forbearance wear off fast.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section loot-section" id="loot">
+  <div class="section-head">
+    <h2 class="heading">Claim Your Loot</h2>
+    <p class="sub">No release yet: the first release is coming soon. For World of Warcraft: Forever only.</p>
+  </div>
+
+  <div class="loot">
+    <div class="loot-bar"><span>Loot</span><span class="loot-from">Tristan's Addon · <span data-version>first release coming soon</span></span></div>
+
+    <div class="loot-item" data-quality="legendary">
+      <img src="https://omaforge.ninepointlabs.com/assets/ui/omaforge.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+      <div class="loot-text">
+        <b class="q-legendary">With OmaForge on Linux</b>
+        <span>Legendary · installs it, then <code>omaforge update -c forever</code> keeps it current</span>
+<pre><code>omaforge install -c forever github:ninepointlabs/tristans-addon</code></pre>
+      </div>
+      <div class="loot-actions">
+        <a class="wow-btn small ghost" href="https://omaforge.ninepointlabs.com/">Get OmaForge</a>
+        <button type="button" class="wow-btn small ghost" data-copy>Copy</button>
+      </div>
+    </div>
+
+    <div class="loot-item" data-quality="epic">
+      <img src="https://render.worldofwarcraft.com/us/icons/56/inv_misc_bag_10.jpg" alt="" width="48" height="48" loading="lazy" decoding="async">
+      <div class="loot-text">
+        <b class="q-epic">The zip, by hand</b>
+        <span>Epic · any OS · download the zip from GitHub Releases and unzip it into your Forever AddOns folder</span>
+<pre><code>World of Warcraft/_forever_/Interface/AddOns/TristansAddon</code></pre>
+      </div>
+      <div class="loot-actions">
+        <a class="wow-btn small" data-download="zip" href="https://github.com/ninepointlabs/tristans-addon/releases">Releases</a>
+      </div>
+    </div>
+
+    <div class="loot-item" data-quality="uncommon">
+      <img src="https://render.worldofwarcraft.com/us/icons/56/inv_misc_rune_01.jpg" alt="" width="48" height="48" loading="lazy" decoding="async">
+      <div class="loot-text">
+        <b class="q-uncommon">Then, in game</b>
+        <span>Uncommon · reload, open it and pick your spec</span>
+<pre><code>/reload
+/tristan</code></pre>
+      </div>
+      <div class="loot-actions">
+        <button type="button" class="wow-btn small ghost" data-copy>Copy</button>
+      </div>
+    </div>
+  </div>
+  <p class="loot-note" data-prerelease>Nothing is published yet. Once the first release is out, it appears on <a href="https://github.com/ninepointlabs/tristans-addon/releases">GitHub Releases</a> with its notes.</p>
+  <p class="loot-note">Source: <a href="https://github.com/ninepointlabs/tristans-addon">ninepointlabs/tristans-addon</a>. Classic Era and retail clients won't load it: it's built for Forever's Interface 16001.</p>
+</section>
+
+<section class="section tavern" id="tavern">
+  <div class="section-head">
+    <h2 class="heading">The Tavern</h2>
+    <p class="sub">Questions, answered by the innkeeper.</p>
+  </div>
+
+  <div class="gossip">
+    <div class="gossip-bar"><img src="https://render.worldofwarcraft.com/us/icons/56/inv_drink_06.jpg" alt="" width="32" height="32" loading="lazy" decoding="async"><span>Innkeeper Emberwick</span></div>
+    <div class="gossip-body parchment">
+      <p class="greeting">Well met, Paladin! Mind the hammer on the table. What would you like to know?</p>
+
+      <details>
+        <summary>Does it work on Classic Era or retail?</summary>
+        <p>No. It's built for World of Warcraft: Forever only, and other clients won't load
+          it. Forever's spells, talents, battlegrounds and gear all differ from Classic.</p>
+      </details>
+      <details>
+        <summary>Why doesn't it track enemy trinkets, cooldowns or DR?</summary>
+        <p>Because it can't. Forever gives addons no combat log, hides other units' values as
+          secrets, and locks chat in instances. So no enemy trackers, no DR, no kill announcer,
+          no callouts, no Spy-style detection and no auto-targeting healers. For nameplates try
+          BetterBlizzPlates or Plater; for battleground timers, Capping.</p>
+      </details>
+      <details>
+        <summary>Is this automation?</summary>
+        <p>No. One press is one cast. The Blessing button and the PvP bar are secure buttons
+          that only cast when you click them or press their key. The rotation helper, the Seal
+          and Aura hints and the Burst coach only advise. You press the buttons.</p>
+      </details>
+      <details>
+        <summary>Why don't the buttons have keys?</summary>
+        <p>Keys are optional and none is bound by default, so it never steals a key you
+          already use. Pick one under <em>Settings › Paladin bar</em>. Super (Meta) combos are
+          never offered: on Omarchy and many Linux desktops they belong to the desktop.</p>
+      </details>
+      <details>
+        <summary>Is Battle a separate addon?</summary>
+        <p>No. Battle is part of the same window, one group in the sidebar next to Rotation,
+          Gear and the rest. Type <code>/tristan battle</code> to jump straight there.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>Nothing. It's free and open source under the MIT license.</p>
+      </details>
+      <details>
+        <summary>Is there one for other classes?</summary>
+        <p>Yes, from the same workshop: <a href="https://andricsaddon.myazerothlife.com/">Andric's Addon</a> for Priests and
+          <a href="https://parzelles-addon.myazerothlife.com/">Parzelle's Addon</a> for Mages. And
+          <a href="https://myazerothlife.com/">My Azeroth Life</a> is where the whole adventure lives.</p>
+      </details>
+      <details>
+        <summary>Is this made by Blizzard?</summary>
+        <p>No. Tristan's Addon is an unofficial, free and open source fan project by
+          <a href="https://ninepointlabs.com/">Nine Point Labs</a>. It isn't affiliated
+          with or endorsed by Blizzard Entertainment.</p>
+      </details>
+      <a class="gossip-bye" href="#top">Farewell.</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="crests" aria-hidden="true">
+    <img src="https://omaforge.ninepointlabs.com/assets/art/alliance-crest-sm.webp" alt="" width="40" height="50" loading="lazy" decoding="async">
+    <img src="https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg" alt="" width="40" height="40" loading="lazy" decoding="async" style="border-radius: 50%; border: 1px solid #8a6526">
+    <img src="https://omaforge.ninepointlabs.com/assets/art/horde-sigil-sm.webp" alt="" width="40" height="50" loading="lazy" decoding="async">
+  </div>
+  <nav class="footer-links" aria-label="Links">
+    <a href="https://github.com/ninepointlabs/tristans-addon">Source</a>
+    <a href="https://github.com/ninepointlabs/tristans-addon/releases">Releases</a>
+    <a href="https://github.com/ninepointlabs/tristans-addon/issues">Issues</a>
+    <a href="https://myazerothlife.com/">My Azeroth Life</a>
+    <a href="https://andricsaddon.myazerothlife.com/" title="Sister addon for Priests">Andric's Addon</a>
+    <a href="https://parzelles-addon.myazerothlife.com/" title="Sister addon for Mages">Parzelle's Addon</a>
+    <a href="https://omaforge.ninepointlabs.com/">OmaForge</a>
+  </nav>
+  <p class="legal">
+    Tristan's Addon is an unofficial fan project, not affiliated with or endorsed by Blizzard
+    Entertainment. World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or
+    registered trademarks of Blizzard Entertainment, Inc. Game artwork, icons and the Alliance
+    and Horde emblems © Blizzard Entertainment, Inc. (artwork via
+    <a href="https://github.com/ninepointlabs/omaforge/blob/main/site/SOURCES.md">omaforge's sources</a>;
+    icons from Blizzard's public icon CDN). Tristan's Addon itself is MIT licensed.
+  </p>
+</footer>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<p class="zone-text" id="zone-text" aria-live="polite"></p>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot">
+  <img alt="">
+  <p>Esc or click to close</p>
+</dialog>
+
+<script src="app.js" defer></script>
+<script src="demo.js" defer></script>
+</body>
+</html>

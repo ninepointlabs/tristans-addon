@@ -1,0 +1,195 @@
+/* Tristan's Addon additions on top of the omaforge theme: the Paladin
+   palette, the Blessing button spotlight (interactive demo), the Battle
+   section, "how it works" notes and screenshot placeholders. */
+
+/* Paladin palette: holy gold (also the neutral accent), with a muted battle
+   red used only in the Battle section. Faction picks still override the accent. */
+:root {
+  --holy: #f2c14e;
+  --holy-2: #fff1c2;
+  --prot: #c9a46a;
+  --ret: #e0763c;
+  --battle: #a8463a;
+  --battle-2: #4a1a14;
+  --accent: #d9a33a;
+  --accent-2: #6b4a12;
+  --accent-glow: rgba(255, 210, 110, 0.38);
+}
+
+/* Spec trio in the hero */
+.specs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 14px; margin: 1.2em 0 1.4em; padding: 0; list-style: none; }
+.spec { display: inline-flex; align-items: center; gap: 9px; padding: 5px 14px 5px 5px; border: 1px solid var(--sc); border-radius: 999px; background: rgba(6, 6, 14, 0.72); box-shadow: 0 0 14px color-mix(in srgb, var(--sc) 35%, transparent); color: var(--sc2); font: 700 0.9rem var(--display); letter-spacing: 0.08em; text-shadow: 0 1px 2px #000; }
+.spec img { width: 30px; height: 30px; border: 1px solid #000; border-radius: 50%; }
+.spec.holy { --sc: var(--holy); --sc2: var(--holy-2); }
+.spec.prot { --sc: var(--prot); --sc2: #f1e2c2; }
+.spec.ret { --sc: var(--ret); --sc2: #ffd2b0; }
+
+.spotlight { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 44px; align-items: start; }
+.spotlight h3 { margin: 0 0 10px; color: var(--gold); font: 700 1.6rem/1.2 var(--display); letter-spacing: 0.03em; }
+.spotlight p { margin: 0 0 14px; }
+.spotlight .steps-title { margin: 22px 0 8px; color: var(--gold-2); font: 700 0.85rem var(--display); letter-spacing: 0.14em; text-transform: uppercase; }
+.picks { margin: 0; padding: 0; list-style: none; counter-reset: pick; }
+.picks li { counter-increment: pick; position: relative; padding: 6px 0 6px 40px; border-bottom: 1px solid rgba(138, 101, 38, 0.25); }
+.picks li::before {
+  content: counter(pick);
+  position: absolute; left: 0; top: 6px;
+  width: 26px; height: 26px; display: grid; place-items: center;
+  border: 1px solid var(--bronze); border-radius: 50%;
+  background: radial-gradient(circle, #2a2016, #0e0a06);
+  color: var(--gold); font: 700 0.8rem var(--display);
+}
+.picks b { color: var(--text); }
+.rules { margin: 16px 0 0; padding: 0; list-style: none; }
+.rules li { padding: 4px 0 4px 22px; position: relative; color: var(--dim); }
+.rules li::before { content: "◆"; position: absolute; left: 2px; color: var(--accent); font-size: 0.8em; top: 0.45em; }
+
+/* The demo panel: a WoW-style frame with bag-stock rows and the button. */
+.demo {
+  position: sticky; top: 84px;
+  padding: 0;
+  border: 1px solid var(--bronze);
+  border-radius: 6px;
+  background: linear-gradient(#1a140d, #0c0906);
+  box-shadow: 0 0 0 1px #000, 0 12px 34px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.demo-bar { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border-bottom: 1px solid var(--bronze-dark); background: linear-gradient(#2b2115, #17110a); color: var(--gold); font: 700 0.85rem var(--display); letter-spacing: 0.08em; }
+.demo-bar small { color: var(--dim); font: 400 0.85rem var(--body); letter-spacing: 0; }
+.party { list-style: none; margin: 0; padding: 10px 12px; display: grid; gap: 6px; }
+.member {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px;
+  padding: 7px 10px; border-radius: 4px;
+  background: linear-gradient(90deg, rgba(120, 90, 30, 0.55), rgba(60, 40, 15, 0.35));
+  border: 1px solid #000;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.member.dead { background: linear-gradient(90deg, rgba(90, 90, 90, 0.45), rgba(50, 50, 50, 0.3)); }
+.member.next { box-shadow: 0 0 0 2px var(--gold), 0 0 14px var(--accent-glow); }
+.member.flash { transform: scale(1.02); box-shadow: 0 0 0 2px var(--holy-2), 0 0 22px rgba(255, 220, 130, 0.6); }
+.member .who { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.member .who b { color: #fff; font: 600 1rem var(--body); text-shadow: 0 1px 0 #000; white-space: nowrap; }
+.member .who span { color: #eee0c0; font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.member .state { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: #e8e2d0; white-space: nowrap; }
+.member .state img { width: 22px; height: 22px; border: 1px solid #000; border-radius: 3px; opacity: 0.25; filter: grayscale(1); transition: opacity 0.3s, filter 0.3s; }
+.member.buffed .state img { opacity: 1; filter: none; }
+.member .bar { grid-column: 1 / -1; height: 5px; border-radius: 3px; background: rgba(0, 0, 0, 0.5); overflow: hidden; }
+.member .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--holy)); transition: width 0.35s; }
+.demo-combat { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 0 14px 12px; color: var(--dim); font-size: 0.9rem; }
+.demo-combat.on { color: #ff9b6b; }
+.tag { padding: 1px 7px; border-radius: 999px; font-size: 0.72rem; background: rgba(0, 0, 0, 0.45); color: var(--dim); }
+.tag.skip { color: #ffc14d; }
+.tag.ok { color: var(--uncommon); }
+
+.demo-foot { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: 14px; border-top: 1px solid var(--bronze-dark); background: rgba(0, 0, 0, 0.3); }
+.bless-btn {
+  position: relative; width: 64px; height: 64px; padding: 0;
+  border: 2px solid var(--gold-2); border-radius: 6px;
+  background: #000 var(--icon, url("https://render.worldofwarcraft.com/us/icons/56/spell_holy_fistofjustice.jpg")) center / cover;
+  box-shadow: 0 0 0 2px #000, 0 0 16px var(--accent-glow);
+  cursor: pointer;
+}
+.bless-btn:hover { filter: brightness(1.15); }
+.bless-btn:active { transform: scale(0.96); }
+.bless-btn[disabled] { filter: grayscale(1) brightness(0.6); box-shadow: 0 0 0 2px #000; cursor: default; }
+.bless-btn .key { position: absolute; top: 2px; right: 4px; color: #fff; font: 700 0.75rem var(--mono); text-shadow: 0 0 3px #000, 0 0 3px #000; }
+.demo-status b { display: block; color: var(--gold); font: 700 0.95rem var(--display); }
+.demo-status span { color: var(--dim); font-size: 0.95rem; }
+.demo-status .reset { margin-top: 6px; }
+.cast-float { position: absolute; right: 12px; top: 50%; color: var(--uncommon); font: 700 0.85rem var(--display); text-shadow: 0 1px 0 #000; pointer-events: none; animation: float-up 1.1s ease-out forwards; }
+@keyframes float-up { from { opacity: 1; transform: translateY(-50%); } to { opacity: 0; transform: translateY(-160%); } }
+.member { position: relative; }
+.demo-note { margin: 0; padding: 0 14px 12px; color: var(--dim); font-size: 0.85rem; font-style: italic; }
+
+/* "How it works" notes inside quests */
+.quest .how { margin: 6px 0 0; padding: 12px 16px; border-left: 3px solid var(--bronze); background: rgba(90, 60, 20, 0.08); font-size: 1.02rem; }
+.quest .how p { margin: 0 0 6px; }
+.quest .how p:last-child { margin-bottom: 0; }
+
+/* Facts strip under the hero */
+.facts-band { border-block: 1px solid var(--bronze-dark); background: linear-gradient(#120d08, #0b0806); box-shadow: inset 0 1px 0 rgba(230, 181, 74, 0.12); }
+.facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 40px; max-width: 1200px; margin: 0 auto; padding: 22px 20px; }
+.fact { text-align: center; min-width: 120px; }
+.fact b { display: block; color: var(--gold); font: 700 1.9rem/1 var(--display); }
+.fact span { color: var(--dim); font-size: 0.95rem; }
+
+@media (max-width: 960px) {
+  .spotlight { grid-template-columns: 1fr; }
+  .demo { position: static; }
+}
+@media (prefers-reduced-motion: reduce) { .cast-float { animation: none; display: none; } }
+
+/* Screenshot slots under the Blessing button spotlight */
+.in-game { max-width: 1120px; margin: 40px auto 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.in-game figure { margin: 0; }
+.in-game button, .quest .shot button { display: block; width: 100%; padding: 0; border: 1px solid var(--bronze); border-radius: 4px; background: #000; cursor: zoom-in; box-shadow: 0 0 0 1px #000, 0 8px 24px rgba(0, 0, 0, 0.55); }
+.in-game img { display: block; width: 100%; height: auto; border-radius: 3px; }
+.in-game figcaption, .quest .shot figcaption { margin-top: 8px; color: var(--dim); font-style: italic; font-size: 0.95rem; text-align: center; }
+.privacy { max-width: 1120px; margin: 14px auto 0; color: var(--dim); font-size: 0.85rem; text-align: center; }
+
+/* Screenshot placeholders (until the real ones arrive) */
+.soon {
+  display: grid; place-items: center; align-content: center; gap: 8px;
+  aspect-ratio: 16 / 10; width: 100%;
+  padding: 18px; text-align: center;
+  border: 1px dashed var(--bronze); border-radius: 4px;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(150, 110, 255, 0.16), transparent 60%),
+    linear-gradient(#15101e, #0a0810);
+  box-shadow: 0 0 0 1px #000, 0 8px 24px rgba(0, 0, 0, 0.55);
+  color: var(--dim);
+}
+.soon img { width: 40px; height: 40px; border: 1px solid #000; border-radius: 4px; opacity: 0.8; }
+.soon b { color: var(--gold-2); font: 700 0.95rem var(--display); letter-spacing: 0.12em; text-transform: uppercase; }
+.soon span { font-style: italic; font-size: 0.92rem; }
+.quest .shot .soon { border-color: #6d4a15; background: rgba(40, 25, 5, 0.18); box-shadow: 0 6px 18px rgba(60, 35, 5, 0.25); color: #5a4220; }
+.quest .shot .soon b { color: #3a2208; }
+.portrait .soon img { width: 40px; height: 40px; border: 1px solid #000; border-radius: 4px; box-shadow: none; }
+.portrait .soon { aspect-ratio: 596 / 655; border: 2px solid var(--gold-2); border-radius: 6px; box-shadow: 0 0 0 3px #000, 0 0 0 5px var(--bronze), 0 18px 40px rgba(0, 0, 0, 0.7); }
+
+/* The Paladin who started it all */
+.origin { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 40px; align-items: center; }
+.portrait { margin: 0; position: relative; }
+.portrait img { display: block; width: 100%; height: auto; border: 2px solid var(--gold-2); border-radius: 6px; box-shadow: 0 0 0 3px #000, 0 0 0 5px var(--bronze), 0 18px 40px rgba(0, 0, 0, 0.7); }
+.portrait figcaption { margin-top: 14px; text-align: center; color: var(--gold); font: 700 1.05rem var(--display); letter-spacing: 0.06em; }
+.portrait figcaption span { display: block; color: var(--dim); font: italic 400 0.95rem var(--body); letter-spacing: 0; }
+.origin-text h3 { margin: 0 0 12px; color: var(--gold); font: 700 1.7rem/1.2 var(--display); }
+.origin-text p { margin: 0 0 14px; }
+.origin-text .signoff { color: var(--gold-2); font-family: var(--quest); font-style: italic; font-size: 1.15rem; }
+
+@media (max-width: 860px) {
+  .in-game, .origin { grid-template-columns: 1fr; }
+  .portrait { max-width: 340px; margin: 0 auto; }
+}
+
+/* Hero: portrait slot (for when one exists) and full name */
+.hero-portrait { display: inline-block; margin-bottom: 14px; }
+.hero-portrait img { display: block; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold-2); box-shadow: 0 0 0 3px #000, 0 0 0 5px var(--bronze), 0 12px 30px rgba(0, 0, 0, 0.7); }
+.named-for { margin: 0.5em 0 0; color: var(--parch); font: italic 400 clamp(1rem, 2vw, 1.25rem) var(--body); text-shadow: 0 2px 8px #000; }
+.named-for a { color: var(--gold); }
+@media (max-width: 560px) { .hero-portrait img { width: 92px; height: 92px; } }
+
+/* Blessing demo extras */
+.member.far { opacity: 0.55; }
+.member.busy { background: linear-gradient(90deg, rgba(60, 90, 120, 0.5), rgba(30, 45, 60, 0.35)); }
+.member .who .cls { font-style: italic; }
+.demo-toggles { display: flex; flex-wrap: wrap; gap: 8px 14px; padding: 0 14px 12px; color: var(--dim); font-size: 0.9rem; }
+.demo-toggles label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.demo-toggles input { accent-color: var(--holy); }
+
+/* Battle section: the one place the muted battle red shows up */
+.section.battle { background: linear-gradient(rgba(74, 26, 20, 0.35), rgba(11, 8, 6, 0) 70%); border-top: 1px solid var(--battle-2); }
+.section.battle .heading, .section.battle .spotlight h3 { color: #e9b8a8; }
+.section.battle .rules li::before { color: var(--battle); }
+.battle-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.battle-card { padding: 16px 18px; border: 1px solid var(--battle); border-radius: 6px; background: linear-gradient(#21120e, #0e0806); box-shadow: 0 0 0 1px #000, 0 8px 22px rgba(0, 0, 0, 0.5); }
+.battle-card h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 8px; color: #f0c9b8; font: 700 1.1rem var(--display); letter-spacing: 0.03em; }
+.battle-card h3 img { width: 32px; height: 32px; border: 1px solid #000; border-radius: 4px; }
+.battle-card p { margin: 0 0 8px; color: var(--dim); }
+.battle-card ul { margin: 0; padding-left: 18px; color: var(--dim); }
+.bg-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.bg-table td { padding: 3px 4px; border-bottom: 1px solid rgba(168, 70, 58, 0.25); color: var(--text); }
+.bg-table td:last-child { text-align: right; color: var(--dim); white-space: nowrap; }
+.cant { max-width: 1120px; margin: 28px auto 0; padding: 16px 20px; border: 1px dashed var(--battle); border-radius: 6px; background: rgba(40, 14, 10, 0.5); }
+.cant h3 { margin: 0 0 8px; color: #f0c9b8; font: 700 1.1rem var(--display); }
+.cant p { margin: 8px 0 0; color: var(--dim); }
+.cant .rules { margin-top: 6px; }

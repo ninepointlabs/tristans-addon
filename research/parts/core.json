@@ -1,0 +1,2743 @@
+{
+ "meta": {
+  "game": "World of Warcraft: Forever",
+  "launch": "2026-11-04 15:00 PST",
+  "client_version": "1.60.1",
+  "latest_build_seen": "1.60.1.70888 (omaforge clients on TUF, 2026-11-10)",
+  "launch_build": "1.60.1.70790",
+  "toc_interface": 16001,
+  "wow_project_id": "18 (WOW_PROJECT_CAMELOT)",
+  "toc_suffixes": [
+   "_Forever.toc",
+   "_Camelot.toc"
+  ],
+  "toc_game_type": [
+   "forever",
+   "camelot"
+  ],
+  "toc_family": "mainline",
+  "api_note": "Mainline (modern) UI architecture; Midnight addon restrictions (secret values) apply per Tautellini doc - verify in client",
+  "max_level": 60,
+  "notes": "Interface/suffix/game-type values from Tautellini doc (community) cross-checked with Questie_Forever.toc, Details_Camelot.toc, BigWigs and DBM TOCs listing 16001.",
+  "class": "Paladin",
+  "talent_calc_version": "70888-1d81729b",
+  "talent_calc_note": "Icy Veins calculator data 70888-1d81729b is in research/talents_paladin.json; every Icy Veins Paladin build link uses 70755-d1899b7d (research/talents_paladin_70755.json). Both trees are in research/.",
+  "source_url": "https://github.com/Gethe/wow-ui-source/tree/forever",
+  "checked": "2026-11-10"
+ },
+ "sources": {
+  "bz_deep": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+  "bz_dev": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+  "bz_hotfix": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+  "iv_overview": "https://www.icy-veins.com/wow-forever/paladin-class-overview",
+  "iv_quests": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+  "iv_ret_lvl": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+  "iv_holy_lvl": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+  "iv_prot_lvl": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+  "iv_ret_guide": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide",
+  "iv_ret_talents": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-spec-builds-talents",
+  "iv_ret_stats": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-stat-priority",
+  "iv_ret_gear": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-gear-best-in-slot",
+  "iv_calc": "https://www.icy-veins.com/wow-forever/paladin-talent-calculator",
+  "iv_calc_data": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+  "wh_ret_lvl": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+  "wh_holy_lvl": "https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips",
+  "wh_prot_lvl": "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+  "wh_ret_abilities": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-abilities",
+  "wh_ret_overview": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/overview",
+  "wh_holy_overview": "https://www.wowhead.com/forever/guide/classes/paladin/holy/overview",
+  "egt_article": "https://endgametools.com/en/wow-forever/news/wow-forever-paladin",
+  "egt_spells": "https://endgametools.com/en/wow-forever/spells/paladin",
+  "fg_paladin": "https://foreverguide.net/classes/paladin/",
+  "fbg_holy": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+  "fbg_ret": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+  "wfgg_hotfix": "https://wow-forever.gg/news/patch-notes/forever-hotfixes-2026-11-10/",
+  "playbook_hotfix": "https://wowforeverplaybook.com/wow-forever-hotfixes"
+ },
+ "spells_by_level": [
+  {
+   "name": "Seal of Righteousness",
+   "wowhead_base_spell_id": 20154,
+   "ivdb_max_rank_id": 20293,
+   "rank_learn_levels": [
+    1,
+    10,
+    18,
+    26,
+    34,
+    42,
+    50,
+    58
+   ],
+   "school": "Holy",
+   "category": "seal",
+   "notes": "8 ranks. Main damage Seal for fast weapons / high spell power (12% SP per hit with a two-hander, 10% one-hander). Rank 1 known at level 1 (endgametools: 'Learnt on reaching this level').",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (20154); Icy Veins pages (20293)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [10, 18, 26, 34, 42, 50, 58] come only from the endgametools spell list (secondary); primary-confirmed levels: [1].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Light",
+   "wowhead_base_spell_id": 635,
+   "ivdb_max_rank_id": 25292,
+   "rank_learn_levels": [
+    1,
+    6,
+    14,
+    22,
+    30,
+    38,
+    46,
+    54,
+    60
+   ],
+   "school": "Holy",
+   "category": "heal",
+   "notes": "9 ranks; 2.5 s cast (endgametools tooltip). endgametools marks rank 1 'Races: Human, Dwarf / Learnt on reaching this level' - Undead start not stated.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (635); Icy Veins pages (25292); Wowhead Holy leveling links 10329",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [6, 14, 22, 30, 38, 46, 54, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [1].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Devotion Aura",
+   "wowhead_base_spell_id": 465,
+   "ivdb_max_rank_id": 10293,
+   "rank_learn_levels": [
+    1,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60
+   ],
+   "school": null,
+   "category": "aura",
+   "notes": "7 ranks; party within 30 yd (endgametools tooltip).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (465); Icy Veins pages (10293)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [10, 20, 30, 40, 50, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [1].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blessing of Might",
+   "wowhead_base_spell_id": 19740,
+   "ivdb_max_rank_id": 25291,
+   "rank_learn_levels": [
+    4,
+    12,
+    22,
+    32,
+    42,
+    52,
+    60
+   ],
+   "school": null,
+   "category": "blessing",
+   "notes": "7 ranks; 1 hour (Icy Veins Ret guide, endgametools). One Blessing per Paladin per target.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (19740); Icy Veins pages (25291)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [12, 22, 32, 42, 52, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [4].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement",
+   "wowhead_base_spell_id": 20271,
+   "ivdb_max_rank_id": 20271,
+   "rank_learn_levels": [
+    4
+   ],
+   "school": "Holy",
+   "category": "judgement",
+   "notes": "No longer consumes the Seal (Blizzard). Off the global cooldown (Icy Veins). 10 s cooldown, 10 yd (endgametools). Judgement debuffs of Crusader/Light/Wisdom last 40 s (endgametools tooltips).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips); Icy Veins pages",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://endgametools.com/en/wow-forever/spells/paladin"
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Strike",
+   "wowhead_base_spell_id": 679,
+   "ivdb_max_rank_id": 10333,
+   "rank_learn_levels": [
+    6,
+    12,
+    20,
+    28,
+    36,
+    44,
+    52,
+    60
+   ],
+   "school": "Holy",
+   "category": "damage",
+   "notes": "New in Forever (Blizzard deep dive, level 6). 8 ranks (Blizzard Sep 24 notes give 8 per-rank values 25/29/32/36/39/43/46/50% weapon damage; Wowhead Prot 'ranks 1-8'). 10 s cooldown (Sep 24 notes made Improved Holy Strike baseline; was 12 s).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (679); Icy Veins/Wowhead pages (10333)",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [12, 20, 28, 36, 44, 52, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [6].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of the Crusader",
+   "wowhead_base_spell_id": 21082,
+   "ivdb_max_rank_id": 20308,
+   "rank_learn_levels": [
+    6,
+    12,
+    22,
+    32,
+    42,
+    52
+   ],
+   "school": null,
+   "category": "seal",
+   "notes": "6 ranks. Judgement debuff increases Holy damage taken, 40 s (endgametools); Improved SotC Judgement bonus is baseline (Blizzard).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (21082); Icy Veins pages (20308)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [12, 22, 32, 42, 52] come only from the endgametools spell list (secondary); primary-confirmed levels: [6].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Protection",
+   "wowhead_base_spell_id": 498,
+   "ivdb_max_rank_id": 5573,
+   "rank_learn_levels": [
+    6,
+    18
+   ],
+   "school": null,
+   "category": "defense",
+   "notes": "2 ranks; 6 s (rank 1) / 8 s (rank 2), 5 min CD, applies Forbearance 1 min (endgametools). Stops your own attacks (Icy Veins).",
+   "id_source": "Wowhead Ret leveling text (498); Icy Veins pages (5573)",
+   "unconfirmed": true,
+   "flag": "Levels [6, 18] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Hammer of Justice",
+   "wowhead_base_spell_id": 853,
+   "ivdb_max_rank_id": 10308,
+   "rank_learn_levels": [
+    8,
+    24,
+    40,
+    54
+   ],
+   "school": null,
+   "category": "cc",
+   "notes": "4 ranks; 10 yd, 1 min CD, stun 3 s at rank 1 to 6 s at rank 4 (endgametools; foreverbattlegrounds '6 s stun at level 54'). Improved Hammer of Justice talent -15 s CD at 3/3.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (853); Icy Veins pages (10308)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "https://foreverbattlegrounds.com/classes/paladin/retribution/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [24, 40, 54] come only from the endgametools spell list (secondary); primary-confirmed levels: [8].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Purify",
+   "wowhead_base_spell_id": 1152,
+   "ivdb_max_rank_id": 1152,
+   "rank_learn_levels": [
+    8
+   ],
+   "school": null,
+   "category": "utility",
+   "notes": "Removes 1 disease and 1 poison (Icy Veins).",
+   "id_source": "Wowhead Ret leveling text; Icy Veins pages",
+   "also_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/holy/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [8] come only from the endgametools spell list (secondary); primary-confirmed levels: none. Level 8 also stated by foreverbattlegrounds (secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blessing of Protection",
+   "wowhead_base_spell_id": 1022,
+   "ivdb_max_rank_id": 10278,
+   "rank_learn_levels": [
+    10,
+    24,
+    38
+   ],
+   "school": null,
+   "category": "defense",
+   "notes": "3 ranks; physical immunity, 5 min CD, Forbearance (endgametools). Level 10 per Icy Veins Ret leveling milestones.",
+   "id_source": "Wowhead Ret leveling text (1022); Icy Veins pages (10278)",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [24, 38] come only from the endgametools spell list (secondary); primary-confirmed levels: [10].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Lay on Hands",
+   "wowhead_base_spell_id": 633,
+   "ivdb_max_rank_id": 10310,
+   "rank_learn_levels": [
+    10,
+    30,
+    50
+   ],
+   "school": "Holy",
+   "category": "heal",
+   "notes": "3 ranks; cooldown 20 min (was 1 h; Blizzard deep dive). Drains all mana.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (633); Icy Veins pages (10310)",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [30, 50] come only from the endgametools spell list (secondary); primary-confirmed levels: [10].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Righteous Fury",
+   "wowhead_base_spell_id": 25780,
+   "rank_learn_levels": [
+    10
+   ],
+   "school": null,
+   "category": "tank",
+   "notes": "Trained at 10 (was 16) per Nov 2 launch notes: +33% all threat and +90% threat from Holy damage. Lasts 30 min (endgametools).",
+   "id_source": "Wowhead Holy/Prot leveling tables (25780)",
+   "also_sources": [
+    "https://endgametools.com/en/wow-forever/spells/paladin",
+    "https://foreverguide.net/classes/paladin/"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of Fury",
+   "wowhead_base_spell_id": 1311649,
+   "ivdb_max_rank_id": 1311649,
+   "rank_learn_levels": [
+    10,
+    18,
+    26,
+    34,
+    42,
+    50,
+    58
+   ],
+   "school": "Holy",
+   "category": "seal",
+   "notes": "New tank Seal (level 10, Blizzard). 7 ranks (Wowhead Prot 'ranks 1-7'); rank 3 at 26 (Blizzard Oct 15 notes). Flat Holy damage per swing, absorb = 50% of it with a shield; its Judgement (Judgement of Fury) taunts, 10 yd, 3 s at launch.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (1311649); Icy Veins pages (1311649). Wowhead Prot/abilities pages also link 20163 and 20423 - see conflicts",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [18, 34, 42, 50, 58] come only from the endgametools spell list (secondary); primary-confirmed levels: [10, 26].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Redemption",
+   "wowhead_base_spell_id": 20773,
+   "ivdb_max_rank_id": 20773,
+   "rank_learn_levels": [
+    12,
+    24,
+    36,
+    48,
+    60
+   ],
+   "school": "Holy",
+   "category": "resurrect",
+   "notes": "Rank 1 unlocked by the level-12 class quest (Alliance: The Tome of Divinity; Undead: A Lesson in Divinity). 5 ranks, 10 s cast, out of combat only (endgametools).",
+   "id_source": "Wowhead abilities page; Icy Veins class quests page",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/paladin-class-quests"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [24, 36, 48, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [12].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blessing of Wisdom",
+   "wowhead_base_spell_id": 25290,
+   "ivdb_max_rank_id": 25290,
+   "rank_learn_levels": [
+    14,
+    24,
+    34,
+    44,
+    54,
+    60
+   ],
+   "school": null,
+   "category": "blessing",
+   "notes": "6 ranks; 1 hour (Icy Veins Ret guide). Improved Blessing of Wisdom is baseline (Blizzard). Wowhead Prot implies only Blessing of Might exists before 14.",
+   "id_source": "Wowhead/Icy Veins pages link 25290 (rank not stated)",
+   "unconfirmed": true,
+   "flag": "Levels [14, 24, 34, 44, 54, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Retribution Aura",
+   "wowhead_base_spell_id": 7294,
+   "ivdb_max_rank_id": 10301,
+   "rank_learn_levels": [
+    16,
+    26,
+    36,
+    46,
+    56
+   ],
+   "school": "Holy",
+   "category": "aura",
+   "notes": "5 ranks (Wowhead Prot 'ranks 1-5'). Oct 8: base damage back to Classic values, 6% of the Paladin's spell power.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (7294); Icy Veins pages (10301)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [26, 36, 46, 56] come only from the endgametools spell list (secondary); primary-confirmed levels: [16].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blessing of Freedom",
+   "wowhead_base_spell_id": 1044,
+   "ivdb_max_rank_id": 1044,
+   "rank_learn_levels": [
+    18
+   ],
+   "school": null,
+   "category": "utility",
+   "notes": "10 s immunity to movement impairing effects, 20 s CD (endgametools, foreverbattlegrounds). Replaces your other Blessing on that target.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips)",
+   "also_sources": [
+    "https://endgametools.com/en/wow-forever/spells/paladin",
+    "https://foreverbattlegrounds.com/classes/paladin/retribution/"
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blessing of Kings",
+   "wowhead_base_spell_id": 20217,
+   "ivdb_max_rank_id": 20217,
+   "rank_learn_levels": [
+    20
+   ],
+   "school": null,
+   "category": "blessing",
+   "notes": "Baseline at 20 (was a Protection talent). +10% total stats, 1 hour (Icy Veins Ret guide; endgametools).",
+   "id_source": "Wowhead/Icy Veins pages",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://endgametools.com/en/wow-forever/news/wow-forever-paladin"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Consecration",
+   "wowhead_base_spell_id": 26573,
+   "ivdb_max_rank_id": 20924,
+   "rank_learn_levels": [
+    20,
+    30,
+    40,
+    50,
+    60
+   ],
+   "school": "Holy",
+   "category": "damage",
+   "notes": "Baseline for all Paladins at 20 (Blizzard). 5 ranks (Wowhead Prot 'ranks 1-5'). Moderate damage to first 4 enemies, very low to the rest; 8 s; SP coefficient 0.042 per tick (Oct 15 notes).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (26573); Icy Veins pages (20924)",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [30, 40, 50, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [20].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Exorcism",
+   "wowhead_base_spell_id": 879,
+   "ivdb_max_rank_id": 10314,
+   "rank_learn_levels": [
+    20,
+    28,
+    36,
+    44,
+    52,
+    60
+   ],
+   "school": "Holy",
+   "category": "damage",
+   "notes": "Undead/Demon only, 30 yd, 15 s CD (endgametools). 6 ranks.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (879); Icy Veins pages (10314)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [28, 36, 44, 52, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [20].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Flash of Light",
+   "wowhead_base_spell_id": 19750,
+   "ivdb_max_rank_id": 19943,
+   "rank_learn_levels": [
+    20,
+    26,
+    34,
+    42,
+    50,
+    58
+   ],
+   "school": "Holy",
+   "category": "heal",
+   "notes": "6 ranks; 1.5 s cast (endgametools).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (19750); Icy Veins pages (19943)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [26, 34, 42, 50, 58] come only from the endgametools spell list (secondary); primary-confirmed levels: [20].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Concentration Aura",
+   "wowhead_base_spell_id": 19746,
+   "rank_learn_levels": [
+    22
+   ],
+   "school": null,
+   "category": "aura",
+   "notes": "35% chance to ignore spell interruption when damaged, party within 30 yd (Wowhead abilities, endgametools).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips)",
+   "also_sources": [
+    "https://endgametools.com/en/wow-forever/spells/paladin"
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of Justice",
+   "wowhead_base_spell_id": 20164,
+   "ivdb_max_rank_id": 20164,
+   "rank_learn_levels": [
+    22
+   ],
+   "school": null,
+   "category": "seal",
+   "notes": "Melee hits can stun 2 s; Judgement prevents fleeing 10 s (endgametools).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips)",
+   "also_sources": [
+    "https://endgametools.com/en/wow-forever/spells/paladin"
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Turn Undead",
+   "wowhead_base_spell_id": 2878,
+   "rank_learn_levels": [
+    24,
+    38,
+    52
+   ],
+   "school": "Holy",
+   "category": "cc",
+   "notes": "3 ranks; up to 20 s fear on one Undead, 1.5 s cast, 30 s CD (endgametools). Turn Evil talent extends it to Demons.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (2878); Wowhead abilities/Holy pages link 10326",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "https://foreverbattlegrounds.com/classes/paladin/holy/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [38, 52] come only from the endgametools spell list (secondary); primary-confirmed levels: [24].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Shadow Resistance Aura",
+   "wowhead_base_spell_id": 19876,
+   "rank_learn_levels": [
+    28,
+    40,
+    52
+   ],
+   "school": null,
+   "category": "aura",
+   "notes": "3 ranks (Wowhead Prot 'ranks 1-3'). Affects all raid members within 30 yd (Blizzard).",
+   "id_source": "Wowhead Prot leveling table",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [40, 52] come only from the endgametools spell list (secondary); primary-confirmed levels: [28].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Intervention",
+   "wowhead_base_spell_id": 19752,
+   "ivdb_max_rank_id": 19752,
+   "rank_learn_levels": [
+    30
+   ],
+   "school": null,
+   "category": "utility",
+   "notes": "1 h CD, reagent Symbol of Divinity (endgametools). Wipe protection on a healer (Icy Veins).",
+   "id_source": "Wowhead abilities page; Icy Veins Prot/Holy leveling",
+   "unconfirmed": true,
+   "flag": "Levels [30] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of Light",
+   "wowhead_base_spell_id": 20349,
+   "ivdb_max_rank_id": 20349,
+   "rank_learn_levels": [
+    30,
+    40,
+    50,
+    60
+   ],
+   "school": null,
+   "category": "seal",
+   "notes": "4 ranks. Default healing Seal (Icy Veins Holy leveling); Judgement of Light 40 s (endgametools).",
+   "id_source": "Wowhead Holy leveling table; Icy Veins pages",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [40, 50, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [30].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Frost Resistance Aura",
+   "wowhead_base_spell_id": 19888,
+   "rank_learn_levels": [
+    32,
+    44,
+    56
+   ],
+   "school": null,
+   "category": "aura",
+   "notes": "3 ranks; raid within 30 yd (Blizzard).",
+   "id_source": "Wowhead Prot leveling table",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [44, 56] come only from the endgametools spell list (secondary); primary-confirmed levels: [32].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Shield",
+   "wowhead_base_spell_id": 642,
+   "ivdb_max_rank_id": 1020,
+   "rank_learn_levels": [
+    34,
+    50
+   ],
+   "school": null,
+   "category": "defense",
+   "notes": "Level 34 (Icy Veins milestone, Wowhead). 12 s, you keep attacking at -50% damage dealt (Icy Veins, endgametools); 5 min CD, Forbearance 1 min.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (642); Icy Veins pages (1020)",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [50] come only from the endgametools spell list (secondary); primary-confirmed levels: [34].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Fire Resistance Aura",
+   "wowhead_base_spell_id": 19891,
+   "rank_learn_levels": [
+    36,
+    48,
+    60
+   ],
+   "school": null,
+   "category": "aura",
+   "notes": "3 ranks; raid within 30 yd (Blizzard).",
+   "id_source": "Wowhead Prot leveling table",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [48, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [36].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of Wisdom",
+   "wowhead_base_spell_id": 20357,
+   "ivdb_max_rank_id": 20357,
+   "rank_learn_levels": [
+    38,
+    48,
+    58
+   ],
+   "school": null,
+   "category": "seal",
+   "notes": "3 ranks. Judgement of Wisdom 40 s (endgametools).",
+   "id_source": "Wowhead abilities/Prot pages; Icy Veins pages (rank not stated)",
+   "unconfirmed": true,
+   "flag": "Levels [38, 48, 58] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Cleanse",
+   "wowhead_base_spell_id": 4987,
+   "rank_learn_levels": [
+    42
+   ],
+   "school": null,
+   "category": "utility",
+   "notes": "Removes 1 poison, 1 disease and 1 magic effect.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips)",
+   "also_sources": [
+    "https://endgametools.com/en/wow-forever/spells/paladin",
+    "https://foreverbattlegrounds.com/classes/paladin/holy/"
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Hammer of Wrath",
+   "wowhead_base_spell_id": 24275,
+   "ivdb_max_rank_id": 24239,
+   "rank_learn_levels": [
+    44,
+    52,
+    60
+   ],
+   "school": "Holy",
+   "category": "damage",
+   "notes": "Execute below 20% health, 30 yd, 1 s cast (instant with Champion of the Light 5/5), 6 s CD (endgametools). Learned at 44 (Icy Veins, Wowhead).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (24275); Icy Veins/Wowhead rotation (24239)",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [52, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: [44].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blessing of Sacrifice",
+   "wowhead_base_spell_id": 6940,
+   "ivdb_max_rank_id": 20729,
+   "rank_learn_levels": [
+    46,
+    54
+   ],
+   "school": null,
+   "category": "defense",
+   "notes": "2 ranks; transfers damage per hit to the Paladin, 30 s (endgametools).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (6940); Icy Veins/Wowhead abilities (20729)",
+   "also_sources": [
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [54] come only from the endgametools spell list (secondary); primary-confirmed levels: [46].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Wrath",
+   "wowhead_base_spell_id": 2812,
+   "ivdb_max_rank_id": 10318,
+   "rank_learn_levels": [
+    50,
+    60
+   ],
+   "school": "Holy",
+   "category": "damage",
+   "notes": "Undead/Demons within 20 yd, 2 s stun, 2 s cast, 1 min CD (endgametools).",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) (2812); Icy Veins pages (10318)",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [60] come only from the endgametools spell list (secondary); primary-confirmed levels: [50].",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Greater Blessing of Might",
+   "wowhead_base_spell_id": null,
+   "rank_learn_levels": [
+    52,
+    60
+   ],
+   "school": null,
+   "category": "blessing",
+   "notes": "Whole class in raid/group, 1 hour, reagent Symbol of Kings (endgametools).",
+   "also_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/retribution/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [52, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: none. Levels unverified: endgametools + foreverbattlegrounds only (both secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Greater Blessing of Wisdom",
+   "wowhead_base_spell_id": null,
+   "rank_learn_levels": [
+    54,
+    60
+   ],
+   "school": null,
+   "category": "blessing",
+   "notes": "1 hour, Symbol of Kings (endgametools).",
+   "also_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/holy/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [54, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: none. Levels unverified: endgametools + foreverbattlegrounds only (both secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Greater Blessing of Kings",
+   "wowhead_base_spell_id": null,
+   "rank_learn_levels": [
+    60
+   ],
+   "school": null,
+   "category": "blessing",
+   "notes": "1 hour, Symbol of Kings (endgametools).",
+   "also_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/holy/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [60] come only from the endgametools spell list (secondary); primary-confirmed levels: none. Level unverified: endgametools + foreverbattlegrounds only (both secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Sense Undead",
+   "wowhead_base_spell_id": 5502,
+   "rank_learn_levels": [],
+   "school": null,
+   "category": "utility",
+   "notes": "Listed by Wowhead's abilities page; not in the endgametools trainer list. Learn level not sourced (gap).",
+   "id_source": "Wowhead Ret abilities page",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-abilities",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of Command (talent)",
+   "wowhead_base_spell_id": 20375,
+   "ivdb_max_rank_id": 20920,
+   "rank_learn_levels": [
+    30,
+    40,
+    50,
+    60
+   ],
+   "school": "Holy",
+   "category": "seal",
+   "talent_tree": "Retribution",
+   "notes": "Retribution row-3 talent (10 points in the tree) gives rank 1; trainer ranks 2-5 at the levels listed (endgametools 'Needs the talent'). Judgement doubled on stunned/incapacitated targets.",
+   "id_source": "Wowhead Ret leveling trainer table (https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips) and Icy Veins calculator data (20375); Icy Veins pages (20920)",
+   "also_sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+    "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [30, 40, 50, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Shock (talent)",
+   "wowhead_base_spell_id": 20930,
+   "ivdb_max_rank_id": 20930,
+   "rank_learn_levels": [
+    40,
+    48,
+    56
+   ],
+   "school": "Holy",
+   "category": "heal",
+   "talent_tree": "Holy",
+   "notes": "21-point Holy gold medal (Blizzard), 10 s CD, 20 yd, heal or damage. Rank 1 from the talent; trainer ranks 2-4 at the levels listed (endgametools).",
+   "id_source": "Icy Veins/Wowhead pages (20930); Icy Veins calculator data talent id 1311606 (see conflicts)",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [40, 48, 56] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Shield (talent)",
+   "wowhead_base_spell_id": 20925,
+   "ivdb_max_rank_id": 20925,
+   "rank_learn_levels": [
+    40,
+    50,
+    60
+   ],
+   "school": "Holy",
+   "category": "tank",
+   "talent_tree": "Protection",
+   "notes": "Protection talent (row 5 at launch, needs Templar's Bulwark). +30% block 10 s, 4 charges. Trainer ranks 2-4 at 40/50/60 (endgametools article and spell list).",
+   "id_source": "Wowhead Prot leveling (20925 and 20928); Icy Veins calculator data (20925)",
+   "also_sources": [
+    "https://endgametools.com/en/wow-forever/news/wow-forever-paladin",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [40, 50, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Light's Vigil (talent)",
+   "wowhead_base_spell_id": 1311595,
+   "ivdb_max_rank_id": 1310911,
+   "rank_learn_levels": [
+    50,
+    60
+   ],
+   "school": "Holy",
+   "category": "heal",
+   "talent_tree": "Holy",
+   "notes": "31-point Holy gold medal: 1.5 s cast, 6 s CD, 30 s; next Holy Shock on that ally has no cooldown and heals their party. Healing only at launch (Nov 2). Trainer ranks 2-3 at 50/60 (endgametools).",
+   "id_source": "Icy Veins pages + calculator data (1310911); Wowhead Holy leveling (1311595) - see conflicts",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels [50, 60] come only from the endgametools spell list (secondary); primary-confirmed levels: none.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Repentance (talent)",
+   "wowhead_base_spell_id": 20066,
+   "ivdb_max_rank_id": 20066,
+   "rank_learn_levels": [],
+   "school": null,
+   "category": "cc",
+   "talent_tree": "Retribution",
+   "notes": "21-point Retribution gold medal; single rank (no trainer ranks). 6 s Humanoid incapacitate, any damage breaks it; 20 yd, 1 min CD (foreverbattlegrounds). Icy Veins Ret leveling lists it at 30, Wowhead's build at 33.",
+   "id_source": "Icy Veins calculator data + guide links",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Templar's Bulwark (talent)",
+   "wowhead_base_spell_id": null,
+   "ivdb_max_rank_id": 1311015,
+   "rank_learn_levels": [],
+   "school": null,
+   "category": "defense",
+   "talent_tree": "Protection",
+   "notes": "Single rank. Absorb = 100% max health for 8 s, 5 min CD, applies Forbearance; row 3 and dispellable (Magic) at launch (Nov 2).",
+   "id_source": "Icy Veins calculator data + class overview link",
+   "also_sources": [
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Favor (talent)",
+   "wowhead_base_spell_id": null,
+   "ivdb_max_rank_id": 20216,
+   "rank_learn_levels": [],
+   "school": null,
+   "category": "buff",
+   "talent_tree": "Holy",
+   "notes": "Single rank; next Flash of Light, Holy Light or Holy Shock crits. Row 3 at launch (Nov 2 notes).",
+   "id_source": "Icy Veins calculator data",
+   "also_sources": [
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Oath of Light (talent)",
+   "wowhead_base_spell_id": null,
+   "ivdb_max_rank_id": 1328548,
+   "rank_learn_levels": [],
+   "school": null,
+   "category": "buff",
+   "talent_tree": "Holy",
+   "notes": "New at launch (Nov 2): row 4, 40 yd, 8% base mana, no CD; one sworn ally for 5 min, boosts Holy Light/Flash of Light/Holy Shock healing on them.",
+   "id_source": "Icy Veins calculator data",
+   "also_sources": [
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Swift Judgement (talent)",
+   "wowhead_base_spell_id": null,
+   "ivdb_max_rank_id": 1310994,
+   "rank_learn_levels": [],
+   "school": null,
+   "category": "judgement",
+   "talent_tree": "Protection",
+   "notes": "Single rank. At launch (Nov 2): instantly unleashes your active Seal, does not share Judgement's cooldown (deep dive version reset Judgement's CD). Usable as a second taunt with Seal of Fury (Icy Veins Prot).",
+   "id_source": "Icy Veins calculator data",
+   "also_sources": [
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  }
+ ],
+ "talent_and_other_spell_ids": [
+  {
+   "name": "Spiritual Focus",
+   "spell_id": 20205,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Max rank: Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Strength",
+   "spell_id": 20262,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Max rank: Increases your Strength by 10%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Healing Light",
+   "spell_id": 20237,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Max rank: Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 12%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Reverence",
+   "spell_id": 1310899,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Max rank: Allows 30% of your Mana regeneration to continue while casting.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Improved Seals",
+   "spell_id": 20224,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 5,
+   "notes": "Max rank: Increases the damage done by your Seals and Judgements by 15%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Purifying Power",
+   "spell_id": 429144,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Max rank: Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by 33%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Favor",
+   "spell_id": 20216,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 10,
+   "notes": "Max rank: When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Illumination",
+   "spell_id": 20210,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 10,
+   "notes": "Max rank: After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Conduit",
+   "spell_id": 1237268,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Max rank: Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Precision",
+   "spell_id": 1310904,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Max rank: Improves your chance to hit with Holy spells by 8%, and reduces the duration of Silence effects on you by 20%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Infusion of Light",
+   "spell_id": 426065,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Max rank: Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Oath of Light",
+   "spell_id": 1328548,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 15,
+   "notes": "Max rank: Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 401, your Flash of Light by up to 116, and your Holy Shock by up to 230. Only one Oath of Light may be sworn by t",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Consecrated Ground",
+   "spell_id": 1310905,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Max rank: Gives your Holy spells 10% increased damage against the first 4 enemies that enter your Consecration.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Shock",
+   "spell_id": 1311606,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Max rank: Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 114 healing to an ally.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Boundless Light",
+   "spell_id": 1328550,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Max rank: Increases the critical strike chance of your Holy Shock spell by 30% when cast on allies not affected by your Oath of Light.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Power",
+   "spell_id": 5923,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 25,
+   "notes": "Max rank: Increases the critical strike healing bonus of your Holy spells by 50%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Light's Vigil",
+   "spell_id": 1310911,
+   "tree": "Holy",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 30,
+   "notes": "Max rank: Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 335. Only one Vigil per Paladin may be active in each party.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Intellect",
+   "spell_id": 20257,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Max rank: Increases your total Intellect by 10%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Redoubt",
+   "spell_id": 20127,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Max rank: Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Precision",
+   "spell_id": 20189,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Max rank: Improves your chance to hit by 3%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Guardian's Favor",
+   "spell_id": 20174,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Max rank: Reduces the cooldown of your Blessing of Protection by 2 min and increases the duration of your Blessing of Freedom by 6 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Sacred Duty",
+   "spell_id": 1224697,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Max rank: Reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec, and reduces the duration of Forbearance by 10 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Templar's Bulwark",
+   "spell_id": 1311015,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 10,
+   "notes": "Max rank: When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Improved Hammer of Justice",
+   "spell_id": 20487,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 10,
+   "notes": "Max rank: Decreases the cooldown of your Hammer of Justice spell by 15 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Shield Specialization",
+   "spell_id": 20150,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Max rank: Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Toughness",
+   "spell_id": 20143,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 10,
+   "notes": "Max rank: Increases your armor value from items by 10%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Swift Judgement",
+   "spell_id": 1310994,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 15,
+   "notes": "Max rank: Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Improved Righteous Fury",
+   "spell_id": 20468,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 15,
+   "notes": "Max rank: While Righteous Fury is active, all damage taken is reduced by 9%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Anticipation",
+   "spell_id": 20096,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 15,
+   "notes": "Max rank: Increases your Defense Skill by 20.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Stoicism",
+   "spell_id": 1328546,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Max rank: Reduces the duration of Stun and Charm effects on you by 20%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Shield",
+   "spell_id": 20925,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Max rank: Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Reckoning",
+   "spell_id": 20177,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 20,
+   "notes": "Max rank: Gives you a 40% chance after Blocking and a 100% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Iron Creed",
+   "spell_id": 1311034,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 25,
+   "notes": "Max rank: Increases the threat generated by your Holy Strike ability by 30%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 6% for 6 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Shieldsworn",
+   "spell_id": 1328544,
+   "tree": "Protection",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 30,
+   "notes": "Max rank: Reduces the cooldown of your Holy Strike ability by 4 sec. Additionally, Holy Strike now strikes with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or t",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Deflection",
+   "spell_id": 20060,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Max rank: Increases your Parry chance by 5%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Benediction",
+   "spell_id": 20101,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Max rank: Reduces the Mana cost of all instant cast spells and abilities by 10%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Improved Judgement",
+   "spell_id": 25956,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Max rank: Decreases the cooldown of your Judgement ability by 2 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Conviction",
+   "spell_id": 20117,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Max rank: Improves your chance to get a critical strike with all spells and attacks by 6%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Sanctified Judgement",
+   "spell_id": 1311074,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Max rank: Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Vindication",
+   "spell_id": 9452,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 10,
+   "notes": "Max rank: Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204 for 30 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Unyielding Faith",
+   "spell_id": 9453,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Max rank: Reduces the duration of Fear and Disorient effects on you by 30%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Seal of Command",
+   "spell_id": 20375,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 10,
+   "notes": "Max rank: Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec. Unleashing this Seal's energy will judge an enemy,",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Pursuit of Justice",
+   "spell_id": 26022,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Max rank: Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Eye for an Eye",
+   "spell_id": 9799,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Max rank: All critical strikes against you cause 10% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Sacred Arbiter",
+   "spell_id": 1311087,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 15,
+   "notes": "Max rank: Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Two-Handed Weapon Specialization",
+   "spell_id": 20111,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 15,
+   "notes": "Max rank: Increases the Physical and Holy damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Turn Evil",
+   "spell_id": 1328370,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Max rank: Reduces the cast time of your Turn Undead spell by 1 sec, its cooldown by 10 sec, and allows it to affect Demons.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Repentance",
+   "spell_id": 20066,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Max rank: Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Vengeance",
+   "spell_id": 20049,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 20,
+   "notes": "Max rank: Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Champion of the Light",
+   "spell_id": 1311084,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 25,
+   "notes": "Max rank: Increases your spell damage by up to 60% of your Intellect, and reduces the cast time of your Hammer of Wrath by 1 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Unsealed Wrath",
+   "spell_id": 1310735,
+   "tree": "Retribution",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 30,
+   "notes": "Max rank: Your melee attacks store a copy of your active Seal for 15 sec, stacking up to 3 times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Shock",
+   "spell_id": 20930,
+   "tree": "Holy",
+   "kind": "spell (guide link)",
+   "notes": "Icy Veins/Wowhead guide link id; calculator talent id is 1311606. Detect by name.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-stat-priority",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Light's Vigil",
+   "spell_id": 1311595,
+   "tree": "Holy",
+   "kind": "spell (guide link)",
+   "notes": "Wowhead Holy leveling id; Icy Veins uses 1310911. Detect by name.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Holy Shield",
+   "spell_id": 20928,
+   "tree": "Protection",
+   "kind": "spell (guide link)",
+   "notes": "Wowhead Prot leveling links both 20925 and 20928.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Forbearance",
+   "spell_id": 25771,
+   "kind": "debuff",
+   "notes": "1 min after Divine Shield, Divine Protection, Blessing of Protection, Templar's Bulwark (endgametools tooltips; Icy Veins). Sacred Duty -10 s.",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-overview",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement of the Crusader",
+   "spell_id": null,
+   "kind": "judgement debuff",
+   "notes": "From Seal of the Crusader; +Holy damage taken, 40 s (endgametools).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement of Light",
+   "spell_id": null,
+   "kind": "judgement debuff",
+   "notes": "From Seal of Light; 40 s (endgametools).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement of Wisdom",
+   "spell_id": null,
+   "kind": "judgement debuff",
+   "notes": "From Seal of Wisdom; 40 s (endgametools).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement of Righteousness",
+   "spell_id": null,
+   "kind": "judgement damage",
+   "notes": "Named in Blizzard Oct 15 notes (SP coefficient fix). Instant damage, no debuff.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement of Fury",
+   "spell_id": null,
+   "kind": "judgement taunt",
+   "notes": "Seal of Fury Judgement: Holy damage + taunt; duration 3 s at launch (was 4 s) per Nov 2 notes; 10 yd.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Judgement of Justice",
+   "spell_id": null,
+   "kind": "judgement debuff",
+   "notes": "Seal of Justice Judgement prevents fleeing 10 s (endgametools tooltip; name not stated by the page).",
+   "unconfirmed": true,
+   "flag": "Debuff name inferred from the Seal; only the effect is sourced.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Vengeance",
+   "spell_id": 20049,
+   "tree": "Retribution",
+   "kind": "talent (buff shares the name)",
+   "notes": "Buff: +3% Physical and Holy damage per stack for 30 s after a non-periodic crit, 5 stacks at launch; needs Seal of Command. Buff spell id not sourced (talent id given).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Unsealed Wrath (echo stacks)",
+   "spell_id": null,
+   "tree": "Retribution",
+   "kind": "buff",
+   "notes": "Melee attacks store a copy of the active Seal for 15 s, up to 3; an attack with a different Seal consumes them. Aura name/id not sourced. Blizzard's Sep 24 notes mention 'Echo of Justice' (Twist of Light era).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Divine Favor",
+   "spell_id": 20216,
+   "tree": "Holy",
+   "kind": "talent (buff shares the name)",
+   "notes": "Buff consumed by next Flash of Light/Holy Light/Holy Shock.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Righteous Fury",
+   "spell_id": 25780,
+   "kind": "self buff",
+   "notes": "30 min (endgametools). Track as the tank-mode buff.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+   "checked": "2026-11-10"
+  }
+ ],
+ "milestones": {
+  "items": [
+   {
+    "level": 1,
+    "what": "Seal of Righteousness, Holy Light, Devotion Aura",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 4,
+    "what": "Judgement, Blessing of Might",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 6,
+    "what": "Holy Strike (new in Forever), Seal of the Crusader",
+    "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 8,
+    "what": "Hammer of Justice",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 10,
+    "what": "Lay on Hands and Blessing of Protection available",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 10,
+    "what": "Talents start; Seal of Fury (new tank Seal); Righteous Fury now trained at 10",
+    "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 12,
+    "what": "Redemption quest unlocks (Alliance: The Tome of Divinity; Undead: A Lesson in Divinity)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 16,
+    "what": "Retribution Aura",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 18,
+    "what": "Blessing of Freedom",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 20,
+    "what": "Verigan's Fist (Alliance) and Wolfsbane (Horde) quest unlocks - realistic from 22+",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 20,
+    "what": "Consecration and Blessing of Kings available (both baseline now)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 20,
+    "what": "Exorcism, Flash of Light",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 22,
+    "what": "Pursuit of Justice talented (Icy Veins Ret leveling build)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 22,
+    "what": "A Strange Artifact (Cloak of the Divine Storm, Alliance) - Icy Veins class quests page",
+    "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 30,
+    "what": "Repentance available (21-point Retribution talent)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 34,
+    "what": "Divine Shield available",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 40,
+    "what": "Mount quest available (speculative - Icy Veins class quests page only expects it)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 40,
+    "what": "Dual Specialization",
+    "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 40,
+    "what": "Unsealed Wrath (31st Retribution point in Wowhead's leveling build)",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 41,
+    "what": "Holy Shock (talent) in Icy Veins' Holy leveling build",
+    "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 42,
+    "what": "Cleanse",
+    "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 43,
+    "what": "Reckoning (talent) in Icy Veins' Protection leveling build",
+    "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 44,
+    "what": "Hammer of Wrath (execute below 20%)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 50,
+    "what": "Holy Wrath (Undead/Demons AoE)",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 52,
+    "what": "Light's Vigil (talent) in Icy Veins' Holy leveling build",
+    "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "level": 60,
+    "what": "Epic mount class quest available (Icy Veins Holy/Prot milestone tables; speculative)",
+    "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+    "checked": "2026-11-10"
+   }
+  ],
+  "talent_milestones": "Talents from level 10; one-point gold medal talents at 11, 16 (new in Forever), 21 and 31 points (Blizzard deep dive). Launch medals by tree row (Icy Veins calculator data 70888 + endgametools article): Holy - Divine Favor (11th point), Oath of Light (16th), Holy Shock (21st), Light's Vigil (31st); Protection - Templar's Bulwark (11th, was the 21-pointer in the deep dive), Swift Judgement (16th), Shieldsworn (31st); Retribution - Seal of Command (11th), Sacred Arbiter (16th), Repentance (21st), Unsealed Wrath (31st).",
+  "trainer_costs": "Training all ranks 1-60 costs about 206-207 gold for every class (foreverguide summarizing Blizzard's Nov 2 notes). Per-rank costs not sourced.",
+  "respec": "Talents (incl. Legacy talents) are changed at a class trainer in a major city; Dual Specialization at level 40 (Blizzard deep dive).",
+  "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+  "checked": "2026-11-10"
+ },
+ "talent_changes": [
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Holy Strike: new ability at level 6, instant Holy damage from 50% weapon damage plus a per-rank bonus.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Judgement no longer consumes the active Seal; classic seal twisting removed baseline.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Seal of Fury: new level-10 tank Seal (flat Holy damage per swing, absorb = 50% of it, Judgement taunts at 10 yd).",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Consecration baseline at 20 (no longer a Holy talent); full damage only to the first 4 enemies.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Lay on Hands cooldown 20 min (was 1 h). Fire/Frost/Shadow Resistance Aura affect all raid members within 30 yd.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Made baseline: Blessing of Kings, Improved Blessing of Wisdom, Lasting Judgement, Improved Seal of the Crusader Judgement bonus.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Righteous Fury trained at 10 (was 16): +33% all threat, +90% Holy threat.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Removed: Salvation, Mass Salvation, Revoke, Blessing of Light. Judgement of Fury lasts 3 s (was 4).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Holy",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Spiritual Focus row 1 (5 points); Improved Seals 5 points; Reverence row 2 (2 points); Purifying Power row 2; Divine Favor and Illumination row 3; Holy Conduit moved into Holy row 3.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Holy",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Voice of Truth removed. New: Oath of Light (row 4), Boundless Light (row 5, +15/30% Holy Shock crit on allies without your Oath).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Holy",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Divine Precision row 4, 2 points: 4/8% Holy spell hit and -10/20% Silence duration.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Holy",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Holy Power: +10-50% critical healing bonus of Holy spells (was crit chance).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Holy",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Light's Vigil: friendly targets only (offensive mode removed).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Holy",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Holy Shock moved to the 21-point gold medal, cooldown 10 s (was 30 s). Divine Favor became the 16-point medal (moved again at launch).",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Protection",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Divine Intellect moved to Protection row 1; Sacred Duty row 2 (no Stamina; -30/60 s on Divine Shield/Divine Protection/Templar's Bulwark and -5/10 s Forbearance).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Protection",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Improved Seal of Fury and One-Handed Weapon Specialization removed.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Protection",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Templar's Bulwark moved to row 3 and is a dispellable Magic effect.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Protection",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Improved Righteous Fury 3/6/9% damage reduction; Shield Specialization 2 points (15/30% block value, 50/100% chance for 4% max mana).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Protection",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Swift Judgement now instantly unleashes your active Seal and does not share Judgement's cooldown (was: reset Judgement's cooldown).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Protection",
+   "stage": "launch (Nov 2 notes)",
+   "change": "New Stoicism (row 5, -10/20% Stun and Charm duration); Holy Shield row 5; Iron Creed 3 points (10/20/30% Holy Strike threat, 2/4/6% DR 6 s); new Shieldsworn (row 7: Holy Strike -4 s CD, strikes with the shield, can block spells 6 s).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Holy Conduit moved to Holy; Sanctified Judgement and Conviction row 2; Conviction 2/4/6% crit for all spells and attacks.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Vindication no longer raises your Attack Power; Unyielding Faith moved to Retribution row 3.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Two-Handed Weapon Specialization row 4: +2/4/6% Holy and Physical damage and -7/14/20% threat with a two-hander.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Instrument of Law removed; Champion of the Light 12-60% of Intellect as spell damage and -0.2 to -1.0 s Hammer of Wrath cast.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Vengeance stacks to 5 (was 3) and requires Seal of Command.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "New Turn Evil (row 5): Turn Undead -0.5/1.0 s cast, -5/10 s CD, also affects Demons.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "launch (Nov 2 notes)",
+   "change": "Twist of Light removed; Unsealed Wrath is the 31-point talent (requires Repentance): swings store the active Seal for 15 s up to 3; a hit with a different Seal fires them.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Sacred Arbiter: new 16-point medal, Holy Strike +20% and refreshes all Judgements on the target (incl. other Paladins'). Repentance moved to the 21-point medal.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "tree": "Retribution",
+   "stage": "deep dive (2026-10-15)",
+   "change": "Removed: Improved Retribution Aura, Sanctity Aura. Protection removed: Blessing of Sanctuary, Improved Concentration Aura.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  }
+ ],
+ "builds": [
+  {
+   "spec": "Retribution",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/paladin-talent-calculator#tc-xxxxxzzBBBFFEDDHIIIDJJJKCLLLLLNOOOOO77444AA4488ccCC~70755-d1899b7d",
+   "notes": "Icy Veins 'Leveling Talent Build' (level slider). Full URL = Icy Veins calculator page + the page's data-talentcalculator-pointsurl fragment. Calculator data version 70755-d1899b7d.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Holy",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/paladin-talent-calculator#tc-yyyyyBBBzzFF3333377222aaaaa699AAdPPbefffffg11111e44~70755-d1899b7d",
+   "notes": "Icy Veins 'Leveling Talent Build': Retribution first (Benediction, Holy Conduit, Conviction, Improved Judgement, Pursuit of Justice), then Holy. Full URL = Icy Veins calculator page + the page's data-talentcalculator-pointsurl fragment. Calculator data version 70755-d1899b7d.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Protection",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/paladin-talent-calculator#tc-yyyyyBBBzzFFiiiiijjjppoothhqnnnlwuuuuuvvvlmlllDDDHh~70755-d1899b7d",
+   "notes": "Icy Veins 'Leveling Talent Build' (leveling and entry-level end-game): Pursuit of Justice first, then Protection. Full URL = Icy Veins calculator page + the page's data-talentcalculator-pointsurl fragment. Calculator data version 70755-d1899b7d.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Retribution",
+   "purpose": "Raid/Dungeon (Unsealed Wrath)",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/paladin-talent-calculator#tc-yyyyyzzBBBDDDEFFIIIH5JJJKLLLLLN11111jjjOOOOO44444AA~70755-d1899b7d",
+   "notes": "Icy Veins 'Unsealed Wrath Talent Build' (PvE, seal-twist archetype; slow weapon + Seal of Command or fast weapon + Seal of Righteousness). Full URL = Icy Veins calculator page + the page's data-talentcalculator-pointsurl fragment. Calculator data version 70755-d1899b7d.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-spec-builds-talents",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Retribution",
+   "purpose": "Raid/Dungeon (Shockadin)",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/paladin-talent-calculator#tc-yyyyyzzBBBDDDEFFIIIH5JJJKLLLLLOOOOO44444AA877bcc86d~70755-d1899b7d",
+   "notes": "Icy Veins 'Shockadin Talent Build' (PvE; Holy Shock + Champion of the Light, spell power, fast two-hander). Full URL = Icy Veins calculator page + the page's data-talentcalculator-pointsurl fragment. Calculator data version 70755-d1899b7d.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-spec-builds-talents",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Retribution",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.wowhead.com/forever/talent-calc/paladin/vkndmh050250002-501-05233011201301351_t0/2BCEhJddmNdRqgSt0BE1Ac0JD",
+   "notes": "Wowhead leveling build (14/6/31, Unsealed Wrath at 40); URL built from the page's [talent=paladin/...] embed code. Level-by-level order table on the page.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Holy",
+   "purpose": "PvP (Battleground healer)",
+   "talent_calc_url": "https://www.wowhead.com/forever/talent-calc/paladin/vkndmh50320215022101251-501221305",
+   "notes": "foreverbattlegrounds 'Battleground healer' 32/19/0 (Holy Shock, Light's Vigil, Oath of Light, Templar's Bulwark, Sacred Duty, Guardian's Favor).",
+   "unconfirmed": true,
+   "flag": "secondary PvP site",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Holy",
+   "purpose": "PvP (Mobile healer / flag carrier)",
+   "talent_calc_url": "https://www.wowhead.com/forever/talent-calc/paladin/vkndmh50320215022101251-5002-550000002",
+   "notes": "foreverbattlegrounds 'Mobile healer (flag carrier)' 32/7/12 (Pursuit of Justice instead of Bulwark/Sacred Duty/Improved HoJ/Toughness).",
+   "unconfirmed": true,
+   "flag": "secondary PvP site",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Retribution",
+   "purpose": "PvP (Battleground burst)",
+   "talent_calc_url": "https://www.wowhead.com/forever/talent-calc/paladin/vkndmh-503221302-05033321201301351",
+   "notes": "foreverbattlegrounds 'Battleground burst' 0/18/33 (Seal of Command, Repentance, Unsealed Wrath, Champion of the Light 5/5, Improved HoJ, Templar's Bulwark).",
+   "unconfirmed": true,
+   "flag": "secondary PvP site",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10"
+  }
+ ],
+ "rotations": {
+  "retribution": "Keep a Blessing (Blessing of Kings, Blessing of Might before 20) and a Seal up. Judge Seal of the Crusader first on targets that live a while, then switch to Seal of Command (slow two-hander, low spell power) or Seal of Righteousness (fast weapon, high spell power). Judgement (off the GCD) and Holy Strike on cooldown; Hammer of Justice or Repentance before Judgement with Seal of Command for the bonus vs stunned/incapacitated targets (macro /cast Repentance + /cast Judgement keeps the incapacitate). Hammer of Wrath below 20% (from 44). Exorcism on Undead/Demons (also a 30 yd tag). Consecration only when mana allows (8 s, costs almost twice Judgement + Holy Strike). AoE: Consecration, Holy Wrath vs Undead/Demons from 50. With Unsealed Wrath: let 2-3 Seal of Command copies stack, swap to Seal of Righteousness for one swing, then swap back (Wowhead).",
+  "protection": "Righteous Fury and Retribution Aura before the pull (Devotion Aura if another Paladin runs Retribution Aura). Keep Seal of Fury up: its Judgement taunts (10 yd) and adds damage; Judgement on cooldown for threat and to grab loose mobs, Swift Judgement as a second taunt. Consecration as long as mana allows (main AoE threat). Holy Shield (if talented) before Holy Strike with Shieldsworn; Holy Strike on cooldown; Exorcism and Holy Wrath on Undead/Demons; Hammer of Wrath when tanking 0-1 targets. Swap to Seal of Righteousness only when no taunt is needed. Sync Judgement and Holy Strike so the 5-second rule restores mana.",
+  "holy": "Flash of Light is the efficient main heal; Holy Light for heavy damage (Infusion of Light crits cut its cast); Holy Shock as an instant emergency/moving heal; Light's Vigil (1.5 s cast, expensive) on an ally before group damage, then Holy Shock on that ally to heal their whole party. Seal of Light while healing, Seal of Righteousness for damage. Questing damage: Seal of Righteousness, Judgement, Holy Strike, Exorcism (Undead/Demons), Holy Shock, Consecration if mana allows.",
+  "mana": "Do not refresh the Seal until it is about to run out; skip Judgement/Holy Strike if the next swing kills; turn leftover mana into Holy Light instead of eating (Icy Veins Ret). 5-second rule: casting stops Spirit regen for 5 s, so sync Judgement and Holy Strike and stop casting near the end of a fight (Icy Veins Prot/Holy, Wowhead Prot). Consecration is the big mana sink. Blessing of Wisdom when mana is the limit (Wowhead). Sanctified Judgement and Shield Specialization return mana; Reverence lets 30% of regen continue while casting.",
+  "seals": "Seal of Command for slow two-handers or low spell power (about 7 procs per minute regardless of speed, 0.203 SP coefficient after the 0.7 weapon modifier); Seal of Righteousness for fast weapons or high spell power (0.12 SP per hit with a two-hander, 0.10 one-hander). Judge Seal of the Crusader first for its 40 s Holy-damage debuff. Tanks: Seal of Fury (Judgement taunts). Healers: Seal of Light. Judgement no longer consumes the Seal; seal twisting only via Unsealed Wrath (31-point Retribution talent).",
+  "pvp_retribution": "Unconfirmed (foreverbattlegrounds, secondary): Hammer of Justice (10 yd) -> Judgement with Seal of Command (doubled on stunned targets) -> Holy Strike; Repentance as a second window; finish with Hammer of Wrath at 30 yd (instant with Champion of the Light 5/5). With Unsealed Wrath swing Seal of Command, swap Seals just before the stun. Blessing of Freedom replaces your other Blessing on that target.",
+  "sources": [
+   "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+   "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips",
+   "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-stat-priority",
+   "https://foreverbattlegrounds.com/classes/paladin/retribution/"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+  "checked": "2026-11-10"
+ },
+ "stat_priority": [
+  {
+   "spec": "Retribution",
+   "priority": "Weapon DPS > Hit (to 8%) > Expertise (to 6.5%) > Strength > Spell power",
+   "notes": "Icy Veins 'Unsealed Wrath Build Stat Priority' (level 60 PvE). Crit, Agility and Intellect still valued.",
+   "alt_priority": {
+    "label": "Holy Shock (Shockadin) build",
+    "priority": "Weapon DPS > Hit (to 8%) > Spell power > Crit > Expertise (to 6.5%)"
+   },
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-stat-priority",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Leveling",
+   "priority": "Weapon DPS > Hit (and Expertise) > Spell power > Intellect > Crit > Strength (and Attack power) > Agility",
+   "notes": "Icy Veins Retribution leveling stat list.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Protection",
+   "priority": "Stamina > Spell power > Strength > Block > Hit > Defense > Armor > Intellect > Agility",
+   "notes": "Icy Veins Protection LEVELING stat list (no level-60 Protection stat page archived).",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "spec": "Holy",
+   "priority": "Healing > Intellect > MP5 > Spell crit (then Haste) > Spirit",
+   "notes": "Icy Veins Holy LEVELING stat list; Haste (5th) is not a schema token, kept as a note. Spell power replaces Healing when questing for damage.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  }
+ ],
+ "quests": [
+  {
+   "type": "class",
+   "level": 12,
+   "races": "Human/Dwarf",
+   "faction": "Alliance",
+   "name": "The Tome of Divinity",
+   "quest_id": 1641,
+   "reward": "Redemption",
+   "reward_spell": "Redemption",
+   "reward_spell_id": 20773,
+   "notes": "Quest chain that unlocks Redemption; do it before group content.",
+   "id_source": "Icy Veins class quests page (db.icy-veins.com quest/item/spell links)",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "class",
+   "level": 20,
+   "races": "Human/Dwarf",
+   "faction": "Alliance",
+   "name": "The Test of Righteousness",
+   "quest_id": 1654,
+   "zone": "Outside the gates of Ironforge",
+   "coords": "52, 36",
+   "start_npc": "Jordan Stilwell",
+   "reward": "Verigan's Fist",
+   "reward_item_id": 6953,
+   "notes": "Chain needs items from The Deadmines, Shadowfang Keep and Blackfathom Deeps; hard before 22+. Verigan's Fist lasts to about 30 (Icy Veins Ret leveling).",
+   "id_source": "Icy Veins class quests page (db.icy-veins.com quest/item/spell links)",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "class",
+   "level": 22,
+   "races": "Human/Dwarf",
+   "faction": "Alliance",
+   "name": "A Strange Artifact",
+   "quest_id": 78088,
+   "zone": "Darkshore, Tower of Althalaxx (top)",
+   "coords": "56.2, 26.4",
+   "start_npc": "Althalaxx Orb (item 209836, starts the quest)",
+   "reward": "Cloak of the Divine Storm",
+   "reward_item_id": 277205,
+   "notes": "Chain goes Ashenvale -> Stormwind -> Redridge Mountains -> Ashenvale; set Hearthstone to Ashenvale. Icy Veins Holy/Prot milestone tables put the cloak at 30 (see conflicts).",
+   "id_source": "Icy Veins class quests page (db.icy-veins.com quest/item/spell links)",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "class",
+   "level": 12,
+   "races": "Undead",
+   "faction": "Horde",
+   "name": "A Lesson in Divinity",
+   "quest_id": 94427,
+   "zone": "Tirisfal Glades",
+   "reward": "Redemption",
+   "reward_spell": "Redemption",
+   "reward_spell_id": 20773,
+   "notes": "Undead Paladin Redemption quest; travels around Tirisfal Glades.",
+   "id_source": "Icy Veins class quests page (db.icy-veins.com quest/item/spell links)",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "breadcrumb",
+   "level": 20,
+   "races": "Undead",
+   "faction": "Horde",
+   "name": "Diplomatic Incident",
+   "quest_id": 91858,
+   "zone": "Bandarion Keep",
+   "coords": "22, 44.6",
+   "start_npc": "Danitha Morr",
+   "notes": "Starts the Old Fire-Eye chain (zone of Bandarion Keep not named on the page).",
+   "id_source": "Icy Veins class quests page (db.icy-veins.com quest/item/spell links)",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "class",
+   "level": 20,
+   "races": "Undead",
+   "faction": "Horde",
+   "name": "Old Fire-Eye",
+   "quest_id": 95140,
+   "reward": "Wolfsbane",
+   "reward_item_id": 267369,
+   "notes": "Horde equivalent of The Test of Righteousness: items from The Deadmines, Shadowfang Keep, Blackfathom Deeps; hard before 22+.",
+   "id_source": "Icy Veins class quests page (db.icy-veins.com quest/item/spell links)",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "mount",
+   "level": 40,
+   "races": "All",
+   "faction": "Both",
+   "name": "The Tome of Nobility",
+   "quest_id": 1661,
+   "reward": "60% speed Paladin mount (per Wowhead)",
+   "notes": "Wowhead Prot leveling: 'Paladins get their 60% speed mount for free through The Tome of Nobility'. No level, faction or race stated there; Icy Veins only expects a mount quest at 40.",
+   "id_source": "Wowhead Prot leveling link [quest=1661]",
+   "unconfirmed": true,
+   "flag": "Single mention (Wowhead) without level/faction; Icy Veins only speculates about Paladin mount quests.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "mount",
+   "level": 60,
+   "races": "All",
+   "faction": "Both",
+   "name": "Epic mount class quest (name unknown)",
+   "notes": "Icy Veins expects class mount quests at 40 and 60 but 'can only provide speculation'.",
+   "unconfirmed": true,
+   "flag": "Speculative; no quest name or ID sourced.",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  }
+ ],
+ "class_trainers": {
+  "trainers": [],
+  "respec_note": "Talents (and Legacy talents) are changed at a class trainer in a major city; Dual Specialization at 40 (Blizzard deep dive).",
+  "note": "No raw page names a Forever Paladin trainer or location (gap).",
+  "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+  "checked": "2026-11-10"
+ },
+ "racials": [
+  {
+   "race": "Human",
+   "faction": "Alliance",
+   "spell": "Ruthless",
+   "spell_id": 20597,
+   "type": "passive",
+   "effect": "+1% critical strike chance (was 2%; replaced Sword Specialization).",
+   "id_source": "Icy Veins Ret guide link",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Human",
+   "faction": "Alliance",
+   "spell": "Human Spirit",
+   "type": "passive",
+   "effect": "+10% Spirit (was 5%).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Human",
+   "faction": "Alliance",
+   "spell": "Will to Survive",
+   "type": "active",
+   "effect": "Removes all Stuns, 3 min CD (foreverbattlegrounds). Blizzard only notes its visual changed (Sep 24).",
+   "unconfirmed": true,
+   "flag": "Effect/cooldown from a secondary PvP site.",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Artisan's Precision",
+   "type": "passive",
+   "effect": "+1% hit with spells and attacks (added Oct 26; Earth Fury removed).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Big Game Hunter",
+   "spell_id": 1259721,
+   "type": "passive",
+   "effect": "Advantage against Beasts (exact value not on the page).",
+   "id_source": "Icy Veins Ret guide link",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Find Treasure",
+   "type": "active",
+   "effect": "Also a chance for extra items in most chests (Oct 15 notes).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Stoneform",
+   "type": "active",
+   "effect": "8 s of -10% physical damage, 3 min CD (foreverbattlegrounds).",
+   "unconfirmed": true,
+   "flag": "Effect/cooldown from a secondary PvP site.",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+   "checked": "2026-11-10"
+  }
+ ],
+ "race_notes": {
+  "text": "Forever Paladin races: Human and Dwarf (Alliance) and Undead/Forsaken (Horde, new - one of six new race/class combinations). Icy Veins: Human (Ruthless +1% crit) is slightly better once geared; Dwarf (Artisan's Precision +1% hit, Big Game Hunter vs Beasts) is stronger early; Undead performs close to both. Tristan is a male Human Paladin (Alliance).",
+  "also_sources": [
+   "https://foreverguide.net/classes/paladin/",
+   "https://endgametools.com/en/wow-forever/news/wow-forever-paladin"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide",
+  "checked": "2026-11-10"
+ },
+ "changes_log": [
+  {
+   "date": "2026-09-24",
+   "change": "Beta: Holy Strike weapon damage per rank 25/29/32/36/39/43/46/50%; Retribution Aura updates with caster spell power; Consecration fixes; Righteous Fury Holy threat lowered to 60% (was 90%); Echo of Justice proc chance fixed.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-10-01",
+   "change": "Beta: Redoubt 4-20% block, Holy Shield 30% block; Champion of the Light 20/40/60% Int (healing tooltip was a mistake).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-10-08",
+   "change": "Beta: Retribution Aura uses the Paladin's spell power, Classic base damage, 6% SP ratio; Reckoning 1.5 s internal cooldown; Seal of Fury mana return only with Improved Seal of Fury; mana returns no longer generate threat.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-10-15",
+   "change": "Beta (posted Oct 16): Salvation/Mass Salvation/Revoke replace Blessing of Salvation; Judgement of Righteousness/Fury coefficients fixed; Seal of Righteousness SP double-dip fixed; Consecration 0.042 SP per tick; Righteous Fury Holy threat back to 90%; Seal of Fury rank 3 at 26; Shield Specialization 4% mana; Reckoning stores up to 4 charges; Champion of the Light 10/20/30%.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-10-15",
+   "change": "Paladin class deep dive published (Holy Strike, Seal of Fury, baseline Consecration/Kings, new talents incl. beta-only Voice of Truth/Twist of Light/Instrument of Law).",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-10-26",
+   "change": "Racials: Human Ruthless 1% crit (was 2%), Human Spirit 10%; Dwarf Earth Fury removed, Artisan's Precision +1% hit added.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-11-02",
+   "change": "Launch notes (posted Nov 3): Righteous Fury at 10 (+33% threat, +90% Holy); Salvation/Mass Salvation/Revoke/Blessing of Light removed; Judgement of Fury 3 s; Voice of Truth, Improved Seal of Fury, One-Handed Weapon Spec, Instrument of Law, Twist of Light removed; new Oath of Light, Boundless Light, Stoicism, Shieldsworn, Turn Evil; Unsealed Wrath is the Retribution 31-pointer; Vengeance 5 stacks; Templar's Bulwark row 3 and dispellable.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-11-04",
+   "change": "WoW Forever launch (Blizzard dev notes addendum: swing timer bar, PvP scoreboard, no honor floating text at Honor cap).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-11-05",
+   "change": "Hotfix (PvP): Plainsrunning can't be stacked in battleground preparation and is cancelled when carrying a flag.",
+   "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-11-06",
+   "change": "Hotfix: Cooldown Manager shows crowd-control durations correctly with diminishing returns; The Quick and the Dead Legacy talent fix.",
+   "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+   "checked": "2026-11-10"
+  },
+  {
+   "date": "2026-11-09",
+   "change": "Hotfix: Consecration no longer stops dealing its increased damage after targets inside despawn; Cooldown Manager now shows Seals correctly; invisible wall on the Warsong Gulch Alliance base roof removed; dungeon kill XP +50%.",
+   "notes": "Blizzard dates the block November 9; wow-forever.gg and wowforeverplaybook describe the post as published 10 November.",
+   "also_sources": [
+    "https://wow-forever.gg/news/patch-notes/forever-hotfixes-2026-11-10/",
+    "https://wowforeverplaybook.com/wow-forever-hotfixes"
+   ],
+   "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+   "checked": "2026-11-10"
+  }
+ ],
+ "conflicts": [
+  {
+   "topic": "Righteous Fury Holy threat",
+   "detail": "Sep 24 beta notes: 60% (was 90%); Oct 15 notes and Nov 2 launch notes: 90% (+33% all threat at launch). Using launch value 90%.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Righteous Fury learn level",
+   "detail": "Wowhead Holy leveling optional table lists level 16; Blizzard Nov 2 notes moved it to 10 (endgametools spell list agrees). Using 10.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Voice of Truth",
+   "detail": "Blizzard Nov 2: 'Voice of Truth removed'. endgametools (article + spell list) and foreverbattlegrounds say it became a level-20 trainer spell; Icy Veins Holy leveling and Wowhead abilities still list it as a Holy talent. Treated as removed per Blizzard - not listed as a current spell; verify in game.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Blessing of Light",
+   "detail": "Removed at launch (Nov 2 notes); Icy Veins Prot leveling still recommends it and Wowhead Prot lists spell 19977 as optional at 40; Wowhead abilities lists 19979 and 1038. Not imported.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Improved Seal of Fury",
+   "detail": "Icy Veins Prot leveling milestone lists it at 32; Blizzard Nov 2 removed it. Not imported.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Hammer of the Righteous",
+   "detail": "endgametools spell list shows a level-40 'Hammer of the Righteous' (tooltip mentions Crusader Strike) and thetirisfalen mentions it; no primary source. Not imported.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Holy Strike cooldown",
+   "detail": "Blizzard deep dive panel recap: 12 s; Sep 24 notes made Improved Holy Strike baseline -> 10 s (client per endgametools). Using 10 s.",
+   "source_url": "https://endgametools.com/en/wow-forever/news/wow-forever-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Judgement of Fury taunt duration",
+   "detail": "Icy Veins class overview and Wowhead abilities: 4 s; Blizzard Nov 2: 3 s (was 4); endgametools tooltip 3 s. Using 3 s.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Seal of Fury spell id",
+   "detail": "Icy Veins and Wowhead Ret leveling: 1311649; Wowhead Prot leveling 20163 (rotation) and Wowhead abilities/Holy 20423. Using 1311649; detect by name.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Holy Shock spell id",
+   "detail": "Icy Veins guide links and Wowhead: 20930; Icy Veins calculator talent data: 1311606. Detect by name.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Light's Vigil spell id",
+   "detail": "Icy Veins (guides + calculator): 1310911; Wowhead Holy leveling: 1311595. Detect by name.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Champion of the Light value",
+   "detail": "Deep dive: up to 30% of Intellect; Oct 15 notes 10/20/30%; Nov 2 launch: 12-60% and -1.0 s Hammer of Wrath cast at 5/5. Using launch.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Vengeance stacks",
+   "detail": "Deep dive / Sep 24: 3 stacks; Nov 2 launch: 5 stacks, requires Seal of Command. Using launch.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Sacred Arbiter Holy Strike bonus",
+   "detail": "Icy Veins class overview: +10%; Blizzard deep dive and talent data: +20% (Sep 24 doubled it). Using 20%.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Templar's Bulwark position",
+   "detail": "Deep dive: 21-point gold medal; Nov 2 launch: row 3 (10 points). Using launch.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Cloak of the Divine Storm level",
+   "detail": "Icy Veins class quests page: A Strange Artifact chain at level 22; Icy Veins Holy/Prot leveling milestone tables: cloak 'can be obtained' at 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Paladin mount quests",
+   "detail": "Icy Veins class quests: mount quests at 40/60 'can only provide speculation'; Icy Veins Holy/Prot milestone tables state them as available; Wowhead Prot leveling says the 60% mount is free via The Tome of Nobility (quest 1661). Kept as unconfirmed rows.",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Wowhead 'forever' overview pages",
+   "detail": "www.wowhead.com/forever/guide/classes/paladin/{retribution,holy}/overview serve Wowhead's retail Midnight Season 2 guides (Holy Power, Final Verdict, hero talents) - not Forever data. Not used.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/overview",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Unsealed Wrath origin",
+   "detail": "foreverbattlegrounds says it was renamed from Twist of Light in a 30 Oct hotfix; Blizzard Nov 2 lists Twist of Light removed and Unsealed Wrath as the new 31st talent. Using Blizzard.",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "Rank levels after the first rank for most trainer spells come only from the endgametools spell list (secondary, client-data scrape): flagged unconfirmed per spell; verify at the trainer.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Per-rank spell IDs not sourced; only one Wowhead id (usually rank 1 from the Wowhead trainer table) and one Icy Veins db id (rank not stated) per spell. Detect spells by name.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-leveling-tips",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Single-rank talent spells (Repentance, Templar's Bulwark, Divine Favor, Oath of Light, Swift Judgement) have no trainer level: rank_learn_levels left empty; earliest level depends on the talent path.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Greater Blessing of Might/Wisdom/Kings: spell IDs not sourced; levels (52/54/60) only from secondary sites.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Sense Undead: learn level not sourced (absent from the endgametools trainer list).",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/dps-abilities",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Summon Warhorse / Summon Charger: no Forever source; mount quests (40/60) speculative. The Tome of Nobility (quest 1661) mentioned only by Wowhead.",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Judgement debuff spell IDs (Crusader, Light, Wisdom, Fury, Justice) and the Vengeance buff id not sourced.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Unsealed Wrath echo aura name/ID not sourced (needed to show stacks).",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Light's Grace and other classic Holy procs: not in Forever's talent data; nothing sourced.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70888-1d81729b/paladin.json",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Class trainer names and locations: no raw page names one.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Holy and Protection level-60 stat priorities: Icy Veins Holy/Prot stat pages not archived; only leveling lists used.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Undead Paladin starting spells/levels: endgametools marks level-1 Holy Light as Human/Dwarf only; Undead details not sourced.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Bandarion Keep zone (Diplomatic Incident start, Danitha Morr 22, 44.6) not named on the Icy Veins page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Wowhead Forever Ret/Holy 'overview' pages are retail content; Wowhead Forever leveling guides were fetched instead (archived in research/raw/).",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/paladin/retribution/overview",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Per-rank training costs not sourced (only the 206-207 gold class total).",
+   "source_url": "https://foreverguide.net/classes/paladin/",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Cooldowns/durations quoted in spell notes from endgametools tooltips (e.g. HoJ 1 min, BoF 10 s/20 s, Divine Shield 12 s) are secondary; verify in game.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/paladin",
+   "checked": "2026-11-10"
+  }
+ ]
+}

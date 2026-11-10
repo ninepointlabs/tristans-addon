@@ -1,0 +1,66 @@
+## Interface: 16001
+## Title: Tristan's Addon
+## Notes: The do-everything Paladin companion for WoW Forever, with PvP: spec-aware rotation help, Blessing button with Aura and Seal hints, a Battle section (Honor & Rank, battlegrounds, PvP bar, your cooldowns and Forbearance, burst coach, world PvP), talents, gear tips, leveling, class quests, reminders and Learn the Paladin.
+## Author: Nine Point Labs
+## Version: @project-version@
+## X-Website: https://github.com/ninepointlabs/tristans-addon
+## Category: Class
+## IconTexture: Interface\Icons\Spell_Holy_SealOfMight
+## AddonCompartmentFunc: TristansAddon_OnCompartmentClick
+## SavedVariables: TristansAddonDB
+## SavedVariablesPerCharacter: TristansAddonCharDB
+
+Core\Init.lua
+Data\Meta.lua
+Data\Spells.lua
+Data\Quests.lua
+Data\Builds.lua
+Data\Gear.lua
+Data\World.lua
+Data\Notes.lua
+Data\PvP.lua
+Data\Talents.lua
+Data\ItemSources.lua
+Data\Learn.lua
+Data\Changes.lua
+Core\Spec.lua
+Core\DB.lua
+Core\DualSpec.lua
+Modules\Auras.lua
+Modules\Stats.lua
+Modules\Training.lua
+Modules\Progress.lua
+Modules\Paladin.lua
+Modules\PvP.lua
+Modules\Cooldowns.lua
+Modules\Reminders.lua
+Modules\Rotation.lua
+Modules\Summary.lua
+Modules\Changes.lua
+Modules\Learn.lua
+Modules\Tooltip.lua
+Modules\Map.lua
+UI\Widgets.lua
+UI\Main.lua
+UI\Panels\Home.lua
+UI\Panels\Rotation.lua
+UI\Panels\Battle.lua
+UI\Panels\Learn.lua
+UI\Panels\Leveling.lua
+UI\Panels\Talents.lua
+UI\Panels\Gear.lua
+UI\Panels\Quests.lua
+UI\Panels\Training.lua
+UI\Panels\Mounts.lua
+UI\Panels\Reminders.lua
+UI\Panels\Changes.lua
+UI\Panels\Sources.lua
+UI\Panels\Options.lua
+UI\Hud.lua
+UI\Bags.lua
+UI\PaladinBar.lua
+UI\BlessingButton.lua
+UI\Hints.lua
+UI\PvPBar.lua
+UI\Minimap.lua
+Core\Boot.lua

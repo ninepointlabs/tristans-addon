@@ -1,0 +1,3133 @@
+{
+ "sources": {
+  "iv_ret_leveling": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+  "iv_holy_leveling": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+  "iv_prot_leveling": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+  "iv_ret_bis": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-gear-best-in-slot",
+  "iv_ret_stat_priority": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-stat-priority",
+  "iv_ret_guide": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide",
+  "iv_class_quests": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+  "bz_pvp_progression": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+  "bz_darkspear": "https://news.blizzard.com/en-us/article/24307308/battle-for-the-darkspear-islands-in-world-of-warcraft-forever",
+  "bz_rulesets": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+  "bz_legacy": "https://news.blizzard.com/en-us/article/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system",
+  "bz_deep_dive": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+  "bz_dev_notes": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+  "bz_hotfixes_nov9": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+  "foreverdb_pvp": "https://foreverdb.net/guide/pvp-guide",
+  "loreforever_bgs": "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+  "lfcarry_pvp": "https://lfcarry.com/guides/wow-forever-pvp",
+  "wowcarry_pvp": "https://wowcarry.com/blog/wow-forever/pvp/pvp-guide",
+  "wowcarry_rulesets": "https://wowcarry.com/blog/wow-forever/getting-started/rulesets",
+  "fbg_ret": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+  "fbg_holy": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+  "tirisfalen_pvp": "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/",
+  "wtl_addons_pvp": "https://wowforevertierlist.com/addons/pvp",
+  "wtl_restrictions": "https://wowforevertierlist.com/addons/restrictions",
+  "hearthproof_addons": "https://hearthproof.com/systems/addons/",
+  "foreverbase_starter_pvp": "https://foreverbase.org/en/addons/starter-pvp/"
+ },
+ "gear_by_bracket": [
+  {
+   "bracket": "level 10",
+   "spec": "Retribution",
+   "name": "Ironforge Greathammer",
+   "item_id": 279895,
+   "slot": "Weapon",
+   "source": "Hall of Thanes (quest)",
+   "level": 9,
+   "faction": "Alliance",
+   "notes": "First strong weapon for Alliance; quest available as early as level 9, dungeon may need a higher-level group.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 10",
+   "spec": "Retribution",
+   "name": "Axe of Orgrimmar",
+   "item_id": 15424,
+   "slot": "Weapon",
+   "source": "Ragefire Chasm (quest)",
+   "level": 9,
+   "faction": "Horde",
+   "notes": "Horde counterpart of Ironforge Greathammer; available as early as level 9.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Rhahk'Zor's Hammer",
+   "item_id": 5187,
+   "slot": "Weapon",
+   "source": "The Deadmines",
+   "faction": "Alliance",
+   "notes": "Listed for Alliance players. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Rockslicer",
+   "item_id": 872,
+   "slot": "Weapon",
+   "source": "The Deadmines",
+   "faction": "Alliance",
+   "notes": "Listed for Alliance players. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Smite's Mighty Hammer",
+   "item_id": 7230,
+   "slot": "Weapon",
+   "source": "The Deadmines",
+   "faction": "Alliance",
+   "notes": "Listed for Alliance players. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Hammerbone",
+   "item_id": 270018,
+   "slot": "Weapon",
+   "source": "Wailing Caverns (quest Leaders of the Fang)",
+   "faction": "Horde",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Forsaken Greataxe",
+   "item_id": 251533,
+   "slot": "Weapon",
+   "source": "Ruins of Lordaeron (quest The Wrath of Rath'mael)",
+   "faction": "Horde",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Retribution",
+   "name": "Verigan's Fist",
+   "item_id": 6953,
+   "slot": "Weapon",
+   "source": "Paladin quest chain from level 20 (The Test of Righteousness)",
+   "level": 20,
+   "faction": "Alliance",
+   "notes": "Very powerful; likely lasts until around level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Retribution",
+   "name": "Wolfsbane",
+   "item_id": 267369,
+   "slot": "Weapon",
+   "source": "Paladin quest chain from level 20 (Old Fire-Eye)",
+   "level": 20,
+   "faction": "Horde",
+   "notes": "Horde counterpart of Verigan's Fist; likely lasts until around level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Manual Crowd Pummeler",
+   "item_id": 9449,
+   "slot": "Weapon",
+   "source": "Gnomeregan",
+   "notes": "First weapon to outshine the level-20 Paladin quest weapons; fast with an on-use attack-speed effect, strong with Seal of Righteousness and Spell Power; may stay useful at 60. Refill charges with 9-60 Battery Pack (Engineering). Source dungeon named on the Icy Veins dungeon hub, not on this page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Retribution",
+   "name": "Crusader's Silvered Chain Helm",
+   "item_id": 250532,
+   "slot": "Head",
+   "source": "Blacksmithing (Bind on Pickup, craft it yourself)",
+   "level": 20,
+   "notes": "First notable helmet for Retribution; lasts several levels.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Double-Stitched Woolen Shoulders",
+   "item_id": 4314,
+   "slot": "Shoulder",
+   "source": "Tailoring (crafted)",
+   "notes": "First good early shoulders. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Retribution",
+   "name": "Reliquary Mantle",
+   "item_id": 273028,
+   "slot": "Shoulder",
+   "source": "Excavation Site: Wetlands (Relic Guardian)",
+   "notes": "First major shoulder upgrade; a little Hit. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Retribution",
+   "name": "First Mate Band",
+   "item_id": 284715,
+   "slot": "Ring",
+   "source": "The Deadmines (Mr. Smite)",
+   "level": 17,
+   "notes": "Solid upgrade at level 17.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Retribution",
+   "name": "Minor Channeling Ring",
+   "item_id": 1449,
+   "slot": "Ring",
+   "source": "Loch Modan quest WANTED: Chok'sul",
+   "level": 16,
+   "faction": "Alliance",
+   "notes": "Quest available as early as level 16; may need a group closer to level 20.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 30",
+   "spec": "Retribution",
+   "name": "Malignant Root",
+   "item_id": 282283,
+   "slot": "Ring",
+   "source": "Wetlands: Nightveil Rotheap (level 31 elite)",
+   "faction": "Alliance",
+   "notes": "Needs a group at lower levels; item level not stated (the mob is level 31).",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 30",
+   "spec": "Retribution",
+   "name": "Ring of Power Regulation",
+   "item_id": 273030,
+   "slot": "Ring",
+   "source": "Excavation Site: Wetlands (Relic Guardian)",
+   "level": 28,
+   "notes": "Strong ring at level 28.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Rhahk'Zor's Hammer",
+   "item_id": 5187,
+   "slot": "Two-Hand",
+   "source": "The Deadmines",
+   "notes": "One of the only early weapons with Spell damage and Healing. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Holy",
+   "name": "Verigan's Fist",
+   "item_id": 6953,
+   "slot": "Two-Hand",
+   "source": "Quest chain The Test of Righteousness",
+   "level": 20,
+   "faction": "Alliance",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Holy",
+   "name": "Wolfsbane",
+   "item_id": 267369,
+   "slot": "Two-Hand",
+   "source": "Quest chain Old Fire-Eye",
+   "level": 20,
+   "faction": "Horde",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Corpsemaker",
+   "item_id": 6687,
+   "slot": "Two-Hand",
+   "source": "Razorfen Kraul",
+   "notes": "Very high Strength and weapon damage. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Durgen's Crescent Axe",
+   "item_id": 270256,
+   "slot": "One-Hand",
+   "source": "Hall of Thanes",
+   "notes": "Decent early weapon. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Scepter of the Abandoned",
+   "item_id": 271216,
+   "slot": "One-Hand",
+   "source": "Ruins of Lordaeron",
+   "notes": "Extremely powerful. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Blade of Silverlaine",
+   "item_id": 273637,
+   "slot": "One-Hand",
+   "source": "Shadowfang Keep",
+   "notes": "Similar power to Scepter of the Abandoned. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Haunting Blade",
+   "item_id": 6641,
+   "slot": "One-Hand",
+   "source": "Shadowfang Keep",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Debt Collector",
+   "item_id": 273827,
+   "slot": "One-Hand",
+   "source": "Shadowfang Keep",
+   "notes": "Extremely powerful for healing and damage. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Worn Turtle Shell Shield",
+   "item_id": 6447,
+   "slot": "Shield",
+   "source": "Wailing Caverns",
+   "notes": "Helps early mana costs. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Kresh's Back",
+   "item_id": 13245,
+   "slot": "Shield",
+   "source": "Wailing Caverns",
+   "notes": "Rare early Defense; useful if you tank. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Painwalker Buckler",
+   "item_id": 274290,
+   "slot": "Shield",
+   "source": "Scarlet Monastery",
+   "notes": "Healing + damage bonuses and some mana return. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Holy",
+   "name": "Crusader's Silvered Chain Helm",
+   "item_id": 250532,
+   "slot": "Head",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Blacksmithing crafts are very strong for their level. Ret leveling page dates this helm to level 20; this page says helmets come only from crafting until about level 25.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Sterling Silver Shoulders",
+   "item_id": 250486,
+   "slot": "Shoulder",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Crusader's Silvered Chain Shirt",
+   "item_id": 250522,
+   "slot": "Armor",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Crusader's Silvered Chain Leggings",
+   "item_id": 250527,
+   "slot": "Legs",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Seal of Sylvanas",
+   "item_id": 6414,
+   "slot": "Ring",
+   "source": "Shadowfang Keep quest Arugal Must Die",
+   "faction": "Horde",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Holy",
+   "name": "Seal of Wrynn",
+   "item_id": 2933,
+   "slot": "Ring",
+   "source": "Quest An Audience with the King",
+   "level": 16,
+   "faction": "Alliance",
+   "notes": "One of the strongest early rings.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Holy",
+   "name": "Field Researcher's Loop",
+   "item_id": 281634,
+   "slot": "Jewellery",
+   "source": "Friend of the Library quest (second step)",
+   "level": 20,
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Worgenbane Talisman",
+   "item_id": 273643,
+   "slot": "Jewellery",
+   "source": "Shadowfang Keep",
+   "notes": "A little mana. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Reedknot Ring",
+   "item_id": 9622,
+   "slot": "Ring",
+   "source": "Quest Jarl Needs a Blade",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 30",
+   "spec": "Holy",
+   "name": "Cloak of the Divine Storm",
+   "item_id": 277205,
+   "slot": "Back",
+   "source": "Paladin quest chain A Strange Artifact",
+   "level": 22,
+   "faction": "Alliance",
+   "notes": "Leveling milestones list it at 30; the class quests page says the chain starts at level 22. No Horde equivalent. Incredibly powerful, used for a while.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Holy",
+   "name": "Scorn's Icy Choker",
+   "item_id": 23169,
+   "slot": "Neck",
+   "source": "Scarlet Monastery",
+   "notes": "Very powerful neck. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 10",
+   "spec": "Protection",
+   "name": "Ironforge Greathammer",
+   "item_id": 279895,
+   "slot": "Two-Hand",
+   "source": "Quest Old Ironforge Incursion",
+   "faction": "Alliance",
+   "notes": "Alliance only. Ret leveling page: quest available as early as level 9.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Rhahk'Zor's Hammer",
+   "item_id": 5187,
+   "slot": "Two-Hand",
+   "source": "The Deadmines",
+   "notes": "One of the only early weapons with Spell damage. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Smite's Mighty Hammer",
+   "item_id": 7230,
+   "slot": "Two-Hand",
+   "source": "The Deadmines",
+   "notes": "Large amount of Strength early. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Protection",
+   "name": "Verigan's Fist",
+   "item_id": 6953,
+   "slot": "Two-Hand",
+   "source": "Quest chain The Test of Righteousness",
+   "level": 20,
+   "faction": "Alliance",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Protection",
+   "name": "Wolfsbane",
+   "item_id": 267369,
+   "slot": "Two-Hand",
+   "source": "Quest chain Old Fire-Eye",
+   "level": 20,
+   "faction": "Horde",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Corpsemaker",
+   "item_id": 6687,
+   "slot": "Two-Hand",
+   "source": "Razorfen Kraul",
+   "notes": "Very high Strength and weapon damage. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Durgen's Crescent Axe",
+   "item_id": 270256,
+   "slot": "One-Hand",
+   "source": "Hall of Thanes",
+   "notes": "Decent early weapon. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Scepter of the Abandoned",
+   "item_id": 271216,
+   "slot": "One-Hand",
+   "source": "Ruins of Lordaeron",
+   "notes": "Extremely powerful. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Butcher's Cleaver",
+   "item_id": 1292,
+   "slot": "One-Hand",
+   "source": "Shadowfang Keep",
+   "notes": "Nice amount of Stamina. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Blade of Silverlaine",
+   "item_id": 273637,
+   "slot": "One-Hand",
+   "source": "Shadowfang Keep",
+   "notes": "Similar power to Scepter of the Abandoned. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Debt Collector",
+   "item_id": 273827,
+   "slot": "One-Hand",
+   "source": "Shadowfang Keep",
+   "notes": "Extremely powerful; used for an extended period. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Worn Turtle Shell Shield",
+   "item_id": 6447,
+   "slot": "Shield",
+   "source": "Wailing Caverns",
+   "notes": "Helps early mana costs. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Kresh's Back",
+   "item_id": 13245,
+   "slot": "Shield",
+   "source": "Wailing Caverns",
+   "notes": "Rare early Defense. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Commander's Crest",
+   "item_id": 6320,
+   "slot": "Shield",
+   "source": "Shadowfang Keep",
+   "notes": "Decent Strength and Stamina. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Arctic Buckler",
+   "item_id": 7002,
+   "slot": "Shield",
+   "source": "Quest Blackfathom Villainy",
+   "faction": "Horde",
+   "notes": "Horde only. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Painwalker Buckler",
+   "item_id": 274290,
+   "slot": "Shield",
+   "source": "Scarlet Monastery",
+   "notes": "Damage bonus and some mana return. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Protection",
+   "name": "Crusader's Silvered Chain Helm",
+   "item_id": 250532,
+   "slot": "Head",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Blacksmithing crafts are very strong for their level. Ret leveling page dates this helm to level 20; this page says helmets come only from crafting until about level 25.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Sterling Silver Shoulders",
+   "item_id": 250486,
+   "slot": "Shoulder",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Crusader's Silvered Chain Shirt",
+   "item_id": 250522,
+   "slot": "Armor",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Crusader's Silvered Chain Leggings",
+   "item_id": 250527,
+   "slot": "Legs",
+   "source": "Blacksmithing (crafted)",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Seal of Sylvanas",
+   "item_id": 6414,
+   "slot": "Ring",
+   "source": "Shadowfang Keep quest Arugal Must Die",
+   "faction": "Horde",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Protection",
+   "name": "Seal of Wrynn",
+   "item_id": 2933,
+   "slot": "Ring",
+   "source": "Quest An Audience with the King",
+   "level": 16,
+   "faction": "Alliance",
+   "notes": "One of the strongest early rings.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 20",
+   "spec": "Protection",
+   "name": "Field Researcher's Loop",
+   "item_id": 281634,
+   "slot": "Jewellery",
+   "source": "Friend of the Library quest (second step)",
+   "level": 20,
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Worgenbane Talisman",
+   "item_id": 273643,
+   "slot": "Jewellery",
+   "source": "Shadowfang Keep",
+   "notes": "A little mana. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Reedknot Ring",
+   "item_id": 9622,
+   "slot": "Ring",
+   "source": "Quest Jarl Needs a Blade",
+   "notes": "Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "level 30",
+   "spec": "Protection",
+   "name": "Cloak of the Divine Storm",
+   "item_id": 277205,
+   "slot": "Back",
+   "source": "Paladin quest chain A Strange Artifact",
+   "level": 22,
+   "faction": "Alliance",
+   "notes": "Leveling milestones list it at 30; the class quests page says the chain starts at level 22. No Horde equivalent. Incredibly powerful, used for a while.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "bracket": "levels 10-30 (level not stated)",
+   "spec": "Protection",
+   "name": "Scorn's Icy Choker",
+   "item_id": 23169,
+   "slot": "Neck",
+   "source": "Scarlet Monastery",
+   "notes": "Very powerful neck. Icy Veins lists it without a level; its leveling gear lists only cover Beta content up to level 30.",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  }
+ ],
+ "other_weapons": {
+  "note": "Seal of Command and Seal of Righteousness can both trigger chance-on-hit weapon effects (Icy Veins names Wolfsbane), so a slightly worse weapon with a strong effect can be worth using. Icy Veins Ret leveling: Manual Crowd Pummeler (9449) may stay useful at 60 for its haste on-use (refill with 9-60 Battery Pack, Engineering). Icy Veins lists no gear past level 30 yet.",
+  "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-stat-priority",
+  "checked": "2026-11-10"
+ },
+ "bis": {
+  "status": "Icy Veins Retribution gear/BiS page (updated Nov 9, 2026): 'It's too early to tell' - the gear widget will be filled once reliable level-60 item and enchant data exist. No pre-raid or raid BiS items listed. Raids open 2026-12-09; item stats hidden until first looted (raid_rules).",
+  "flag": "No Paladin BiS list published on any archived page; Holy/Protection BiS pages not archived.",
+  "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-gear-best-in-slot",
+  "checked": "2026-11-10"
+ },
+ "consumables_enchants": [
+  {
+   "type": "consumable",
+   "bracket": "level 30",
+   "name": "Greater Healing Potion",
+   "item_id": 1710,
+   "source_url": "https://www.wowhead.com/forever/guide/classes/priest/shadow/enchants-consumables",
+   "checked": "2026-11-09"
+  },
+  {
+   "type": "consumable",
+   "bracket": "level 30",
+   "name": "Mana Potion",
+   "item_id": 3827,
+   "source_url": "https://www.wowhead.com/forever/guide/classes/priest/shadow/enchants-consumables",
+   "checked": "2026-11-09"
+  },
+  {
+   "type": "consumable",
+   "bracket": "level 30",
+   "name": "Sweet Nectar",
+   "item_id": 1708,
+   "source_url": "https://www.wowhead.com/forever/guide/classes/priest/shadow/enchants-consumables",
+   "checked": "2026-11-09"
+  },
+  {
+   "type": "camp",
+   "name": "Camp Tent",
+   "item_id": 279978,
+   "profession": "Leatherworking",
+   "notes": "Buff: Rested XP up to 5% of a level. Icy Veins frost leveling: 5% Rested Experience, once per hour.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Mana Well",
+   "item_id": 279956,
+   "profession": "Alchemy",
+   "notes": "Buff: Mana regeneration. Icy Veins frost leveling: Mana/5 buff, mutually exclusive with Blessing of Wisdom.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Sharpening Wheel",
+   "item_id": 279944,
+   "profession": "Blacksmithing",
+   "notes": "Buff: Increased Strength. Icy Veins frost leveling: mutually exclusive with Strength of Earth Totem.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Enchanted Lute",
+   "item_id": 279976,
+   "profession": "Enchanting",
+   "notes": "Buff: Increased Armor, All Stats and Resistances. Icy Veins frost leveling: mutually exclusive with Mark of the Wild.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Incense Candle",
+   "item_id": 279962,
+   "profession": "Herbalism",
+   "notes": "Buff: Increased Intellect. Icy Veins: mutually exclusive with some class buffs.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Lodestone",
+   "item_id": 279960,
+   "profession": "Mining",
+   "notes": "Buff: Increased melee Attack Power. Icy Veins frost leveling: mutually exclusive with Blessing of Might.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Camp Chair",
+   "item_id": 279979,
+   "profession": "Skinning",
+   "notes": "Buff: 2% Critical Strike. Icy Veins frost leveling: mutually exclusive with Moonkin Aura.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Basic Campfire Kit",
+   "item_id": 279981,
+   "notes": "Allows Cooking and hosts 3 camp features. Wowhead lists it under skill=185; tier 2 unlocks Cookie's Feast (279957) Stamina food.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "First Aid Kit",
+   "item_id": 279968,
+   "profession": "First Aid",
+   "notes": "Buff: Stamina. Icy Veins frost leveling: mutually exclusive with Power Word: Fortitude.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "camp",
+   "name": "Fish Bowl",
+   "item_id": 279967,
+   "profession": "Fishing",
+   "notes": "Buff: 8% increased stats. Icy Veins frost leveling: All Stats buff, mutually exclusive with Blessing of Kings.",
+   "source_url": "https://www.wowhead.com/forever/guide/classes/mage/frost/overview-pve-dps",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "note",
+   "name": "Campfire buffs vs class buffs",
+   "notes": "Icy Veins: 1-hour campfire buffs are for the most part mutually exclusive with class buffs from other players; Leatherworking's Camp Tent is 'the most immediately beneficial' for leveling; Incense Candle (Herbalism) is mutually exclusive with class buffs.",
+   "source_url": "https://www.icy-veins.com/wow-forever/frost-mage-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "consumable",
+   "name": "9-60 Battery Pack",
+   "item_id": 274048,
+   "profession": "Engineering",
+   "notes": "Refills the on-use charges of Manual Crowd Pummeler.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "item",
+   "name": "Cozy Sleeping Bag",
+   "item_id": 211527,
+   "notes": "From the Sleeping Bag questline; builds up a 3% experience buff.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "note",
+   "name": "Leveling consumables",
+   "notes": "Bring food, water and Healing/Mana potions; Cooking food gives Well Fed (more XP from kills); First Aid bandages heal without mana.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "consumable",
+   "name": "Combat potions (PvP rank 5 reward)",
+   "notes": "Blizzard: Rank 5 unlocks Combat Potions for Honor.",
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  {
+   "type": "consumable",
+   "name": "Combat Healing Potion",
+   "item_id": 18839,
+   "level": 35,
+   "notes": "PvP rank 5 reward named from the client by foreverdb; usable from level 35.",
+   "source_url": "https://foreverdb.net/guide/pvp-guide",
+   "checked": "2026-11-10",
+   "unconfirmed": true,
+   "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+  },
+  {
+   "type": "consumable",
+   "name": "Combat Mana Potion",
+   "item_id": 18841,
+   "level": 41,
+   "notes": "PvP rank 5 reward named from the client by foreverdb; usable from level 41.",
+   "source_url": "https://foreverdb.net/guide/pvp-guide",
+   "checked": "2026-11-10",
+   "unconfirmed": true,
+   "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+  },
+  {
+   "type": "note",
+   "name": "PvP consumables (Classic reference list)",
+   "notes": "Free Action / Living Action Potion, Limited Invulnerability Potion, Swiftness Potion, Greater Protection Potions; Engineering grenades/Net-o-Matic/Rocket Boots etc. Availability in Forever not confirmed by the page itself.",
+   "source_url": "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/",
+   "checked": "2026-11-10",
+   "unconfirmed": true,
+   "flag": "thetirisfalen only (secondary, partly AI-modelled; verify in game)"
+  }
+ ],
+ "professions": {
+  "leveling": "Mining + Blacksmithing (weapons, Mail and later Plate for yourself)",
+  "raiding": "Blacksmithing or Engineering (Icy Veins Holy/Protection leveling: the two strongest max-level choices; Mining feeds both)",
+  "alternatives": [
+   "Herbalism + Alchemy (potions/elixirs; good gold)",
+   "Engineering instead of Blacksmithing (PvP)",
+   "Secondary: Cooking (Well Fed), First Aid (bandages, healing potions from AH mats), Fishing"
+  ],
+  "pvp_note": "Icy Veins: Retribution's biggest PvP issue is no slows or gap closers vs ranged players; Engineering grenades become incredibly potent PvP tools for Paladins - level it instead of Blacksmithing, or bank Mining mats to support both.",
+  "other_sources": [
+   "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "https://www.icy-veins.com/wow-forever/protection-paladin-leveling"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+  "checked": "2026-11-10"
+ },
+ "riding": [
+  {
+   "skill": "Apprentice Riding",
+   "spell_id": 33388,
+   "level": 40,
+   "speed": "60%",
+   "training": "100g",
+   "mount_cost": "20g (first mount free via quest)",
+   "source_url": "https://www.wowhead.com/forever/guide/riding-mounts",
+   "checked": "2026-11-09"
+  },
+  {
+   "skill": "Journeyman Riding",
+   "spell_id": 33391,
+   "level": 60,
+   "speed": "100%",
+   "training": "1000g",
+   "mount_cost": "200g epic",
+   "source_url": "https://www.wowhead.com/forever/guide/riding-mounts",
+   "checked": "2026-11-09"
+  },
+  {
+   "skill": "Discounts/rules",
+   "notes": "Honored with home faction = 10% off; Exalted lets you learn another race's riding for 100g; no WoW Token",
+   "source_url": "https://www.wowhead.com/forever/guide/riding-mounts",
+   "checked": "2026-11-09"
+  },
+  {
+   "skill": "Class mounts",
+   "notes": "Only Paladins and Warlocks have class mount quests (levels 40 and 60). Same costs table as above confirmed on this page 2026-11-10 (Apprentice 40/60%/100g, mount 20g first free; Journeyman 60/100%/1000g, mount 200g). Quest names/steps not on any archived Paladin page.",
+   "source_url": "https://www.wowhead.com/forever/guide/unlocking-riding-skill-mounts",
+   "checked": "2026-11-10"
+  }
+ ],
+ "mounts": [
+  {
+   "race": "Human",
+   "trainer": "Randal Hunter",
+   "trainer_npc_id": 4732,
+   "location": "Eastvale Logging Camp 84.2,65.0",
+   "vendor": "Katie Hunter",
+   "vendor_npc_id": 384,
+   "first_mount_quest": "Your First Horse",
+   "quest_id": 97045,
+   "mount_item_ids": [
+    5655,
+    5656,
+    2414
+   ],
+   "epic_mount_item_ids": [
+    18776,
+    18777,
+    18778
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/riding-mounts",
+   "checked": "2026-11-09",
+   "faction": "Alliance"
+  },
+  {
+   "race": "Dwarf",
+   "trainer": "Ultham Ironhorn",
+   "trainer_npc_id": 4772,
+   "location": "Gol'Bolar Quarry 63.8,50.2",
+   "vendor": "Veron Amberstill",
+   "vendor_npc_id": 1261,
+   "first_mount_quest": "(first mount quest)",
+   "quest_id": 97017,
+   "mount_item_ids": [
+    5864,
+    5872,
+    5873
+   ],
+   "epic_mount_item_ids": [
+    18787,
+    18786,
+    18785
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/riding-mounts",
+   "checked": "2026-11-09",
+   "faction": "Alliance"
+  },
+  {
+   "race": "Undead",
+   "trainer": "Velma Warnam",
+   "trainer_npc_id": 4773,
+   "location": "Brill 60.0,52.6",
+   "vendor": "Zachariah Post",
+   "vendor_npc_id": 4731,
+   "first_mount_quest": "(first mount quest)",
+   "quest_id": 96997,
+   "mount_item_ids": [
+    13331,
+    13332,
+    13333,
+    276063
+   ],
+   "epic_mount_item_ids": [
+    274799,
+    18791,
+    13334
+   ],
+   "source_url": "https://www.wowhead.com/forever/guide/riding-mounts",
+   "checked": "2026-11-09",
+   "faction": "Horde"
+  },
+  {
+   "race": "Any",
+   "notes": "Cerulean Prideclaw pre-purchase mount still requires riding skill",
+   "source_url": "https://news.blizzard.com/en-us/article/24302093",
+   "checked": "2026-11-09"
+  }
+ ],
+ "zones_by_level": [
+  {
+   "levels": "10-13",
+   "alliance": "Loch Modan / Darkshore",
+   "horde": "The Barrens",
+   "dungeons": "Hall of Thanes / Ragefire Chasm",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  },
+  {
+   "levels": "14-17",
+   "alliance": "Westfall / Darkshore",
+   "horde": "Silverpine Forest",
+   "dungeons": "Hall of Thanes / Ragefire + Ruins of Lordaeron",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  },
+  {
+   "levels": "18-20",
+   "alliance": "Westfall / Redridge",
+   "horde": "The Barrens / Stonetalon",
+   "dungeons": "Hall of Thanes / Wailing Caverns",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  },
+  {
+   "levels": "21-23",
+   "alliance": "Redridge / Duskwood",
+   "horde": "Hillsbrad / Stonetalon",
+   "dungeons": "Stockade / Shadowfang + Wailing Caverns",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  },
+  {
+   "levels": "24-26",
+   "alliance": "Ashenvale / Duskwood",
+   "horde": "Ashenvale / Duskwood",
+   "dungeons": "BFD + Stockade / BFD + Shadowfang",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  },
+  {
+   "levels": "27-28",
+   "alliance": "Wetlands / Ashenvale",
+   "horde": "Hillsbrad / Wetlands",
+   "dungeons": "Excavation Site + BFD",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  },
+  {
+   "levels": "29-30",
+   "alliance": "Wetlands / Ashenvale",
+   "horde": "Wetlands / Thousand Needles",
+   "dungeons": "Excavation Site + Gnomeregan / Excavation Site + Razorfen Kraul",
+   "source_url": "https://www.icy-veins.com/wow-forever/zones-and-maps",
+   "checked": "2026-11-09"
+  }
+ ],
+ "new_zones": [
+  {
+   "zone": "Zephras Isle",
+   "levels": "1-12",
+   "notes": "Skyborne start",
+   "source_url": "https://www.icy-veins.com/wow-forever/wow-forever-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "zone": "Riverglades",
+   "levels": "35-45",
+   "notes": "",
+   "source_url": "https://www.icy-veins.com/wow-forever/wow-forever-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "zone": "Shen'Dralas",
+   "levels": "?",
+   "notes": "Between Mulgore/Desolace and Feralas; quests for Maraudon and Razorfen Downs",
+   "source_url": "https://www.icy-veins.com/wow-forever/wow-forever-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "zone": "Mount Hyjal",
+   "levels": "60",
+   "notes": "Barrow Deeps / Hyjal Summit raids",
+   "source_url": "https://www.icy-veins.com/wow-forever/wow-forever-overview",
+   "checked": "2026-11-09"
+  }
+ ],
+ "dungeons": [
+  {
+   "name": "Ragefire Chasm",
+   "levels": "13-18",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Hall of Thanes",
+   "levels": "13-20",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Ruins of Lordaeron",
+   "levels": "15-22",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Wailing Caverns",
+   "levels": "15-24",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "The Deadmines",
+   "levels": "17-26",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Shadowfang Keep",
+   "levels": "20-30",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Blackfathom Deeps",
+   "levels": "24-32",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "The Stockade",
+   "levels": "24-32",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Excavation Site: Wetlands",
+   "levels": "26-33",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "City of Dalaran",
+   "levels": "28-35",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Gnomeregan",
+   "levels": "29-38",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Razorfen Kraul",
+   "levels": "29-38",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "SM Graveyard",
+   "levels": "30-38",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "SM Library",
+   "levels": "33-41",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "The Drowned City",
+   "levels": "35-40",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "SM Armory",
+   "levels": "36-44",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Razorfen Downs",
+   "levels": "37-46",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "SM Cathedral",
+   "levels": "38-46",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Krol'dok Stronghold",
+   "levels": "40-45",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Uldaman",
+   "levels": "41-51",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Zul'Farrak",
+   "levels": "44-54",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Maraudon",
+   "levels": "46-55",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Alcaz Island Prison",
+   "levels": "48-53",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Sunken Temple",
+   "levels": "50-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Blackrock Depths",
+   "levels": "52-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Dire Maul East",
+   "levels": "54-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Blackmaw Hold",
+   "levels": "55-60",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Lower Blackrock Spire",
+   "levels": "55-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Dire Maul North/West",
+   "levels": "56-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Scholomance",
+   "levels": "58-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Shaper's Terrace",
+   "levels": "58-60",
+   "new_in_forever": true,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Stratholme",
+   "levels": "58-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Upper Blackrock Spire",
+   "levels": "59-60",
+   "new_in_forever": false,
+   "source_url": "https://www.icy-veins.com/wow-forever/dungeons-overview",
+   "checked": "2026-11-09"
+  }
+ ],
+ "raids": [
+  {
+   "name": "Barrow Deeps",
+   "size": 10,
+   "bosses": 8,
+   "location": "Mount Hyjal",
+   "opens": "2026-12-09",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Hyjal Summit",
+   "size": 20,
+   "bosses": 13,
+   "location": "Mount Hyjal",
+   "opens": "2026-12-09",
+   "notes": "Has a legendary",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Onyxia's Lair",
+   "size": 40,
+   "location": "Dustwallow Marsh",
+   "opens": "2026-12-09",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  }
+ ],
+ "raid_rules": {
+  "rules": [
+   "No world buffs in raids",
+   "No heroic/flex modes",
+   "Item stats hidden until first looted"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/raid-overview",
+  "checked": "2026-11-09"
+ },
+ "roadmap": [
+  {
+   "when": "2026-11-04",
+   "what": "Launch: level 60 cap, dungeons, PvP",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "when": "2026-12-09",
+   "what": "Raids: Barrow Deeps, Hyjal Summit, Onyxia's Lair",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "when": "Winter 2026",
+   "what": "Hardcore ruleset",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "when": "Spring 2027",
+   "what": "2 raids (10/20), 2 dungeons, new zone/quests, legendary questline, PvP season refresh",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "when": "Summer 2027",
+   "what": "Revamped iconic raid, new raid, 2 dungeons, profession and Legacy updates",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  }
+ ],
+ "addons": [
+  {
+   "name": "Questie",
+   "status": "Forever TOC (Questie_Forever.toc, Interface 16001)",
+   "source_url": "https://github.com/Questie/Questie",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Deadly Boss Mods",
+   "status": "16001 in DBM-Core TOC",
+   "source_url": "https://github.com/DeadlyBossMods/DeadlyBossMods",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Details!",
+   "status": "Details_Camelot.toc 16001",
+   "source_url": "https://github.com/Tercioo/Details-Damage-Meter",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "BigWigs",
+   "status": "16001 in TOC",
+   "source_url": "https://github.com/BigWigsMods/BigWigs",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "WeakAuras",
+   "status": "NOT confirmed: Vanilla TOC 11509 only",
+   "source_url": "https://github.com/WeakAuras/WeakAuras2",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "ElvUI, Bartender4, Dominos, Plater, BetterBags, UnitFramesImproved",
+   "status": "Listed as working by foreverstatus.com (third party, unverified)",
+   "source_url": "https://foreverstatus.com/addons",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Built-in Cooldown Manager",
+   "status": "Blizzard UI has Blizzard_CooldownViewer; it tracks all spells by default",
+   "source_url": "https://www.icy-veins.com/wow-forever/wow-forever-overview",
+   "checked": "2026-11-09"
+  }
+ ],
+ "addon_dev": {
+  "notes": [
+   "Forever is Mainline-family; Classic Era addons don't load",
+   "Midnight-style restrictions incl. secret values apply (verify)",
+   "TOC lookup: _Forever/_Camelot, then _Mainline, then plain .toc",
+   "Use '## Interface: 16001'; dual: '120105, 16001'",
+   "Runtime: WOW_PROJECT_ID == 18",
+   "Check in game: /run print(GetBuildInfo()) print('project', WOW_PROJECT_ID)",
+   "Install folder _forever_ (verify)"
+  ],
+  "source_url": "https://github.com/Tautellini/TautelliniAddons/blob/main/docs/forever-addon-development.md",
+  "checked": "2026-11-09"
+ },
+ "change_sources": [
+  {
+   "name": "Blizzard Tracker RSS (blue posts incl. Forever hotfixes/tuning)",
+   "type": "rss",
+   "source_url": "https://us.forums.blizzard.com/en/wow/groups/blizzard-tracker/posts.rss",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Forever Development Notes thread RSS",
+   "type": "rss",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696.rss",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Wowhead Forever news RSS",
+   "type": "rss",
+   "source_url": "https://www.wowhead.com/news/rss/forever",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Wowhead Forever hub",
+   "type": "page",
+   "source_url": "https://www.wowhead.com/forever",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Blizzard hotfixes article (updated in place)",
+   "type": "page",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-6-2026",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Blizzard WoW news feed",
+   "type": "rss (returned HTML on test - verify)",
+   "source_url": "https://news.blizzard.com/en-us/feed/world-of-warcraft",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Gethe/wow-ui-source forever branch commits (build number changes)",
+   "type": "atom",
+   "source_url": "https://github.com/Gethe/wow-ui-source/commits/forever.atom",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Icy Veins roadmap (Last Updated / changelog)",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/roadmap",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Discourse JSON for any thread (append .json)",
+   "type": "api",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696.json",
+   "checked": "2026-11-09"
+  },
+  {
+   "name": "Blizzard hotfixes article (worldofwarcraft.blizzard.com, updated in place; Nov 9 Paladin fixes)",
+   "type": "page",
+   "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blizzard Paladin class deep dive",
+   "type": "page",
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blizzard: How PvP progression in WoW Forever works",
+   "type": "page",
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blizzard: Battle for the Darkspear Islands",
+   "type": "page",
+   "source_url": "https://news.blizzard.com/en-us/article/24307308/battle-for-the-darkspear-islands-in-world-of-warcraft-forever",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Blizzard: Choose your ruleset (updated 10-22)",
+   "type": "page",
+   "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Icy Veins Retribution Paladin leveling (gear list stops at 30; changelog)",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Icy Veins Holy Paladin leveling",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Icy Veins Protection Paladin leveling",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/protection-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Icy Veins Retribution Paladin gear/BiS (placeholder)",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-gear-best-in-slot",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Icy Veins Paladin class quests",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Icy Veins PvP overview (cited by loreforever; not archived)",
+   "type": "page",
+   "source_url": "https://www.icy-veins.com/wow-forever/pvp-overview",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Wowhead riding/mounts guide (current URL; Paladin class mount quests)",
+   "type": "page",
+   "source_url": "https://www.wowhead.com/forever/guide/unlocking-riding-skill-mounts",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "foreverdb PvP guide (client-derived BG levels, rank titles, item IDs)",
+   "type": "page",
+   "source_url": "https://foreverdb.net/guide/pvp-guide",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "foreverbattlegrounds Retribution Paladin (low confidence)",
+   "type": "page",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "foreverbattlegrounds Holy Paladin (low confidence)",
+   "type": "page",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "wowforevertierlist addon restrictions",
+   "type": "page",
+   "source_url": "https://wowforevertierlist.com/addons/restrictions",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "foreverbase PvP addon starter pack",
+   "type": "page",
+   "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "hearthproof addon census",
+   "type": "page",
+   "source_url": "https://hearthproof.com/systems/addons/",
+   "checked": "2026-11-10"
+  }
+ ],
+ "pvp": {
+  "summary": {
+   "text": "PvP is live since the Nov 4, 2026 launch (season 1). Progression has two tracks: Honor (currency) and Rank Points (14 ranks, weekly cap). Honor buys a blue set; the epic set = blue piece + rank-gated Emboldened Seal. Four battlegrounds at launch (Warsong Gulch, Arathi Basin, Darkspear Islands, Alterac Valley); no arenas or rated PvP announced. Battlegrounds mix all rulesets except Hardcore, but there is no cross-ruleset or cross-faction grouping. Your rank, Rank Points and buyable rewards are on Character pane (C) > Player vs. Player tab.",
+   "other_sources": [
+    "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "https://news.blizzard.com/en-us/article/24307308/battle-for-the-darkspear-islands-in-world-of-warcraft-forever",
+    "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+    "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026"
+   ],
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  "rulesets": [
+   {
+    "name": "Normal",
+    "world_pvp": false,
+    "notes": "Fight other players at your own discretion. Both factions allowed on the account.",
+    "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "PvP",
+    "world_pvp": true,
+    "notes": "Almost always at risk of being attacked by the other faction. Only one faction per account on this ruleset; faction-balance systems (Season of Discovery style creation limits).",
+    "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Roleplay",
+    "world_pvp": false,
+    "notes": "Strict naming and behaviour rules. Both factions allowed.",
+    "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Roleplay PvP",
+    "world_pvp": true,
+    "notes": "Roleplay rules plus open-world PvP (almost always at risk). Blizzard post does not state its faction limit.",
+    "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Hardcore",
+    "notes": "After launch; fully separate ecosystem, not in shared battlegrounds; a dead Hardcore character can transfer to another ruleset incl. PvP.",
+    "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "checked": "2026-11-10",
+    "world_pvp": null
+   }
+  ],
+  "honor": {
+   "currency_name": "Honor",
+   "cap_note": "Honor cap raised from 15,000 to 25,000 in the Oct 1 beta build (Blizzard dev notes); gear/token Honor costs +~50% in the same build. Live cap not restated since launch.",
+   "cap_source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "earn": [
+    "Defeating other players",
+    "Completing battlegrounds",
+    "Finishing relevant PvP quests",
+    "Extra Honor in the highlighted battleground during its holiday week",
+    "Seasonal journey weekly tasks",
+    "Legacy perk 'For Great Honor' increases Honor gains"
+   ],
+   "notes": "Honor gains were reviewed so battlegrounds are more even (Alterac Valley not the only efficient choice). Killing a player at Honor cap no longer shows honor gained (dev notes). Per-kill/per-win amounts not published.",
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10",
+   "currency_id": null
+  },
+  "rank_points": {
+   "weekly_cap": true,
+   "decay": false,
+   "ranks": 14,
+   "notes": "Rank Points come from battlegrounds and relevant PvP quests (holiday-week battlegrounds give a boost) and advance the 14 original ranks to Grand Marshal (Alliance) / High Warlord (Horde). Weekly cap is official; cap values are not. decay=false is from secondary pages (loreforever citing Icy Veins/Blizzpro, wowforevertierlist) - Blizzard does not mention decay. Beta data (lfcarry, thetirisfalen): Rank 14 = 24,750 Rank Points, earliest in season week 10 - unconfirmed.",
+   "unconfirmed_fields": [
+    "decay"
+   ],
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  "ranks": [
+   {
+    "rank": 1,
+    "reward": "Tabard",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 2,
+    "reward": "PvP Trinket",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 3,
+    "reward": "Cloaks",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 4,
+    "reward": "Necklace",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 5,
+    "reward": "Combat Potions",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 6,
+    "reward": "Tabard",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 7,
+    "reward": "Battle Standard",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 8,
+    "reward": "Epic Bracers/Epic Belt Upgrade Token",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 9,
+    "reward": "Epic Boots Upgrade Token",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 10,
+    "reward": "Epic Gloves Upgrade Token",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 11,
+    "reward": "Mounts",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 12,
+    "reward": "Epic Legs/Epic Shoulders Upgrade Token",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 13,
+    "reward": "Epic Chest/Epic Helm Upgrade Token",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   },
+   {
+    "rank": 14,
+    "reward": "Epic Weapons",
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10"
+   }
+  ],
+  "rank_titles": [
+   {
+    "rank": 1,
+    "alliance": "Private",
+    "horde": "Scout",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 2,
+    "alliance": "Corporal",
+    "horde": "Grunt",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 3,
+    "alliance": "Sergeant",
+    "horde": "Sergeant",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 4,
+    "alliance": "Master Sergeant",
+    "horde": "Senior Sergeant",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 5,
+    "alliance": "Sergeant Major",
+    "horde": "First Sergeant",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 6,
+    "alliance": "Knight",
+    "horde": "Stone Guard",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 7,
+    "alliance": "Knight-Lieutenant",
+    "horde": "Blood Guard",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 8,
+    "alliance": "Knight-Captain",
+    "horde": "Legionnaire",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 9,
+    "alliance": "Knight-Champion",
+    "horde": "Centurion",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 10,
+    "alliance": "Lieutenant Commander",
+    "horde": "Champion",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 11,
+    "alliance": "Commander",
+    "horde": "Lieutenant General",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 12,
+    "alliance": "Marshal",
+    "horde": "General",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 13,
+    "alliance": "Field Marshal",
+    "horde": "Warlord",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   },
+   {
+    "rank": 14,
+    "alliance": "Grand Marshal",
+    "horde": "High Warlord",
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard); Blizzard names only Grand Marshal/High Warlord"
+   }
+  ],
+  "gear_path": {
+   "text": "Honor buys two PvP sets: blue (rare) and epic. Epic = matching blue piece + Emboldened Seal; seals have rank requirements. New/reworked sets fill missing specs. Earning a rank does not award the item - buy the blue piece, reach the rank, buy the seal, upgrade.",
+   "emboldened_seal": "Rank-gated upgrade item per slot (R8 bracers/belt, R9 boots, R10 gloves, R12 legs/shoulders, R13 chest/helm); weapons are R14 rewards.",
+   "seal_items": [
+    {
+     "name": "Premier Emboldened Wrist Seal",
+     "item_id": 275240,
+     "rank": 8,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Belt Seal",
+     "item_id": 275244,
+     "rank": 8,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Feet Seal",
+     "item_id": 275243,
+     "rank": 9,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Hands Seal",
+     "item_id": 275239,
+     "rank": 10,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Legs Seal",
+     "item_id": 275242,
+     "rank": 12,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Shoulder Seal",
+     "item_id": 275229,
+     "rank": 12,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Chest Seal",
+     "item_id": 275238,
+     "rank": 13,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Premier Emboldened Head Seal",
+     "item_id": 275241,
+     "rank": 13,
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    }
+   ],
+   "trinket_items": [
+    {
+     "name": "Insignia of the Alliance",
+     "item_id": 18854,
+     "rank": 2,
+     "faction": "Alliance",
+     "notes": "PvP trinket, one version per class (foreverdb). Effect/cooldown not on any archived page.",
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Insignia of the Horde",
+     "item_id": 18834,
+     "rank": 2,
+     "faction": "Horde",
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    }
+   ],
+   "other_items": [
+    {
+     "name": "Alliance Battle Standard",
+     "item_id": 18606,
+     "rank": 7,
+     "faction": "Alliance",
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    },
+    {
+     "name": "Horde Battle Standard",
+     "item_id": 18607,
+     "rank": 7,
+     "faction": "Horde",
+     "source_url": "https://foreverdb.net/guide/pvp-guide",
+     "checked": "2026-11-10",
+     "unconfirmed": true,
+     "flag": "foreverdb only (secondary; reads launch client; not stated by Blizzard)"
+    }
+   ],
+   "pvp_set_notes": {
+    "text": "Gloves of the Chevalier PvP sets add 1 s to Repentance (7 s); Holy page: the PvP set cuts Hammer of Justice cooldown by 10 s.",
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)"
+   },
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  "battlegrounds": [
+   {
+    "key": "wsg",
+    "name": "Warsong Gulch",
+    "size": "10v10",
+    "min_level": 10,
+    "max_level": 60,
+    "objective": "Capture the enemy flag 3 times (Classic's rules; Blizzard has not restated them).",
+    "alliance_queue": "Battlemaster in any capital city (Stormwind Keep per Icy Veins via loreforever); no remote queue.",
+    "marks": "Warsong Gulch Mark of Honor (item 20558, foreverdb) for reputation quests; marks stack to 30 (Blizzard, Oct 16 notes). Icy Veins (via loreforever): 3 marks per win, 1 per loss - unconfirmed.",
+    "mark_item_id": 20558,
+    "vendor_note": "Battleground faction sells gear/consumables as reputation rises (foreverdb); Alliance faction name not on any archived page.",
+    "call_to_arms": "Holiday week: highlighted battleground gives extra Honor and Rank Points (Blizzard); foreverdb names it 'Call to Arms: Warsong Gulch'.",
+    "notes": "Nov 9 hotfix removed an invisible wall blocking the roof of the Alliance base. First queue at level 10.",
+    "roles": {
+     "Retribution": "Best: attacker and flag hunter (A); carrier B, defender B, healer C. Pursuit of Justice to close, Hammer of Justice > Judgement (Seal of Command) > Holy Strike, instant Hammer of Wrath at 30 yd on a fleeing carrier.",
+     "Holy": "Best: healer on the carrier/escort (S); defender A, carrier B. Oath of Light + Light's Vigil on the carrier, Holy Shock on the move, Blessing of Freedom for the first slow; defend from the flag-room doorway.",
+     "Protection": "No per-map Protection rating published; foreverbattlegrounds' Paladin summary calls Protection (Templar's Bulwark, Seal of Fury absorbs) 'the safest flag carrier'."
+    },
+    "roles_flag": "Roles from foreverbattlegrounds (secondary, own ratings for solo queue) - unconfirmed",
+    "other_sources": [
+     "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+     "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+     "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+     "https://foreverbattlegrounds.com/classes/paladin/holy/"
+    ],
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Size/levels from the launch client and rules from Classic via foreverdb (secondary); Blizzard has not published WSG details"
+   },
+   {
+    "key": "ab",
+    "name": "Arathi Basin",
+    "size": "15v15",
+    "min_level": 20,
+    "max_level": 60,
+    "objective": "First to 2000 resources by holding bases (Classic's rules; Blizzard has not restated them).",
+    "alliance_queue": "Battlemaster in any capital city (Stormwind Keep per Icy Veins via loreforever); no remote queue.",
+    "marks": "Arathi Basin Mark of Honor (item 20559, foreverdb) for reputation quests; marks stack to 30 (Blizzard).",
+    "mark_item_id": 20559,
+    "vendor_note": "Battleground faction sells gear/consumables as reputation rises (foreverdb); Alliance faction name not on any archived page.",
+    "call_to_arms": "Holiday week: extra Honor and Rank Points (Blizzard); foreverdb: 'Call to Arms: Arathi Basin'.",
+    "roles": {
+     "Retribution": "Attacker (A) for the next base or roamer (A) for undefended ones; defender B. Pick the weakest defender: Hammer of Justice, Judgement (Seal of Command), Holy Strike, cap while the team handles the rest; Divine Protection + Holy Light if caught alone.",
+     "Holy": "Healer (A) / defender (A). Stay a step behind the flag, keep Hammer of Justice for the capper, Cleanse the capper first, buff before gates.",
+     "Protection": "No per-map Protection rating published; foreverbattlegrounds' Paladin summary calls Protection (Templar's Bulwark, Seal of Fury absorbs) 'the safest flag carrier'."
+    },
+    "roles_flag": "Roles from foreverbattlegrounds (secondary, own ratings for solo queue) - unconfirmed",
+    "other_sources": [
+     "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+     "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+     "https://foreverbattlegrounds.com/classes/paladin/holy/"
+    ],
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Size/levels from the launch client and rules from Classic via foreverdb (secondary)"
+   },
+   {
+    "key": "darkspear",
+    "name": "Darkspear Islands",
+    "size": "15v15",
+    "min_level": 30,
+    "max_level": 60,
+    "objective": "Capture point + flag map off the shores of Dustwallow Marsh: hold four capture points (more held = faster points); carry the central flag to a base your team controls for extra points; first team to 2000 points wins.",
+    "alliance_queue": "Battlemaster in any major capital city, or the Theramore Expeditionary Force base at Northwatch (The Barrens), whose portal takes you into the battle.",
+    "portal": "Northwatch, The Barrens (Theramore Expeditionary Force base)",
+    "marks": "Turn in Marks of Honor on reputation quests; Darkspear Islands Mark of Honor = item 274895 (foreverdb, unconfirmed). Marks stack to 30 (Blizzard).",
+    "mark_item_id": 274895,
+    "rep_faction": "Theramore Expeditionary Force",
+    "vendor_note": "Base vendors sell gear and consumables (trinkets, rings, cloaks, weapons, armor pieces) at reputation thresholds; battleground quests at the base; Exalted unlocks a short questline for the faction's exclusive tabard.",
+    "call_to_arms": "Holiday week: extra Honor and Rank Points (Blizzard); foreverdb: 'Call to Arms: Darkspear Islands'.",
+    "horde_note": "Horde side: Darkspear Raiders, base and portal at the Merchant Coast (The Barrens).",
+    "notes": "Nov 2 notes: dropping the flag no longer gives the dropper a 'Recently Dropped Flag' debuff.",
+    "roles": {
+     "Retribution": "Attacker (A) / roamer (A); carrier B. Flip lightly held bases in pairs (one stuns and bursts, one caps); one stun per 45 s (talented) - travel with another attacker; keep Hammer of Wrath for a hurt flag carrier; with Unsealed Wrath swing with Seal of Command, then swap Seal just before your stun.",
+     "Holy": "Healer (A) / defender (A); carrier B. Oath of Light on the flag carrier (recast on the next carrier - one Oath at a time); Light's Vigil on whoever is focused at a base fight, then Holy Shock heals their party; Blessing of Protection on a capper under attack.",
+     "Protection": "No per-map Protection rating published; foreverbattlegrounds' Paladin summary calls Protection (Templar's Bulwark, Seal of Fury absorbs) 'the safest flag carrier'."
+    },
+    "roles_flag": "Roles from foreverbattlegrounds (secondary, own ratings for solo queue) - unconfirmed",
+    "other_sources": [
+     "https://foreverdb.net/guide/pvp-guide",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+     "https://foreverbattlegrounds.com/classes/paladin/holy/"
+    ],
+    "source_url": "https://news.blizzard.com/en-us/article/24307308/battle-for-the-darkspear-islands-in-world-of-warcraft-forever",
+    "checked": "2026-11-10"
+   },
+   {
+    "key": "av",
+    "name": "Alterac Valley",
+    "size": "40v40",
+    "min_level": 51,
+    "max_level": 60,
+    "objective": "Kill the enemy general (Classic's rules; Blizzard has not restated them).",
+    "alliance_queue": "Battlemaster in any capital city (Stormwind Keep per Icy Veins via loreforever); no remote queue.",
+    "marks": "Alterac Valley Mark of Honor (item 20560, foreverdb) for reputation quests; marks stack to 30 (Blizzard).",
+    "mark_item_id": 20560,
+    "vendor_note": "Battleground faction sells gear/consumables as reputation rises (foreverdb); Alliance faction name not on any archived page.",
+    "call_to_arms": "Holiday week: extra Honor and Rank Points (Blizzard); foreverdb: 'Call to Arms: Alterac Valley'. Blizzard rebalanced Honor so AV is no longer the only efficient choice.",
+    "roles": {
+     "Retribution": "Attacker (A) in the push group: burst tower defenders, the captain, then the general; Hammer of Justice > Judgement (Seal of Command) > Holy Strike, then Repentance on the next target; backcap in pairs.",
+     "Holy": "Healer (A) in the push group; Greater Blessings before the gates; Light's Vigil on a front-line player, Holy Shock the focus target to heal their party; save Lay on Hands for the player carrying the push.",
+     "Protection": "No per-map Protection rating published; foreverbattlegrounds' Paladin summary calls Protection (Templar's Bulwark, Seal of Fury absorbs) 'the safest flag carrier'."
+    },
+    "roles_flag": "Roles from foreverbattlegrounds (secondary, own ratings for solo queue) - unconfirmed",
+    "other_sources": [
+     "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+     "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+     "https://foreverbattlegrounds.com/classes/paladin/holy/"
+    ],
+    "source_url": "https://foreverdb.net/guide/pvp-guide",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Level range disputed (51-60 vs 20-60, see conflicts); size/rules via foreverdb (secondary)"
+   }
+  ],
+  "queue": {
+   "text": "Queue at a battlemaster: Blizzard says every major capital city has one (Darkspear post); secondary pages name Stormwind Keep (and Valley of Honor in Orgrimmar, Horde). Darkspear Islands also via the Northwatch portal. No remote queue button (players asked Oct 7, no reply); players report being returned to where they accepted the queue. Battlegrounds mix rulesets (not Hardcore) but you cannot queue as a group with a friend on another ruleset.",
+   "remote_queue": false,
+   "other_sources": [
+    "https://news.blizzard.com/en-us/article/24307308/battle-for-the-darkspear-islands-in-world-of-warcraft-forever",
+    "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+    "https://foreverdb.net/guide/pvp-guide"
+   ],
+   "source_url": "https://wowforevertierlist.com/addons/pvp",
+   "checked": "2026-11-10",
+   "unconfirmed": true,
+   "flag": "remote_queue=false and Stormwind Keep from wowforevertierlist/loreforever (secondary); Blizzard only says 'battlemaster in any major capital city'"
+  },
+  "call_to_arms": {
+   "text": "Each battleground has holiday weeks: the highlighted battleground gives increased Honor and an additional Rank Point boost. foreverdb (client) calls them Call to Arms weeks for Warsong Gulch, Arathi Basin, Darkspear Islands and Alterac Valley; schedule not published.",
+   "other_sources": [
+    "https://foreverdb.net/guide/pvp-guide"
+   ],
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  "seasonal": {
+   "text": "PvP runs in seasons. Each season has a journey of weekly tasks granting Honor and Rank Points; three tasks per season also grant a Legacy Point and stay completable in later seasons. Legacy PvP challenges (12 points): reach ranks 3, 7, 10, 13 and 14 (5), Exalted with each battleground reputation (4), and the week 4, 7 and 10 quests of the 'Field of Honor' season journey (3). Legacy perk 'For Great Honor' (Resourcefulness tree) increases Honor gains. First PvP season refresh: spring 2027 (roadmap), second: summer 2027 (lfcarry).",
+   "other_sources": [
+    "https://news.blizzard.com/en-us/article/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system",
+    "https://www.icy-veins.com/wow-forever/roadmap",
+    "https://lfcarry.com/guides/wow-forever-pvp"
+   ],
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  "cooldowns": [
+   {
+    "spell": "Hammer of Justice",
+    "cooldown": "60 s",
+    "duration": "6 s",
+    "notes": "6 s stun at level 54 (rank 4), 10 yd range. Improved Hammer of Justice (Protection, 3 pts) -15 s -> 45 s. PvP set: -10 s (foreverbattlegrounds Holy page). Only way for Paladins to stop a cast (no interrupt).",
+    "other_sources": [
+     "https://foreverbattlegrounds.com/classes/paladin/holy/",
+     "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Cooldown/duration only on secondary fansites (foreverbattlegrounds, thetirisfalen); no Blizzard or Icy Veins number"
+   },
+   {
+    "spell": "Repentance",
+    "cooldown": "60 s",
+    "duration": "6 s",
+    "spec": "Retribution",
+    "talent": true,
+    "notes": "Retribution 21-point talent (Blizzard deep dive). Incapacitates a Humanoid for 6 s, any damage breaks it, stops your swing timer vs them (Icy Veins). 20 yd, 1 min cooldown (foreverbattlegrounds). Chevalier PvP gloves: 7 s. /cast Repentance + /cast Judgement in one macro gives the Seal of Command bonus without breaking it (Icy Veins).",
+    "other_sources": [
+     "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+     "https://foreverbattlegrounds.com/classes/paladin/retribution/"
+    ],
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Duration from Icy Veins; cooldown and range from foreverbattlegrounds only"
+   },
+   {
+    "spell": "Divine Shield",
+    "duration": "12 s",
+    "forbearance": true,
+    "notes": "Learned at 34. Immune to damage; you keep attacking at -50% damage dealt (Icy Veins). Sacred Duty (Protection) -60 s cooldown and -10 s Forbearance. Base cooldown not on any archived page.",
+    "other_sources": [
+     "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+     "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "12 s and Forbearance from foreverbattlegrounds/thetirisfalen; damage penalty disputed (see conflicts)",
+    "cooldown": null
+   },
+   {
+    "spell": "Divine Protection",
+    "duration": "8 s",
+    "forbearance": true,
+    "notes": "Immune to physical attacks and spells but you cannot attack (Icy Veins: stops your attacks; usable vs fall damage). Sacred Duty -60 s. Base cooldown not on any archived page.",
+    "other_sources": [
+     "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+     "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Duration/Forbearance from foreverbattlegrounds only",
+    "cooldown": null
+   },
+   {
+    "spell": "Blessing of Protection",
+    "duration": "10 s",
+    "forbearance": true,
+    "notes": "Physical immunity on you or a party/raid member; target loses aggro; prevents your attacks (Icy Veins/thetirisfalen). Guardian's Favor (Protection) -2 min cooldown. Replaces your other Blessing on that target - recast it afterwards (Icy Veins). Base cooldown not on any archived page.",
+    "other_sources": [
+     "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+     "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Duration/Forbearance from foreverbattlegrounds only",
+    "cooldown": null
+   },
+   {
+    "spell": "Blessing of Freedom",
+    "cooldown": "20 s",
+    "duration": "10 s",
+    "notes": "Immunity to movement-impairing effects, removes active roots/slows, castable on party/raid (Icy Veins). Learned at 18, 10 s, 20 s cooldown (foreverbattlegrounds). Guardian's Favor +6 s -> 16 s. Replaces your other Blessing on the target - re-apply Blessing of Might/Kings afterwards (Icy Veins + foreverbattlegrounds).",
+    "other_sources": [
+     "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+     "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+     "https://foreverbattlegrounds.com/classes/paladin/holy/",
+     "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Cooldown/duration from foreverbattlegrounds only"
+   },
+   {
+    "spell": "Lay on Hands",
+    "cooldown": "20 min",
+    "notes": "Cooldown reduced to 20 min from 1 hour (Blizzard deep dive; Improved Lay on Hands made baseline). Heals for your maximum health, drains your remaining mana (Icy Veins). Forbearance: not stated by any source.",
+    "other_sources": [
+     "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling"
+    ],
+    "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "checked": "2026-11-10",
+    "duration": null
+   },
+   {
+    "spell": "Templar's Bulwark",
+    "cooldown": "5 min",
+    "duration": "8 s",
+    "forbearance": true,
+    "spec": "Protection",
+    "talent": true,
+    "notes": "Protection 21-point talent (row 3 since Nov 2): absorb shield = 100% of max health for 8 s; applies Forbearance and cannot be used under Forbearance. Since Nov 2 it is a Magic effect and dispellable. Sacred Duty -60 s.",
+    "other_sources": [
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://www.icy-veins.com/wow-forever/paladin-class-overview"
+    ],
+    "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "checked": "2026-11-10"
+   },
+   {
+    "spell": "Holy Shock",
+    "cooldown": "10 s",
+    "spec": "Holy",
+    "talent": true,
+    "notes": "Holy 21-point talent; cooldown 10 s (was 30 s). Light's Vigil makes the next Holy Shock on that ally skip its cooldown. Range 20 yd per foreverbattlegrounds (unconfirmed).",
+    "other_sources": [
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://foreverbattlegrounds.com/classes/paladin/holy/"
+    ],
+    "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "checked": "2026-11-10",
+    "duration": null
+   },
+   {
+    "spell": "PvP trinket",
+    "notes": "Rank 2 reward (Blizzard). foreverdb names Insignia of the Alliance (18854) / Insignia of the Horde (18834), one per class (unconfirmed). Effect and cooldown not on any archived page. Cooldown Manager supports trinkets (Blizzard dev notes).",
+    "other_sources": [
+     "https://foreverdb.net/guide/pvp-guide",
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+    ],
+    "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+    "checked": "2026-11-10",
+    "cooldown": null,
+    "duration": null
+   },
+   {
+    "spell": "Will to Survive",
+    "cooldown": "3 min",
+    "notes": "Human racial (Tristan is Human): removes all Stuns. Only foreverbattlegrounds gives the effect/cooldown.",
+    "other_sources": [
+     "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)",
+    "duration": null
+   }
+  ],
+  "forbearance": {
+   "text": "Divine Shield, Divine Protection, Blessing of Protection and Templar's Bulwark share Forbearance: normally one bubble per minute. Templar's Bulwark applies Forbearance and cannot be cast while it is active (Blizzard). Sacred Duty reduces Forbearance by 5/10 s (Blizzard Nov 2 notes).",
+   "duration": "1 min",
+   "other_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+    "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+   ],
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10",
+   "unconfirmed": true,
+   "flag": "1 min duration only from the talent tooltip text quoted by foreverbattlegrounds/thetirisfalen; Blizzard gives no base duration"
+  },
+  "burst": {
+   "Retribution": [
+    {
+     "spell": "Blessing of Freedom",
+     "note": "Optional prep vs Hunters/Mages: on yourself before closing in, then re-apply Blessing of Might (Freedom replaces it)."
+    },
+    {
+     "spell": "Hammer of Justice",
+     "note": "6 s stun, 10 yd - opens the window. Seal of Command must be active."
+    },
+    {
+     "spell": "Judgement",
+     "note": "With Seal of Command: roughly double damage on a stunned/incapacitated target. Off the GCD (Icy Veins)."
+    },
+    {
+     "spell": "Holy Strike",
+     "note": "While the stun lasts (Sacred Arbiter refreshes all Judgements on the target)."
+    },
+    {
+     "spell": "Repentance",
+     "note": "Second window (20 yd, 6 s) on another target or after the stun. Damage breaks it; /cast Repentance + /cast Judgement in one macro keeps the bonus without breaking it (Icy Veins)."
+    },
+    {
+     "spell": "Hammer of Wrath",
+     "note": "Finisher at 20% health or lower, 30 yd; instant with Champion of the Light 5/5. Keep mana for it."
+    }
+   ],
+   "Retribution_unsealed_wrath": "With Unsealed Wrath: swing with Seal of Command to store up to 3 echoes (15 s), then swap Seal just before the stun lands so the stored copies proc together.",
+   "Holy": [
+    {
+     "spell": "Oath of Light",
+     "note": "On the flag carrier the moment the flag is picked up (5 min, one Oath at a time; boosts Holy Light/Flash of Light/Holy Shock on them)."
+    },
+    {
+     "spell": "Light's Vigil",
+     "note": "On the carrier/focused ally before the chase: next Holy Shock on them has no cooldown and heals their party (friendly targets only since Nov 2; one per party)."
+    },
+    {
+     "spell": "Holy Shock",
+     "note": "Instant heal on the move; fire twice in a row with Light's Vigil."
+    },
+    {
+     "spell": "Cleanse",
+     "note": "Removes a poison, a disease and a magic effect (incl. magical crowd control) - Cleanse a capper before healing."
+    },
+    {
+     "spell": "Blessing of Freedom",
+     "note": "First Hunter/Mage slow or root on the carrier."
+    },
+    {
+     "spell": "Divine Protection",
+     "note": "Save for the enemy's first burst on you (8 s, Forbearance)."
+    }
+   ],
+   "Protection": [],
+   "other_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+    "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+   ],
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10",
+   "unconfirmed": true,
+   "flag": "Sequences from foreverbattlegrounds (secondary); spell mechanics cross-checked with Icy Veins and Blizzard dev notes. No Protection PvP burst source."
+  },
+  "roles": [
+   {
+    "spec": "Retribution",
+    "role": "Attacker / flag hunter / roamer",
+    "text": "Burst one target in HoJ/Repentance windows and survive between them; no interrupt, no snare, one stun - Hunters and Mages can kite you. Engineering grenades help (Icy Veins).",
+    "other_sources": [
+     "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling"
+    ],
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)"
+   },
+   {
+    "spec": "Holy",
+    "role": "Healer / defender",
+    "text": "Strong single-target healer that survives focus with plate and bubbles; keeps a flag carrier alive with Oath of Light, Light's Vigil and Holy Shock; low damage, no interrupt, snare or enemy dispel; mana-limited in long fights.",
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)"
+   },
+   {
+    "spec": "Protection",
+    "role": "Flag carrier",
+    "text": "foreverbattlegrounds summary: plate tank with Templar's Bulwark and Seal of Fury absorbs; 'the safest flag carrier'. No Protection PvP page archived.",
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)"
+   }
+  ],
+  "world_pvp_tips": [
+   {
+    "title": "PvP ruleset = always at risk",
+    "body": "On PvP and Roleplay PvP rulesets you are almost always at risk of attack by the other faction; on Normal you fight only by choice. You cannot move a character between rulesets.",
+    "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "Crowded zones thinned (Nov 6)",
+    "body": "Blizzard lowered player population in congested zones, with a bigger change on the PvP ruleset after overcrowding feedback.",
+    "source_url": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "Leveling in contested zones",
+    "body": "On the PvP ruleset every trip into contested territory is dangerous while you level.",
+    "source_url": "https://lfcarry.com/guides/wow-forever-pvp",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "lfcarry only (secondary)"
+   },
+   {
+    "title": "Escape kit",
+    "body": "Blessing of Freedom (immune to roots/slows, removes them) plus Pursuit of Justice lets you run away; Hammer of Justice buys distance or time to cast Holy Light; Repentance (Humanoids) also gives you distance.",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "Bubbles",
+    "body": "Divine Protection gives a breather but stops your attacks; Divine Shield (34) lets you keep attacking at -50% damage. They share Forbearance with Blessing of Protection (see forbearance).",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "No slows or gap closers",
+    "body": "Retribution's biggest PvP issue is no slows/gap closers vs ranged players; Engineering grenades are incredibly potent PvP tools for Paladins.",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "Recast your Blessing",
+    "body": "Blessing of Freedom or Blessing of Protection replaces your other Blessing on the target - recast Blessing of Might/Kings afterwards (one Blessing per Paladin per player).",
+    "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "Freedom before you close",
+    "body": "Against Hunters and Mages put Blessing of Freedom on yourself before closing in, then re-apply Blessing of Might.",
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)"
+   },
+   {
+    "title": "Human Will to Survive",
+    "body": "Human racial removes all Stuns (3 min) - your answer to a stun-lock gank.",
+    "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbattlegrounds only (secondary fansite; verify in game)"
+   },
+   {
+    "title": "Legacy perk High Alert",
+    "body": "Adventure perk 'High Alert' increases stealth detection outside battlegrounds - useful vs Rogue/Druid ganks on the PvP ruleset.",
+    "source_url": "https://news.blizzard.com/en-us/article/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system",
+    "checked": "2026-11-10"
+   },
+   {
+    "title": "No Spy",
+    "body": "Spy (enemy player detector for world PvP) has no Forever version; enemy cooldown trackers depend on the restricted combat log. Watch nameplates instead (BetterBlizzPlates or Plater).",
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   }
+  ],
+  "limits": [
+   {
+    "what": "No combat log for addons",
+    "why": "COMBAT_LOG_EVENT is removed and Combat Log chat-tab text is a string type addons cannot parse - no kill-blow credit, enemy cooldown/trinket tracking, DR tracking or log-based enemy detection.",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "what": "Secret values in combat",
+    "why": "Other units' health %/missing (UnitHealthPercent/UnitHealthMissing), power %/missing, primary resources and casts are Secret: addon code can pass them to bars/cooldown widgets but not compare them - e.g. 'target under 20% for Hammer of Wrath' cannot be computed.",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "what": "Aura contents secret in combat",
+    "why": "Aura lists and UNIT_AURA still fire, but aura contents are Secret; helper functions (instance IDs, has-expiration, counts, dispel colours) remain.",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "what": "Instance chat lockdown (battlegrounds unclear)",
+    "why": "In instances chat reaches addons as Secrets and addons may not send any chat or addon messages; creature names/GUIDs/IDs are Secret. Blizzard does not say whether battlegrounds count - assume yes: no BG callouts or addon sync.",
+    "other_sources": [
+     "https://wowforevertierlist.com/addons/pvp"
+    ],
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "Midnight documentation Forever inherits; not Forever-tested; BG applicability unknown"
+   },
+   {
+    "what": "Secure code out of combat only",
+    "why": "Secure snippets (bar paging, click-casting) run out of combat; one press = one action.",
+    "source_url": "https://hearthproof.com/systems/addons/",
+    "checked": "2026-11-10"
+   },
+   {
+    "what": "No combat automation",
+    "why": "Blizzard's stated aim: addons should not automate combat decisions; named targets include relabelling enemies by role ('Healer'), renaming casts, and colouring nameplates by priority.",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "what": "No Forever-specific API list",
+    "why": "The only Forever statement is a Blizzard rep in the WoW UI Discord (Sep 15, 2026) that Midnight's disarmament, incl. secrets, is active; nothing has been publicly tested at 60 on a Forever build.",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   }
+  ],
+  "not_in_addon": [
+   {
+    "feature": "Enemy trinket / cooldown tracking (OmniBar/Gladius style)",
+    "why": "Needs the combat log, which addons cannot read."
+   },
+   {
+    "feature": "Diminishing-returns tracker",
+    "why": "Needs the combat log; Forever's DR table is unpublished. The built-in Cooldown Manager shows CC duration with DR applied (Nov 6 hotfix)."
+   },
+   {
+    "feature": "Kill announcer / killing-blow credit",
+    "why": "No combat log; chat sending locked in instances."
+   },
+   {
+    "feature": "Battleground callouts and addon-to-addon sync",
+    "why": "Addons may not send chat/addon messages in instances (BG status unconfirmed)."
+   },
+   {
+    "feature": "Spy-style enemy detection",
+    "why": "Spy has no Forever version and relied on the combat log."
+   },
+   {
+    "feature": "Auto-target or relabel enemy healers",
+    "why": "Explicit Blizzard target of the restrictions; enemy identity/casts are Secret."
+   },
+   {
+    "feature": "Execute warning from enemy health % (Hammer of Wrath)",
+    "why": "Other units' health % is Secret and cannot be compared; show the spell's own usable state instead (untested)."
+   },
+   {
+    "feature": "Automatic raid-target marking",
+    "why": "Creature names/GUIDs are Secret in instances; no statement either way - treat as unsupported."
+   }
+  ],
+  "pvp_addons": [
+   {
+    "name": "BetterBlizzPlates",
+    "purpose": "Clearer enemy nameplates with cast bars, class colours, important debuffs (popular with PvP players)",
+    "forever_build": true,
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Plater",
+    "purpose": "Configurable nameplates (alternative to BetterBlizzPlates); threat colouring listed",
+    "forever_build": true,
+    "other_sources": [
+     "https://hearthproof.com/systems/addons/"
+    ],
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Capping",
+    "purpose": "Battleground timers: base captures, flags, queues",
+    "forever_build": true,
+    "notes": "Written for the old battlegrounds; Darkspear Islands support unknown.",
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "foreverbase: works on Forever, Darkspear support unknown"
+   },
+   {
+    "name": "BugSack",
+    "purpose": "Keep Lua errors out of sight during a fight (needs BugGrabber)",
+    "forever_build": true,
+    "other_sources": [
+     "https://hearthproof.com/systems/addons/"
+    ],
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Details!",
+    "purpose": "Damage/healing done after the fact (partial without combat log)",
+    "forever_build": true,
+    "other_sources": [
+     "https://hearthproof.com/systems/addons/"
+    ],
+    "source_url": "https://wowforevertierlist.com/addons/pvp",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Mapster",
+    "purpose": "Bigger, movable world map for reading a battleground",
+    "forever_build": true,
+    "source_url": "https://wowforevertierlist.com/addons/pvp",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "PP Forever",
+    "purpose": "Paladin blessing assignment (PallyPower-style); idea source only",
+    "forever_build": true,
+    "source_url": "https://hearthproof.com/systems/addons/",
+    "checked": "2026-11-10",
+    "unconfirmed": true,
+    "flag": "hearthproof census lists it as a Forever build; untested"
+   },
+   {
+    "name": "Spy",
+    "purpose": "World PvP enemy detector",
+    "forever_build": false,
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "OmniBar-style enemy cooldown trackers",
+    "purpose": "Enemy cooldown/trinket tracking",
+    "forever_build": false,
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "ClassicCastbars",
+    "purpose": "Enemy cast bars (nameplate addons show cast bars instead)",
+    "forever_build": false,
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "WeakAuras",
+    "purpose": "In-combat aura/cue engine",
+    "forever_build": false,
+    "other_sources": [
+     "https://hearthproof.com/systems/addons/"
+    ],
+    "source_url": "https://wowforevertierlist.com/addons/pvp",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "OmniCC",
+    "purpose": "Cooldown numbers (Forever has built-in cooldown numbers on action bars per foreverbase)",
+    "forever_build": false,
+    "source_url": "https://hearthproof.com/systems/addons/",
+    "checked": "2026-11-10"
+   }
+  ],
+  "api_notes": [
+   {
+    "api": "GetZonePVPInfo",
+    "note": "Not mentioned on any archived page; test in game (zone PvP type for contested/sanctuary detection).",
+    "status": "unverified",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "C_PvP.* / rank and Rank Points API",
+    "note": "No archived page names a Lua API for rank, Rank Points or weekly cap; the Character pane (C) > Player vs. Player tab shows them. Test C_PvP functions on Forever.",
+    "status": "unverified",
+    "source_url": "https://wowforevertierlist.com/addons/pvp",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "UnitPVPRank / GetPVPRankInfo",
+    "note": "Classic rank APIs; not mentioned for Forever on any archived page.",
+    "status": "unverified",
+    "source_url": "https://wowforevertierlist.com/addons/pvp",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "Ruleset detection API",
+    "note": "wowforevertierlist (from the 1.60.1 interface diff) says ruleset detection exists so an addon can tell Hardcore/PvP/Roleplay apart; the function name is not given.",
+    "status": "unverified",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "Cooldown Manager (/cdm)",
+    "note": "Built-in; off by default, enable in Options > Gameplay Enhancement (Blizzard dev notes); /cdm picks spells (foreverbase, hearthproof). Supports all classes, racials and trinkets (Oct 8 notes); all ranks = one entry (Oct 15); shows CC duration with DR (Nov 6 hotfix); Seals shown correctly since Nov 9 hotfix. Gaps: no Healthstone, pet cooldowns, weapon enhancements; consumables later.",
+    "status": "documented",
+    "other_sources": [
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+     "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-9-2026",
+     "https://hearthproof.com/systems/addons/"
+    ],
+    "source_url": "https://foreverbase.org/en/addons/starter-pvp/",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "C_SwingTimer / PLAYER_SWING",
+    "note": "Built-in swing timer: C_SwingTimer namespace, PLAYER_SWING event and a visibility setting that defaults to off (from client data). Nov 4 notes: Swing Timer bar no longer fades by distance until the swing finishes.",
+    "status": "documented",
+    "other_sources": [
+     "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+    ],
+    "source_url": "https://wowforevertierlist.com/addons/pvp",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "issecretvalue / HasSecretValues / HasSecretAspect / IsAnchoringSecret",
+    "note": "Runtime tests for Secret values/objects (Midnight documentation Forever inherits). Comparing possibly-Secret values of different types returns false instead of erroring; 'if x then' still works as a nil test.",
+    "status": "documented",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "UNIT_SPELLCAST_* for player",
+    "note": "The player's own casts and those of units the player controls stay readable in combat; other units' casts are Secret.",
+    "status": "documented",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "UnitHealthMax / UnitPowerMax (player units)",
+    "note": "Readable for player units; UnitHealthPercent/UnitHealthMissing/UnitPowerPercent/UnitPowerMissing return Secrets.",
+    "status": "documented",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "WOW_PROJECT_CAMELOT (18) / GetBuildInfo",
+    "note": "Build 70170 added WOW_PROJECT_CAMELOT = 18; select(4, GetBuildInfo()) > 16000 and < 20000 identifies Forever. hearthproof says the client reports WOW_PROJECT_ID 1 (see conflicts).",
+    "status": "documented",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   },
+   {
+    "api": "Developer settings forcing restricted states",
+    "note": "Blizzard ships settings that force instance chat lockdown (not persisting across restart) and Secret auras/cooldowns/unit identity/spellcasts, for testing out of instances. Setting names not given.",
+    "status": "documented",
+    "source_url": "https://wowforevertierlist.com/addons/restrictions",
+    "checked": "2026-11-10"
+   }
+  ]
+ },
+ "conflicts": [
+  {
+   "topic": "Lay on Hands cooldown",
+   "detail": "Blizzard deep dive (and endgametools/foreverguide/foreverbattlegrounds): 20 min (was 1 h). thetirisfalen: '1-hour cooldown in the current client'. Using 20 min.",
+   "other_sources": [
+    "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+   ],
+   "source_url": "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Divine Shield damage penalty",
+   "detail": "Icy Veins Ret leveling: you keep attacking but deal 50% less damage; foreverbattlegrounds: damage dealt halved. thetirisfalen: 'Divine Shield has no damage-dealt penalty' in the current client. Using -50%; verify in game.",
+   "other_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Alterac Valley level range",
+   "detail": "51-60 (Icy Veins via loreforever; foreverdb from the launch client) vs 20-60 in 'the database behind one tracker' (loreforever). Using 51-60.",
+   "other_sources": [
+    "https://foreverdb.net/guide/pvp-guide"
+   ],
+   "source_url": "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Number of new battlegrounds",
+   "detail": "Blizzpro headline says two new battlegrounds but describes only Darkspear Islands (loreforever). foreverdb: client also contains Battle for Gilneas (10v10), Battle for Blackrock (15v15, 50-60) and a five-player Mak'gora Arena, none announced. Recording only the four launch battlegrounds.",
+   "other_sources": [
+    "https://foreverdb.net/guide/pvp-guide"
+   ],
+   "source_url": "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Voice of Truth",
+   "detail": "Blizzard Nov 2 dev notes: Voice of Truth removed (slot now Oath of Light). foreverbattlegrounds Holy page lists it as a level-20 trainer spell (6 s Silence/Interrupt immunity, 3 min) and uses it in tips; Icy Veins Holy/Prot leveling still mention it. Not imported.",
+   "other_sources": [
+    "https://foreverbattlegrounds.com/classes/paladin/holy/",
+    "https://www.icy-veins.com/wow-forever/holy-paladin-leveling"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Hammer of the Righteous",
+   "detail": "thetirisfalen lists Hammer of the Righteous (spell 407632) in its kit and rotations; no Blizzard or Icy Veins page has it for Forever. Not imported.",
+   "other_sources": [
+    "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Light's Vigil on enemies",
+   "detail": "Deep dive (Oct 15): usable on allies and enemies (enemy = extra Holy damage + 75% mana refund). Nov 2 notes: friendly targets only, offensive part removed. Using friendly only.",
+   "other_sources": [
+    "https://news.blizzard.com/en-us/article/24302099/world-of-warcraft-forever-class-deep-dives-paladin"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "WOW_PROJECT_ID on Forever",
+   "detail": "hearthproof: client reports itself as retail (WOW_PROJECT_ID 1). wowforevertierlist: build 70170 added WOW_PROJECT_CAMELOT = 18; Priest/Mage research addon_dev and omaforge (NOTES.md) say WOW_PROJECT_ID 18. Using 18; check in game.",
+   "other_sources": [
+    "https://wowforevertierlist.com/addons/restrictions"
+   ],
+   "source_url": "https://hearthproof.com/systems/addons/",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Built-in damage meter",
+   "detail": "hearthproof: built-in damage meter is in the game (Edit Mode). wowforevertierlist: reported but no damage-meter function/event/setting in the 1.60.1 interface data - unconfirmed.",
+   "other_sources": [
+    "https://wowforevertierlist.com/addons/restrictions"
+   ],
+   "source_url": "https://hearthproof.com/systems/addons/",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "ElvUI Forever build",
+   "detail": "wowforevertierlist restrictions page: ElvUI shipped a Forever build. hearthproof census (Nov 5): no Forever file or developer statement. Copied addons list (foreverstatus) lists ElvUI as working.",
+   "other_sources": [
+    "https://wowforevertierlist.com/addons/restrictions"
+   ],
+   "source_url": "https://hearthproof.com/systems/addons/",
+   "checked": "2026-11-10"
+  },
+  {
+   "topic": "Hammer of Justice cooldown wording",
+   "detail": "foreverbattlegrounds Ret page says both 'a single stun on a 45 s cooldown' and '1 min cooldown (45 s with Improved Hammer of Justice)'; thetirisfalen: 60 s, 45 s talented. Using 60 s base.",
+   "other_sources": [
+    "https://thetirisfalen.com/wow-forever/guides/paladin-ret-holy-pvp/"
+   ],
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "Level 60 pre-raid and raid BiS: Icy Veins Ret BiS page says 'too early to tell' and lists no items; no Holy/Protection BiS page archived.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-gear-best-in-slot",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Gear for levels 31-59: Icy Veins Paladin leveling gear lists stop at level 30 (Beta cap).",
+   "source_url": "https://www.icy-veins.com/wow-forever/holy-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Most leveling items have no level on the page; they are bracketed 'levels 10-30 (level not stated)'.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-leveling",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Paladin enchants: no Paladin page lists any; no enchant rows included.",
+   "source_url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-gear-best-in-slot",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Honor currency ID and any Lua API for Honor, rank, Rank Points or weekly cap (C_PvP.*, UnitPVPRank, GetPVPRankInfo) - test in game.",
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Weekly Rank Point cap values, Rank Points per rank, Honor per kill/win/loss, season 1 end date - not published by Blizzard.",
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "PvP trinket (rank 2) effect and cooldown in Forever - not on any archived page.",
+   "source_url": "https://news.blizzard.com/en-us/article/24303316/how-pvp-progression-in-world-of-warcraft-forever-works",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Base cooldowns of Divine Shield, Divine Protection and Blessing of Protection - no archived page states them.",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/holy/",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Hammer of Justice cooldown/duration, Repentance cooldown, Blessing of Freedom duration/cooldown and Forbearance duration only from secondary fansites.",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Whether battlegrounds count as 'instances' for the chat/addon-message lockdown - no source says.",
+   "source_url": "https://wowforevertierlist.com/addons/pvp",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "GetZonePVPInfo status and the ruleset-detection API name on Forever - untested.",
+   "source_url": "https://wowforevertierlist.com/addons/restrictions",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "warcraft.wiki.gg Secret Values raw copy is a Cloudflare block page - no content used.",
+   "source_url": "https://warcraft.wiki.gg/wiki/Secret_Values",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Protection Paladin PvP: no Protection PvP page archived; no burst sequence or per-map roles.",
+   "source_url": "https://foreverbattlegrounds.com/classes/paladin/retribution/",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Alliance reputation factions/vendors for Warsong Gulch, Arathi Basin and Alterac Valley - not named on any archived page.",
+   "source_url": "https://foreverdb.net/guide/pvp-guide",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Marks of Honor per win/loss (3/1 per Icy Veins via loreforever) unconfirmed; Mark item IDs only from foreverdb.",
+   "source_url": "https://loreforeverwow.com/guides/wow-forever-battlegrounds",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "World PvP tip 'Divine Shield then Hearthstone' to escape ganks - not stated on any archived page; not included.",
+   "source_url": "https://news.blizzard.com/en-us/article/24302070/updated-10-22-choose-your-ruleset-in-world-of-warcraft-forever",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Battlemaster NPC names/locations (other than 'every capital city' / Stormwind Keep) - not on any archived page.",
+   "source_url": "https://foreverdb.net/guide/pvp-guide",
+   "checked": "2026-11-10"
+  },
+  {
+   "gap": "Paladin class mount quests (40/60): only that they exist; names, steps and rewards not on any archived page.",
+   "source_url": "https://www.wowhead.com/forever/guide/unlocking-riding-skill-mounts",
+   "checked": "2026-11-10"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+# Runs the poller a few minutes after boot and then every 6 hours.
+[Unit]
+Description=Tristan's Addon change poller (every 6h)
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=6h
+RandomizedDelaySec=10min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,28 @@
+name: Test
+
+# Every push to main and every PR (the brief: CI runs on push).
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Lua 5.1 from Ubuntu packages (lua.org downloads kept timing out); LuaJIT
+      # runs the same 5.1 code if the lua5.1 package isn't on the runner image.
+      - name: Install Lua 5.1
+        run: |
+          sudo apt-get update -q
+          if sudo apt-get install -y -q lua5.1; then echo "LUA=lua5.1" >> "$GITHUB_ENV";
+          else sudo apt-get install -y -q luajit && echo "LUA=luajit" >> "$GITHUB_ENV"; fi
+      - name: Generated data is up to date
+        run: python3 tools/build_data.py --check
+      - name: Lua syntax
+        run: for f in $(git ls-files '*.lua'); do $LUA -e "assert(loadfile('$f'))"; done
+      - name: Addon headless tests
+        run: $LUA tests/run.lua
+      - name: Poller tests
+        run: python3 tools/paladin-changes-poller/tests/test_poller.py -v

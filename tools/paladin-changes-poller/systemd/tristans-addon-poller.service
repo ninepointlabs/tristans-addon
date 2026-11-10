@@ -1,0 +1,13 @@
+# Example user unit (no secrets). Install with the steps in ../README.md.
+# Adjust the paths if your repo or WoW install live elsewhere.
+[Unit]
+Description=Tristan's Addon: poll WoW Forever Paladin/PvP change feeds
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/Projects/tristans-addon/tools/paladin-changes-poller/poller.py \
+  --output "%h/Projects/tristans-addon/Data/Changes.lua" \
+  --output "%h/Games/battlenet/drive_c/Program Files (x86)/World of Warcraft/_forever_/Interface/AddOns/TristansAddon/Data/Changes.lua"
+Nice=10
