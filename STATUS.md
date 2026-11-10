@@ -110,7 +110,7 @@ Main conflicts (30 total, listed in game): Righteous Fury Holy threat 60% vs 90%
 ## Commits
 
 - `e89c98d` Tristan's Addon v0.1.0: spec-aware Paladin companion for WoW Forever, with a Battle (PvP) section
-- (next) STATUS.md
+- `b608af5` STATUS: v0.1.0 on main, checks, PvP API probes, gaps, in-game checklist
 
 ## Still to check in game
 
