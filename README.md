@@ -7,7 +7,7 @@ Human Paladin of the Alliance, who lives on a PvP realm and would like to stop g
 It's the third sibling of [Andric's Addon](https://andricsaddon.myazerothlife.com) (Priest) and
 [Parzelle's Addon](https://parzelles-addon.myazerothlife.com) (Mage), from the makers of [My Azeroth Life](https://myazerothlife.com).
 
-> **Status:** v0.1.0 is on `main`. There is **no release yet**. Screenshots come once Tristan has logged a few hours.
+> **Status:** [v0.1.0](https://github.com/ninepointlabs/tristans-addon/releases/tag/v0.1.0) is out. Screenshots come once Tristan has logged a few hours.
 
 - Website: https://tristans-addon.myazerothlife.com (files in `docs/`; the domain isn't live yet)
 - WoW Forever only (`WOW_PROJECT_ID 18`), Interface `16001`. No Ace3; Blizzard API only. MIT.
@@ -28,7 +28,7 @@ It's the third sibling of [Andric's Addon](https://andricsaddon.myazerothlife.co
 
 ### With OmaForge (Linux)
 
-Once the first release is out:
+Search for "tristan" in OmaForge, or:
 
 ```sh
 omaforge install -c forever github:ninepointlabs/tristans-addon
@@ -37,7 +37,7 @@ omaforge update -c forever          # later versions
 
 ### By hand (any OS)
 
-Download the zip from [GitHub Releases](https://github.com/ninepointlabs/tristans-addon/releases) (once there is one) and unzip it so the folder is
+Download the zip from [GitHub Releases](https://github.com/ninepointlabs/tristans-addon/releases) and unzip it so the folder is
 `World of Warcraft/_forever_/Interface/AddOns/TristansAddon`. From a checkout, `tools/install-dev.sh` copies only the files WoW needs.
 
 ## Getting started

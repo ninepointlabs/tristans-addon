@@ -4,8 +4,8 @@
 
 **Repo:** local `/home/tim/Projects/tristans-addon`, branch `main`. Commits use `Nine Point Labs <179739321+ninepointlabs@users.noreply.github.com>`.
 - **On GitHub:** https://github.com/ninepointlabs/tristans-addon (public), created 2026-11-10 at Tim's go-ahead; `origin` set, `main` pushed. First CI run (Test, run 42887561649) passed: data up to date, Lua syntax, headless tests, poller tests.
-- **No tag, no GitHub release, no release post, no Pages setting, no DNS.** Admin handles releases with Tim's explicit OK. `docs/CNAME` = `tristans-addon.myazerothlife.com` (file only).
-- Repo topics `wow-addon` and `world-of-warcraft` added (as the siblings have) so `omaforge search -c forever tristan` finds it. Install still needs a release.
+- **v0.1.0 released 2026-11-10** at Tim's explicit request ("do a initial 0.1 release"): tag `v0.1.0`, Release workflow run 42943278277 passed, assets `TristansAddon-v0.1.0.zip` + `release.json` (flavor `forever`, interface 16001; `omaforge clients` re-checked first). No release post, no Pages setting, no DNS. `docs/CNAME` = `tristans-addon.myazerothlife.com` (file only).
+- Repo topics `wow-addon` and `world-of-warcraft` added (as the siblings have) so `omaforge search -c forever tristan` finds it. Installs from the v0.1.0 release.
 - Target: loadable **v0.1.0** on `main` (the TOC says `@project-version@`; the packager fills it in on a tag).
 
 ## Tim's decisions (final, 2026-11-10 12:59 PM CT)
