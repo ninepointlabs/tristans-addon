@@ -270,9 +270,12 @@ def merge(existing: list[dict], new: list[dict]) -> tuple[list[dict], int]:
 
 # ------------------------------------------------------------------ output ----
 def lua_str(s: str) -> str:
-    s = (s or "").replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", "")
+    # Map typographic punctuation first: curly double quotes become '"', which
+    # must then be escaped like any other quote.
+    s = s or ""
     for k, v in {"\u2014": "-", "\u2013": "-", "\u2018": "'", "\u2019": "'", "\u201c": '"', "\u201d": '"', "\u2026": "..."}.items():
         s = s.replace(k, v)
+    s = s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", "")
     return f'"{s}"'
 
 

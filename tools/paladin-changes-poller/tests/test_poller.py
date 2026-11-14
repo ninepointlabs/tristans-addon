@@ -80,6 +80,11 @@ class PollerTest(unittest.TestCase):
         poller.run(self.args(), fetcher=self.fetch)
         self.assertEqual(self.out.read_text().count("Consecration now deals"), 1)
 
+    def test_curly_quotes_are_escaped(self):
+        # Curly quotes map to '"' and must still be escaped (they produced invalid Lua before).
+        out = poller.lua_str('Buff now displays as \u201cWindfury Totem\u201d and "plain"')
+        self.assertEqual(out, '"Buff now displays as \\"Windfury Totem\\" and \\"plain\\""')
+
     def test_failed_source_does_not_abort(self):
         def flaky(url):
             if url == "u:atom":
